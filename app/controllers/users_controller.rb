@@ -3,15 +3,17 @@ class UsersController < ApplicationController
 
   # GET /users
   # GET /users.json
-  def index
-    @users = User.all
-  end
+  #def index
+    #@users = User.all
+ # end
 
   # GET /users/1
   # GET /users/1.json
   def show
   end
-
+  def index
+    @users = User.find(:all, :conditions => ['name LIKE ?', "%#{params[:query]}%"])
+  end
   # GET /users/new
   def new
     @user = User.new

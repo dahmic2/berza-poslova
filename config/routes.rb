@@ -1,4 +1,14 @@
 BerzaPoslova::Application.routes.draw do
+  resources :projects
+
+  get "log_out" => "sessions#destroy", :as => "log_out"
+  get "log_in" => "sessions#new", :as => "log_in"
+  get "sign_up" => "users#new", :as => "sign_up"
+  # root :to => "users#new"
+  resources :sessions
+  resources :projects
+
+  get "home/index"
   resources :notifications
 
   resources :advartisments
@@ -18,7 +28,7 @@ BerzaPoslova::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # root 'welcome#index'
-
+  root :to => "home#index"
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
