@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="531aad26-debe-4623-9c4b-d439d70cd012" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="berza_poslova.iws" />
@@ -15,7 +14,7 @@
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
   <component name="CreatePatchCommitExecutor">
-    <option name="PATCH_PATH" value="" />
+    <option name="PATCH_PATH" value="C:\Sites\pok\berza-poslova" />
   </component>
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
@@ -379,7 +378,11 @@
       <created>1395317701228</created>
       <updated>1395317701228</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="sad radi login&#10;">
+      <created>1395317980814</created>
+      <updated>1395317980814</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -441,7 +444,8 @@
       <TodoPanelSettings />
     </option>
     <MESSAGE value="sad radi login" />
-    <option name="LAST_COMMIT_MESSAGE" value="sad radi login" />
+    <MESSAGE value="sad radi login&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="sad radi login&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
