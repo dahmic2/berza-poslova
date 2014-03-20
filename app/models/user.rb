@@ -4,7 +4,6 @@ class User < ActiveRecord::Base
   validates_confirmation_of :password
   validates_presence_of :password, :name, :last_name, :phone, :adress, :on => :create
   validates_uniqueness_of :email
-#hdsgjkasdhgfhjdagf
 
   def self.authenticate(email, password)
     user = find_by_email(email)
