@@ -18,23 +18,22 @@
           <%= link_to "Employers", employers_path %> |
           <%= link_to "Users", users_path %>
       <%end%>
-      <% i=1 %>
       <% @users=User.all%>
-      <% while i<=@users.count() %>
-          <%if current_user.email==@users.find(i).email %>
-              <%= link_to "Profile", users_path %> |
-              <%= link_to "Users", users_path %>
+      <% @users.each do |user|%>
+          <%if current_user.email==user.email %>
+              <%= link_to "Profile",current_user%> |
+              <%= link_to "Advartisment", advartisments_path %>
+              <%= link_to "CVs", cvs_path %>
               <%end%>
-          <% i=i+1 %>
-          <%end%>
-      <% i=2 %>
+
+                s <%end%>
       <% @employers=Employer.all%>
-      <% while i<=@employers.count() %>
-          <%if current_user.email==@employers.find(i).email %>
-              <%= link_to "Advartisment", advartisment_path %> |
-              <%= link_to "Profile", users_path %>
+      <% @employers.each do |employer| %>
+          <%if current_user.email==employer.email %>
+              <%= link_to "Advartisment", advartisments_path %> |
+              <%= link_to "Profile", current_user %>
           <%end%>
-          <% i=i+1 %>
+s
       <%end%>
 
   <% else %>
