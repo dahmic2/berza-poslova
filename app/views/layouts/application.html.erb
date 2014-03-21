@@ -16,10 +16,27 @@
       <%= link_to "Log out", log_out_path %>
       <% if current_user.email=="admin@poso.ba"%> |
           <%= link_to "Employers", employers_path %> |
-          <%= link_to "Users", users_path %> |
-
-
+          <%= link_to "Users", users_path %>
       <%end%>
+      <% i=1 %>
+      <% @users=User.all%>
+      <% while i<=@users.count() %>
+          <%if current_user.email==@users.find(i).email %>
+              <%= link_to "Profile", users_path %> |
+              <%= link_to "Users", users_path %>
+              <%end%>
+          <% i=i+1 %>
+          <%end%>
+      <% i=2 %>
+      <% @employers=Employer.all%>
+      <% while i<=@employers.count() %>
+          <%if current_user.email==@employers.find(i).email %>
+              <%= link_to "Advartisment", advartisment_path %> |
+              <%= link_to "Profile", users_path %>
+          <%end%>
+          <% i=i+1 %>
+      <%end%>
+
   <% else %>
       <%= link_to "Sign up", sign_up_path %> or
       <%= link_to "log in", log_in_path %>

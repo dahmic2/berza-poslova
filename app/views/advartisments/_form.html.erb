@@ -28,12 +28,9 @@
     <%= f.date_select :expire %>
   </div>
   <div class="field">
-    <%= f.label :employer_id %><br>
-    <%= f.text_field :employer_id %>
-  </div>
-  <div class="field">
     <%= f.label :category_id %><br>
-    <%= f.text_field :category_id %>
+    <%= options_from_collection_for_select(Category.all, :id, :name) %>
+    <%= collection_select(:category, :category_id, Category.all, :id, :name ) %>
   </div>
   <div class="actions">
     <%= f.submit %>

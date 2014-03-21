@@ -72,3 +72,4 @@ class EmployersController < ApplicationController
       params.require(:employer).permit(:name, :username, :password, :email, :location, :website)
     end
 end
+
