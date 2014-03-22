@@ -9,7 +9,6 @@ class User < ActiveRecord::Base
   validates :email, format: { with: VALID_EMAIL_REGEX }
 
 
-
   def self.authenticate(email, password)
     user = find_by_email(email)
     if user && user.password == password
