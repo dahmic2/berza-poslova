@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :email
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, format: { with: VALID_EMAIL_REGEX }
-  
+
 #ovo ne radi
 
   def self.authenticate(email, password)
