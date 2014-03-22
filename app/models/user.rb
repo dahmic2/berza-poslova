@@ -1,6 +1,5 @@
 class User < ActiveRecord::Base
   before_save :encrypt_password
-
   has_many :cvs, dependent: destroy, foreign_key: :user_id
 
   validates_confirmation_of :password
