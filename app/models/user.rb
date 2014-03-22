@@ -8,7 +8,7 @@ class User < ActiveRecord::Base
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, format: { with: VALID_EMAIL_REGEX }
 
-#ovo ne radi
+
 
   def self.authenticate(email, password)
     user = find_by_email(email)
@@ -19,7 +19,7 @@ class User < ActiveRecord::Base
     end
   end
 
-  
+
   def encrypt_password
     if password.present?
       #self.password_salt = BCrypt::Engine.generate_salt
