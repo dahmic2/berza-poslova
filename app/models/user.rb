@@ -1,9 +1,13 @@
 class User < ActiveRecord::Base
   before_save :encrypt_password
 
+  has_many :cvs, dependent: destroy, foreign_key: :user_id
+
   validates_confirmation_of :password
-  validates_presence_of :password, :name, :last_name, :phone, :adress, :on => :create
+  validates_presence_of :password, :name, :last_name, :phone, :adress,:email, :on => :create
   validates_uniqueness_of :email
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  validates :email, format: { with: VALID_EMAIL_REGEX }
 #ovo ne radi
 
   def self.authenticate(email, password)

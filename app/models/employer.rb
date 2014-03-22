@@ -2,8 +2,10 @@ class Employer < ActiveRecord::Base
   before_save :encrypt_password
 
   validates_confirmation_of :password
-  validates_presence_of :password, :name, :location, :username, :website,  :on => :create
+  validates_presence_of :password, :name, :location, :username, :website, :email,  :on => :create
   validates_uniqueness_of :email
+  VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
+  validates :email, format: { with: VALID_EMAIL_REGEX }
 #ovo ne radi
 
   def self.authenticate(email, password)
