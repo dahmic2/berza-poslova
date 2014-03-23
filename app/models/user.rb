@@ -1,6 +1,6 @@
 class User < ActiveRecord::Base
   before_save :encrypt_password
-  has_many :cvs, dependent: destroy, foreign_key: :user_id
+  has_many :cvs
 
   validates_confirmation_of :password
   validates_presence_of :password, :name, :last_name, :phone, :adress,:email, :on => :create
