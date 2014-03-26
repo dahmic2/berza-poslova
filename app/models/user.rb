@@ -3,12 +3,12 @@ class User < ActiveRecord::Base
   has_many :cvs
 
   validates_confirmation_of :password
-  validates_presence_of :password, :name, :last_name, :phone, :addres,:email, :on => :create
+  validates_presence_of :password, :name, :last_name, :phone, :adress,:email, :on => :create
   validates_uniqueness_of :email
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, format: { with: VALID_EMAIL_REGEX }
   VALID_PHONE_REGEX = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/
-  validates :phine, format: { with: VALID_PHONE_REGEX }
+  validates :phone, format: { with: VALID_PHONE_REGEX }
 
 
   def self.authenticate(email, password)

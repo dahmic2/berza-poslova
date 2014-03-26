@@ -25,15 +25,17 @@
               <%= link_to "Advartisment", advartisments_path %>
               <%= link_to "CVs", cvs_path %>
               <%end%>
+      <%end%>
 
-                s <%end%>
+ <% elsif current_employer %>
+      Logged in as <%= current_employer.email %>.
+      <%= link_to "Log out", log_out_path %>
       <% @employers=Employer.all%>
       <% @employers.each do |employer| %>
-          <%if current_user.email==employer.email %>
-              <%= link_to "Advartisment", advartisments_path %> |
-              <%= link_to "Profile", current_user %>
+          <%if current_employer.email==employer.email %>
+              <%= link_to "Advartisments", advartisments_path %> |
+              <%= link_to "Profile", current_employer %>
           <%end%>
-s
       <%end%>
 
   <% else %>
@@ -41,6 +43,7 @@ s
       <%= link_to "log in", log_in_path %>
   <% end %>
 </div>
+
 
 <% flash.each do |name, msg| %>
     <%= content_tag :div, msg, :id => "flash_#{name}" %>

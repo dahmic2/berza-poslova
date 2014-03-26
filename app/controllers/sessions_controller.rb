@@ -29,7 +29,7 @@ class SessionsController < ApplicationController
       session[:user_id] = user.id
       redirect_to root_url, :notice => "Logged in!"
     elsif employer
-          session[:emplyer_id] = employer.id
+          session[:employer_id] = employer.id
           redirect_to root_url, :notice => "Logged in!"
     else
       flash.now.alert = "Invalid email or password"
@@ -39,6 +39,7 @@ class SessionsController < ApplicationController
 
   def destroy
     session[:user_id] = nil
+    session[:employer_id] = nil
     redirect_to root_url, :notice => "Logged out!"
   end
   # PATCH/PUT /sessions/1
