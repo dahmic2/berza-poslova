@@ -14,4 +14,9 @@ class ApplicationController < ActionController::Base
   def current_employer
     @current_employer ||= Employer.find(session[:employer_id]) if session[:employer_id]
   end
+  def provjera
+    if @current_employer.nil? && @current_user.nil?
+      redirect_to home_index_path
+    end
+  end
 end

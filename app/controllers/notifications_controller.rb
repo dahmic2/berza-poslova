@@ -1,4 +1,5 @@
 class NotificationsController < ApplicationController
+  before_filter :provjera , :except => [:login]
   before_action :set_notification, only: [:show, :edit, :update, :destroy]
 
   # GET /notifications

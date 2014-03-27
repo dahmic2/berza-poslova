@@ -1,4 +1,5 @@
 class EmployersController < ApplicationController
+  before_filter :provjera , :except => [:login]
   before_action :set_employer, only: [:show, :edit, :update, :destroy]
 
   # GET /employers

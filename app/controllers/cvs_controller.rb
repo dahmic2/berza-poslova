@@ -1,4 +1,5 @@
 class CvsController < ApplicationController
+  before_filter :provjera , :except => [:login]
   before_action :set_cv, only: [:show, :edit, :update, :destroy]
 
   # GET /cvs

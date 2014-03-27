@@ -1,4 +1,5 @@
 class AdvartismentsController < ApplicationController
+  before_filter :provjera , :except => [:login]
   before_action :set_advartisment, only: [:show, :edit, :update, :destroy]
 
   # GET /advartisments
