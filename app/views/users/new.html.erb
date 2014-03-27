@@ -40,5 +40,6 @@
       <%= f.label :phone %><br />
       <%= f.text_field :phone %>
     </p>
+    <%= show_simple_captcha(:label => "human authentication", :image_style => 'embosed_silver') %>
     <p class="button"><%= f.submit %></p>
 <% end %>

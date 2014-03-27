@@ -5,6 +5,8 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
   helper_method :current_employer
 
+  include SimpleCaptcha::ControllerHelpers
+
   private
 
   def current_user
@@ -15,7 +17,7 @@ class ApplicationController < ActionController::Base
     @current_employer ||= Employer.find(session[:employer_id]) if session[:employer_id]
   end
   def provjera
-    if @current_employer.nil? && @current_user.nil?
+    if !current_employer && !current_user
       redirect_to home_index_path
     end
   end

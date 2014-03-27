@@ -1,7 +1,9 @@
 class UsersController < ApplicationController
-  before_filter :provjera , :except => [:login]
-
+  before_filter :provjera , :except => [:create, :new]
   before_action :set_user, only: [:show, :edit, :update, :destroy]
+
+
+
 
   # GET /users
   # GET /users.json
@@ -29,7 +31,6 @@ class UsersController < ApplicationController
   # POST /users.json
   def create
     @user = User.new(user_params)
-
     respond_to do |format|
       if @user.save
         format.html { redirect_to @user, notice: 'User was successfully created.' }

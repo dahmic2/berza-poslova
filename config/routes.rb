@@ -1,4 +1,5 @@
 BerzaPoslova::Application.routes.draw do
+
   resources :projects
 
   get "log_out" => "sessions#destroy", :as => "log_out"

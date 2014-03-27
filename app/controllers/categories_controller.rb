@@ -1,5 +1,5 @@
 class CategoriesController < ApplicationController
-  before_filter :provjera , :except => [:login]
+  before_filter :provjera
   before_action :set_category, only: [:show, :edit, :update, :destroy]
 
   # GET /categories

@@ -49,4 +49,6 @@ gem 'haml-rails'
 
 gem 'slim-rails'
 
+gem 'simple_captcha', :git => 'git://github.com/galetahub/simple-captcha.git'
+
 
