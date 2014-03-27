@@ -51,4 +51,4 @@ gem 'slim-rails'
 
 gem 'simple_captcha', :git => 'git://github.com/galetahub/simple-captcha.git'
 
-
+gem 'wash_out'

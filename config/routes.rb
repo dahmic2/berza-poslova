@@ -13,6 +13,8 @@ BerzaPoslova::Application.routes.draw do
   resources :projects
 
   get "home/index"
+
+
   resources :notifications
 
   resources :advartisments
@@ -81,4 +83,7 @@ BerzaPoslova::Application.routes.draw do
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+
+ wash_out :soap
+
 end
