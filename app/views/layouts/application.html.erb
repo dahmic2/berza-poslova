@@ -15,17 +15,20 @@
       Logged in as <%= current_user.email %>.
       <%= link_to "Log out", log_out_path %>
       <% if current_user.email=="admin@poso.ba"%> |
+          <%= link_to "Profile",current_user%> |
+          <%= link_to 'New Employer', new_employer_path %> |
           <%= link_to "Employers", employers_path %> |
           <%= link_to "Users", users_path %>
-      <%end%>
+      <%else%>
       <% @users=User.all%>
       <% @users.each do |user|%>
           <%if current_user.email==user.email %>
               <%= link_to "Profile",current_user%> |
-              <%= link_to "Advartisment", advartisments_path %>
+              <%= link_to "Advartisment", advartisments_path %> |
               <%= link_to "CVs", cvs_path %>
               <%end%>
       <%end%>
+          <%end%>
 
  <% elsif current_employer %>
       Logged in as <%= current_employer.email %>.
@@ -33,6 +36,7 @@
       <% @employers=Employer.all%>
       <% @employers.each do |employer| %>
           <%if current_employer.email==employer.email %>
+              <%= link_to 'New Advartisments', new_advartisment_path %> |
               <%= link_to "Advartisments", advartisments_path %> |
               <%= link_to "Profile", current_employer %>
           <%end%>
