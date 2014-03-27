@@ -43,3 +43,10 @@ end
 
 # Use debugger
 # gem 'debugger', group: [:development, :test]
+gem 'bootstrap-generators', '~> 3.1.1'
+
+gem 'haml-rails'
+
+gem 'slim-rails'
+
+
