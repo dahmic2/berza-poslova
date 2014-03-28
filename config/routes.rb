@@ -13,7 +13,8 @@ BerzaPoslova::Application.routes.draw do
   resources :projects
 
   get "home/index"
-
+  get "home/about"
+  get "home/contact"
 
   resources :notifications
 
