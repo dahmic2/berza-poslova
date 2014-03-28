@@ -3,6 +3,9 @@ class User < ActiveRecord::Base
   before_save :encrypt_password
   has_many :cvs
 
+
+  validates_length_of :name, :in => 3..30
+  validates_length_of :last_name, :in => 3..30
   validates_confirmation_of :password
   validates_presence_of :password, :name, :last_name, :phone, :adress,:email, :on => :create
   validates_uniqueness_of :email
