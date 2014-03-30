@@ -20,22 +20,16 @@
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="container">
       <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
         <%= link_to "Berza poslova", "#", :class => "navbar-brand" %>
       </div>
-      <div class="collapse navbar-collapse">
         <ul class="nav navbar-nav">
-          <li><a <%= link_to "Home", home_index_path %> ></a></li>
-          <li ><a <%= link_to "About", home_about_path %> ></a></li>
-          <li ><a <%= link_to "Contact", home_contact_path %> ></a></li>
+          <li><a class="linkovi" <%= link_to "Home", home_index_path %> ></a></li>
+          <li><a class="linkovi" <%= link_to "About", home_about_path %> ></a></li>
+          <li ><a class="linkovi" <%= link_to "Contact", home_contact_path %> ></a></li>
+          <li><a  class="reg" style="  padding-left: 250px;" <%= link_to "Registration", users_new_path %> ></a></li>
+          <li><a class="reg" <%= link_to "Log in", log_in_path %> ></a></li>
 
         </ul>
-      </div>
     </div>
   </div>
 
