@@ -23,12 +23,17 @@
         <%= link_to "Berza poslova", "#", :class => "navbar-brand" %>
       </div>
         <ul class="nav navbar-nav">
-          <li><a class="linkovi" <%= link_to "Home", home_index_path %> ></a></li>
+          <% if current_user  %>
+        <li><a class="linkovi" <%= link_to "Home", home_index_path %> ></a></li>
           <li><a class="linkovi" <%= link_to "About", home_about_path %> ></a></li>
           <li ><a class="linkovi" <%= link_to "Contact", home_contact_path %> ></a></li>
-          <li><a  class="reg" style="  padding-left: 250px;" <%= link_to "Registration", users_new_path %> ></a></li>
-          <li><a class="reg" <%= link_to "Log in", log_in_path %> ></a></li>
-
+              <% else %>
+              <li><a class="linkovi" <%= link_to "Home", home_index_path %> ></a></li>
+              <li><a class="linkovi" <%= link_to "About", home_about_path %> ></a></li>
+              <li ><a class="linkovi" <%= link_to "Contact", home_contact_path %> ></a></li>
+               <li><a  class="reg" style="  padding-left: 250px;" <%= link_to "Registration", users_new_path %> ></a></li>
+                <li><a class="reg" <%= link_to "Log in", log_in_path %> ></a></li>
+           <% end%>
         </ul>
     </div>
   </div>
@@ -53,8 +58,8 @@
                 <%end%>
             <%end%>
         <%end%>
-
-    <% elsif current_employer %>
+    <% end%>
+    <% if current_employer %>
         Logged in as <%= current_employer.email %>.
         <%= link_to "Log out", log_out_path %>
         <% @employers=Employer.all%>
@@ -65,11 +70,9 @@
                 <%= link_to "Profile", current_employer %>
             <%end%>
         <%end%>
+    <%end%>
 
-    <% else %>
-        <%= link_to "Sign up", sign_up_path %> or
-        <%= link_to "log in", log_in_path %>
-    <% end %>
+
   </div>
 
 

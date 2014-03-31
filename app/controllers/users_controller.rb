@@ -26,6 +26,7 @@ class UsersController < ApplicationController
   # GET /users/1/edit
   def edit
   end
+  #UserMailer.deliver_registration_confirmation(@user)
 
   # POST /users
   # POST /users.json
@@ -33,6 +34,8 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
     respond_to do |format|
       if @user.save
+       # UserMailer.deliver_registration_confirmation(@current_user)
+
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render action: 'show', status: :created, location: @user }
       else
@@ -76,4 +79,5 @@ class UsersController < ApplicationController
     def user_params
       params.require(:user).permit(:name, :last_name, :email, :password, :adress, :phone)
     end
+
 end

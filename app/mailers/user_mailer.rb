@@ -10,4 +10,10 @@ class UserMailer < ActionMailer::Base
     @user = user
     mail :to => user.email, :subject => "Password Reset"
   end
+  def registration_confirmation(user)
+    recipients  user.email
+    from        "webmaster@example.com"
+    subject     "Thank you for Registering"
+    body        :user => user
+  end
 end
