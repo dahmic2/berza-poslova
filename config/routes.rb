@@ -1,5 +1,6 @@
 BerzaPoslova::Application.routes.draw do
 
+  get "password_resets/new"
   resources :projects
 
   get "log_out" => "sessions#destroy", :as => "log_out"
@@ -29,6 +30,11 @@ BerzaPoslova::Application.routes.draw do
   resources :employers
 
   resources :users
+  resources :password_resets
+
+    default_url_options :host => "localhost:3000"
+
+    # ... snip ...
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

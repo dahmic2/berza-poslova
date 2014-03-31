@@ -1,5 +1,5 @@
 class User < ActiveRecord::Base
-
+  before_create { generate_token(:auth_token) }
   before_save :encrypt_password
   has_many :cvs
 
@@ -11,10 +11,25 @@ class User < ActiveRecord::Base
   validates_uniqueness_of :email
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, format: { with: VALID_EMAIL_REGEX }
-  VALID_PHONE_REGEX = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/
-  validates :phone, format: { with: VALID_PHONE_REGEX }
+ # VALID_PHONE_REGEX = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/
+ # validates :phone, format: { with: VALID_PHONE_REGEX }
 
 
+  def send_password_reset
+    generate_token(:password_reset_token)
+    self.password_reset_sent_at = Time.zone.now
+    save!
+    UserMailer.password_reset(self).deliver
+  end
+  def password_reset(user)
+    @user = user
+    mail :to => user.email, :subject => "Password Reset"
+  end
+  def generate_token(column)
+    begin
+      self[column] = SecureRandom.urlsafe_base64
+    end while User.exists?(column => self[column])
+  end
   def self.authenticate(email, password)
     user = find_by_email(email)
     if user && user.password == password
