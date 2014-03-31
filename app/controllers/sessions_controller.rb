@@ -23,14 +23,13 @@ class SessionsController < ApplicationController
   def new
   end
   def create
-    user = User.find_by_email(params[:email])
-    if user && User.authenticate(params[:email], params[:password])
-        #user.authenticate(params[:password])
-      if params[:remember_me]
-        cookies.permanent[:auth_token] = user.auth_token
-      else
-        cookies[:auth_token] = user.auth_token
-      end
+    user = User.authenticate(params[:email], params[:password])
+    employer = Employer.authenticate(params[:email], params[:password])
+    if user
+      session[:user_id] = user.id
+      redirect_to root_url, :notice => "Logged in!"
+    elsif employer
+      session[:employer_id] = employer.id
       redirect_to root_url, :notice => "Logged in!"
     else
       flash.now.alert = "Invalid email or password"
@@ -39,9 +38,11 @@ class SessionsController < ApplicationController
   end
 
   def destroy
-    cookies.delete(:auth_token)
+    session[:user_id] = nil
+    session[:employer_id] = nil
     redirect_to root_url, :notice => "Logged out!"
   end
+
 
   # PATCH/PUT /sessions/1
   # PATCH/PUT /sessions/1.json

@@ -1,7 +1,5 @@
-BerzaPoslova::Application.routes.draw do
 
-  get "password_resets/new"
-  resources :projects
+BerzaPoslova::Application.routes.draw do
 
   get "log_out" => "sessions#destroy", :as => "log_out"
   get "log_in" => "sessions#new", :as => "log_in"
@@ -30,9 +28,7 @@ BerzaPoslova::Application.routes.draw do
   resources :employers
 
   resources :users
-  resources :password_resets
 
-    default_url_options :host => "localhost:3000"
 
     # ... snip ...
 
@@ -92,5 +88,6 @@ BerzaPoslova::Application.routes.draw do
   #   end
 
  wash_out :soap
+
 
 end
