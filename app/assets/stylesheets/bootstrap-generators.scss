@@ -29,10 +29,6 @@ clearfix:before,
   box-sizing: border-box;
 }
 
-body {
-  padding-top: $navbar-height + 10px;
-}
-
 .page-header {
   a.btn {
     float: right;
@@ -113,6 +109,7 @@ img {
   vertical-align: middle;
   border: 0;
   -ms-interpolation-mode: bicubic;
+
 }
 
 #map_canvas img,
@@ -121,11 +118,52 @@ img {
 }
 .linkovi{
   font-weight: bold;
- font-size: 15px;
+  font-size: 15px;
 }
-.naslov{
-  text-align: center;
-  font-size: 35px;
+.berza {
+  font-weight: bold;
+  font-size: 20px;
+  text-align: left;
+  color: darkred;
+  padding-top: 17px;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+}
+.naslov {
+
+  font-size: 20px;
+  color: darkred;
+  font-weight: bold;
+
+}
+.read {
+  color: darkred;
+}
+.tabela {
+  background-color: #ffffff;
+  padding-top: 0px;
+  color : black;
+  margin: 0 auto;
+  width:895px;
+  cellspacing:10px;
+
+}
+.boja {
+  background-color: black;
+  color : #ffffff;
+}
+
+.slika {
+  align-content: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+td {
+  width:180px;
+  height:30px
+}
+.pozadina {
+  background-color: white;
 }
 .okvir{
   border: 2dppx;
@@ -140,7 +178,7 @@ img {
   -webkit-box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
   text-align: center;
-@include box-shadow( rgba(0, 0, 0, 0.15) 4px 0 rgba(0, 0, 0, 0.15));
+  @include box-shadow( rgba(0, 0, 0, 0.15) 4px 0 rgba(0, 0, 0, 0.15));
 }
 .reg{
   font-weight: bold;
@@ -259,11 +297,12 @@ textarea {
 
 body {
   margin: 0;
-  font-family: "Lora", Georgia, "Times New Roman", Times, serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 17px;
   line-height: 26px;
   color: #333333;
-  background-color: #f6f6f6;
+  padding-top: $navbar-height + 10px;
+  padding-top: 100px;
 }
 
 a {
@@ -274,7 +313,7 @@ a {
 a:hover,
 a:focus {
   color: #da7e18;
-  text-decoration: underline;
+
 }
 
 .img-rounded {
