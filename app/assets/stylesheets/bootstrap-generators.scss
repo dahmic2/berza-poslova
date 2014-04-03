@@ -148,6 +148,11 @@ img {
   cellspacing:10px;
 
 }
+.filter_jobs
+{
+  color: black;
+}
+
 .boja {
   background-color: black;
   color : #ffffff;
@@ -6283,3 +6288,197 @@ div.subnav-fixed {
 .affix {
   position: fixed;
 }
+
+div, span, h3, footer {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-weight: inherit;
+  font-style: inherit;
+  font-size: 100%;
+  font-family: inherit;
+  vertical-align: baseline;
+}
+
+
+
+
+footer, section {display: block}
+
+
+/***************************************************
+			      Global styles
+***************************************************/
+
+
+
+
+
+
+
+
+
+
+h3 {
+  font-family: Arial, Verdana, sans-serif;
+  font-weight: normal;
+  position:relative;
+  text-shadow: 2px 3px 3px #C1C1C1;
+
+
+
+}
+
+
+
+
+h3{
+  font-size: 17px;
+  line-height:0.9;
+  color: white;
+  margin-top:20px;
+  left:0px;
+}
+
+h3 span{
+
+  font-size: 12px;
+  line-height: 1.4;
+  color:white;
+  display:block;
+  margin-top:10px;
+  text-transform:none;
+
+
+}
+
+/***************************************************
+			    Main containers
+***************************************************/
+
+#container, #container_left, #container_right{
+  position: relative;
+  width:100%;
+
+}
+#container{
+  position:relative;
+  width:980px;
+  margin:0 auto;
+  background-color:transparent;
+  min-height:100%;
+
+
+}
+
+footer{
+  position:relative;
+  height:300px;
+  clear:both;
+  width:100%;
+  background-image:url(../images/footer.png);
+  background-position:left top;
+  background-repeat:repeat-x;
+  background-color:#333333;
+
+
+
+}
+
+#FooterOne, #FooterTwo, #FooterTree {
+  position: absolute;
+}
+
+#FooterTwo{
+  position: absolute;
+  right: 225px;
+  top:250px;
+  color:white;
+
+}
+
+#FooterTree{
+  position: absolute;
+  left: 225px;
+  top:250px;
+  color:white;
+
+}
+
+.container{
+  width:980px;
+  margin:0 auto;
+  background-color:transparent;
+
+
+}
+
+.footer_left{
+  float:left;
+  padding:12px;
+  margin-botttom:-55px;
+  width:170px;
+  margin-right:76px;
+}ooter{
+   position:relative;
+   height:300px;
+   clear:both;
+   width:100%;
+   background-image:url(../images/footer.png);
+   background-position:left top;
+   background-repeat:repeat-x;
+   background-color:#333333;
+
+
+
+ }
+
+#FooterOne, #FooterTwo, #FooterTree {
+  position: absolute;
+}
+
+#FooterTwo{
+  position: absolute;
+  right: 225px;
+  top:250px;
+  color:white;
+
+}
+
+#FooterTree{
+  position: absolute;
+  left: 225px;
+  top:250px;
+  color:white;
+
+}
+
+.container{
+  width:1100px;
+  margin:0 auto;
+  background-color:transparent;
+
+
+}
+
+.footer_left{
+  float:left;
+  padding:12px;
+  margin-botttom:-55px;
+  width:170px;
+  margin-right:76px;
+}
+
+
+
+.picture_footer{
+  position:absolute;
+  left:980px;
+  top:-85px;
+}
+.filter_job {
+  display: inline;
+
+}
+

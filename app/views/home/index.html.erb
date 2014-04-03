@@ -1,9 +1,91 @@
 <!--<h1 class="naslov">Dobro došli na poso.ba!</h1>-->
+<html>
+<head></head>
+<body>
+<%if !current_user%>
+<div id="slika" align="center">
+  <img src="assets/job.jpg" width="895px" height="40" >
+ </div>
+ <%elsif current_user.email=="admin@poso.ba" %>
+    <h1 align="center" style="font-size: 35px;"> Welcome <%= current_user.name%> </h1>
+    <table align="center" border="3px solid black" width="895px" >
+      <tr >
+        <td align="center" style="font: Arial; font-size: 20px"><%= link_to "Profile",current_user%> </td>
+        <td align="center" style="font: Arial; font-size: 20px"> <%= link_to 'New Employer', new_employer_path %></td>
+        <td align="center" style="font: Arial; font-size: 20px"> <%= link_to "Employers", employers_path %></td>
+        <td align="center" style="font: Arial; font-size: 20px"><%= link_to "Users", users_path %></td>
+      </tr></table>
+<%else%>
+<h1 align="center" style="font-size: 35px;"> Welcome <%= current_user.name%> </h1>
+        <table align="center" border="3px solid black" width="895px" >
+          <tr >
+            <td align="center" style="font: Arial; font-size: 20px"><%= link_to "Advartisment", advartisments_path %></td>
+            <td align="center" style="font: Arial; font-size: 20px"> <%= link_to "Profile",current_user%></td>
+            <td align="center" style="font: Arial; font-size: 20px"> <%= link_to "CVs", cvs_path %></td>
+            <td align="center" style="font: Arial; font-size: 20px"><a  href="#">Korisnici</a></td>
+          </tr></table>
+        <%end%>
+<div class="container">
+<div id="filter_job" style="width: 200px;margin-top:13px;height:inherit;float: left">
+  <div  style="background-color:#EAE8E8;">
+    <ul style="margin-left: 0px;margin-bottom:2px;padding-top: 12px;padding-bottom: 13px;padding-left: 10px;">
+      <li>
+        <h5 style=color:red>Categories</h5>
+        <ul id="Kategorije" tag="specialty" style="display: block;list-style: none;margin-left:5px" >
+          <li><a href='#'  ><b>Sve kategorije </a></li><li><a href='#' ><b>Administrativne usluge </a></li><li><a href='#'  ><b>Bankarstvo </a></li><li><a href='#' ><b>Biotehnologija i farmacija </a></li><li><a href='#' ><b>Drvna industrija </a></li><li><a href='#' ><b> Državna služba i uprava </a></li><li><a href='#'  ><b>Ekonomija i finansije </a></li><li><a href='#'  ><b>Elektrotehnika i informatika </a></li><li><a href='#'  ><b>Energetika i rudarstvo </a></li><li><a href='#'  ><b>Frizeri i kozmetičari </a></li><li><a href='#'  ><b>Geologija </a></li><li><a href='#'  ><b>Građevinarstvo i arhitektura </a></li><li><a href='#'  ><b>Komercijala i prodaja </a></li><li><a href='#'  ><b>Marketing i PR </a></li><li><a href='#'  ><b>Mašinstvo i metalurgija </a></li><li><a href='#'  ><b>Mediji </a></li><li><a href='#'  ><b>Menadžment i upravljanje </a></li><li><a href='#'  ><b>Obrazovanje, kultura i sport </a></li><li><a href='#'  ><b>Osiguranje </a></li><li><a href='#'  ><b>Ostalo </a></li><li><a href='#'  ><b>Policija i zaštitarske usluge </a></li><li><a href='#'  ><b>Poljoprivreda i šumarstvo </a></li><li><a href='#'  ><b>Pravo i društvene nauke </a></li><li><a href='#' ><b>Prevodilačke usluge </a></li><li><a href='#'  ><b>Proizvodnja </a></li><li><a href='#'  ><b>Računovodstvo i revizija </a></li><li><a href='#'  ><b>Socijalne usluge </a></li><li><a href='#'  ><b>Stipendije </a></li><li><a href='#' ><b>Teleprodaja i telemarketing </a></li><li><a href='#'  ><b>Transport i skladištenje </a></li><li><a href='#'  ><b>Trgovina </a></li><li><a href='#'  ><b>Ugostiteljstvo i turizam </a></li><li><a href='#' ><b>Umjetnost i dizajn </a></li><li><a href='#'  ><b>Zanatske usluge </a></li><li><a href='#' ><b>Zdravstvo i medicina </a></li>                </ul>
+      </li>
+      <li>
+        <h5 style=color:red>Locations</h5>
+        <ul id="Lokacije" tag="specialty" style="display: block;list-style: none;margin-left:5px" >
+          <li ><a href='#' ><b>Sve lokacije</a></li><li><a href='#'  ><b>Sarajevo</a></li><li><a href='#'  ><b>Banja Luka</a></li><li><a href='#' ><b>Tuzla</a></li><li><a href='#'  ><b>Mostar</a></li><li><a href='#'  ><b>Zenica</a></li><li><a href='#'  ><b>Bosna i Hercegovina</a></li><li><a href='#'  ><b>Brčko</a></li><li><a href='#'  ><b>Travnik</a></li><li><a href='#'  ><b>Inostranstvo (EU)</a></li><li><a href='#'  ><b>Bihać</a></li>                </ul>
+      </li>
+    </ul>
+  </div>
+</div>
+  <div id="job_section" style="width:800px;margin-left:2px;margin-top:0px; margin-right: 2px; float:left; ">
+    <div id="filter_menu" style="width: inherit;background-color: #EAE8E8;height:1535px;">
+      <h1 style="color: red; text-align: center"> Advartisments </h1>
+    </div>
+  </div>
+</div>
+ </div>
 
 
-<table class="tabela" >
-  <tr> <td colspan="3"><img src="assets/job.jpg" width="895px" height="40"></td></tr>
-  <tr class="naslov"><td style="background-color: #000000">     Categories</td><td colspan="2">Advartisments</td></tr>
+
+<!--start footer-->
+<footer>
+  <div class="container">
+    <section class="footer_left">
+      <h3>Contact information:
+        <span>Lorem ipsum dolor sit amet</span>
+        <span>Lorem ipsum dolor sit amet</span>
+      </h3>
+    </section>
+
+    <section class="footer_left">
+      <h3>Website:
+        <span>Lorem ipsum dolor sit amet</span>
+        <span>Lorem ipsum dolor sit amet</span>
+      </h3>
+    </section>
+
+
+    <aside class="footer_left">
+      <h3>Lorem ipsum:
+        <span>Lorem ipsum dolor sit amet</span>
+        <span>Lorem ipsum dolor sit amet</span>
+      </h3>
+    </aside>
+    <img src="assets/contact-us.png" width="240" height="230" alt="contact" class="picture_footer"/>
+
+
+    <div id="FooterTwo"> © 2014 	Berza poslova </div>
+    <div id="FooterTree"> Valid html5  - creative simplicity</a> </div>
+  </div>
+</footer>
+</body>
+</html>
+  <!--<tr class="naslov"><td style="background-color: #000000">     Categories</td><td colspan="2">Advartisments</td></tr>
   <tr><td class="boja">     Medicina i farmacija<br>
     Računarstvo i informatika <br>
     Ekonomija i bankarstvo <br>
@@ -23,7 +105,7 @@
     IT kompanija Autority Partners nudi 3 pozicije za junior programere...<b class="read">read more</b>
   </td><td>Neki oglas</td></tr>
 
-</table>
+</table>-->
 
 
 
