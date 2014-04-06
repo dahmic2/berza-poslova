@@ -19,9 +19,9 @@
         <td><%= image_tag(user.avatar_url) if user.avatar? %></td>
         <td><%= user.name %></td>
         <td><%= user.last_name %></td>
-        <td><%= link_to 'Show', user %></td>
-      <!--  <td><%= link_to 'Edit', edit_user_path(user) %></td> -->
-        <td><%= link_to 'Destroy', user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to (t "show"), user %></td>
+      <!--  <td><%= link_to ( t "edit"), edit_user_path(user) %></td> -->
+        <td><%= link_to (t "Destroy") , user, method: :delete, data: { confirm: 'Are you sure?' } %></td>
             <%end%>
       </tr>
     <% end %>

@@ -7,21 +7,21 @@
   <img src="assets/job.jpg" width="895px" height="40" >
  </div>
  <%elsif current_user.email=="admin@poso.ba" %>
-    <h1 align="center" style="font-size: 35px;"> Welcome <%= current_user.name%> </h1>
+    <h1 align="center" style="font-size: 35px;"> {{i18n.t.WELCOME}} <%= current_user.name%> </h1>
     <table align="center" border="3px solid black" width="895px" >
       <tr >
-        <td align="center" style="font: Arial; font-size: 20px"><%= link_to "Profile",current_user%> </td>
+        <td align="center" style="font: Arial; font-size: 20px"><%= link_to (t "nav.profile"),current_user%> </td>
         <td align="center" style="font: Arial; font-size: 20px"> <%= link_to 'New Employer', new_employer_path %></td>
-        <td align="center" style="font: Arial; font-size: 20px"> <%= link_to "Employers", employers_path %></td>
-        <td align="center" style="font: Arial; font-size: 20px"><%= link_to "Users", users_path %></td>
+        <td align="center" style="font: Arial; font-size: 20px"> <%= link_to (t "nav.employers"), employers_path %></td>
+        <td align="center" style="font: Arial; font-size: 20px"><%= link_to (t "nav.users"), users_path %></td>
       </tr></table>
 <%else%>
 <h1 align="center" style="font-size: 35px;"> Welcome <%= current_user.name%> </h1>
         <table align="center" border="3px solid black" width="895px" >
           <tr >
-            <td align="center" style="font: Arial; font-size: 20px"><%= link_to "Advartisment", advartisments_path %></td>
-            <td align="center" style="font: Arial; font-size: 20px"> <%= link_to "Profile",current_user%></td>
-            <td align="center" style="font: Arial; font-size: 20px"> <%= link_to "CVs", cvs_path %></td>
+            <td align="center" style="font: Arial; font-size: 20px"><%= link_to (t "nav.advartisments"), advartisments_path %></td>
+            <td align="center" style="font: Arial; font-size: 20px"> <%= link_to (t "nav.profile"),current_user%></td>
+            <td align="center" style="font: Arial; font-size: 20px"> <%= link_to (t "nav.cvs"), cvs_path %></td>
             <td align="center" style="font: Arial; font-size: 20px"><a  href="#">Korisnici</a></td>
           </tr></table>
         <%end%>
