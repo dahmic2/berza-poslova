@@ -56,3 +56,5 @@ gem 'wash_out'
 gem 'prawn'
 
 gem 'prawn-layout'
+
+gem 'carrierwave'

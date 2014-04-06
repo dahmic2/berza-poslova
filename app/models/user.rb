@@ -10,6 +10,7 @@ class User < ActiveRecord::Base
   validates :email, format: { with: VALID_EMAIL_REGEX }
  # VALID_PHONE_REGEX = /\(?([0-9]{3})\)?([ .-]?)([0-9]{3})\2([0-9]{4})/
  # validates :phone, format: { with: VALID_PHONE_REGEX }
+  mount_uploader :avatar, AvatarUploader
 
 
   def self.authenticate(email, password)

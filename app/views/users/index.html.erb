@@ -16,6 +16,7 @@
     <% @users.each do |user| %>
       <tr>
         <% if user.email != "admin@poso.ba"%>
+        <td><%= image_tag(user.avatar_url) if user.avatar? %></td>
         <td><%= user.name %></td>
         <td><%= user.last_name %></td>
         <td><%= link_to 'Show', user %></td>

@@ -11,6 +11,9 @@
     </div>
   <% end %>
 
+    <%= f.file_field :avatar %>
+     <%= f.hidden_field :avatar_cache %>
+
   <div class="field">
     <%= f.label :name %><br>
     <%= f.text_field :name %>
