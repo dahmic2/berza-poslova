@@ -1,16 +1,38 @@
-<div style="text-align: center">
-  <h1>Log in</h1>
+<div style="text-align: center; align-content: center; align-items: center">
 <%= form_tag sessions_path do %>
+      <!--login modal-->
 
-      <%= label_tag :email %>  <%= text_field_tag :email, params[:email] %>
+          <div class="modal-content" style="align-content: center; text-align: center; border-top:500px;width: 500px; height: 450px">
+            <div class="modal-header" style="align-content: center; text-align: center;">
+              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+              <h1 class="text-center">Login</h1>
+            </div>
+            <div class="modal-body" style="align-content: center; text-align: center;">
+              <form class="form col-md-12 center-block" style="align-content: center; text-align: center; align-items: center">
+                <div class="form-group" style="align-content: center; text-align: center;">
+                  <%= label_tag (t "user.email") %>  <%= text_field_tag :email, params[:email] %>
+                </div>
+                <div class="form-group" style="align-content: center; text-align: center;">
+                  <%= label_tag (t "user.password") %>  <%= password_field_tag :password %>
+                </div>
+                <div class="form-group"style="align-content: center; text-align: center;">
+                  <button class="btn "style="align-content: center; text-align: center;">Prijava <a style="visibility: hidden" <%= submit_tag (t "nav.login") %>  /a></button>
+                </div>
+              </form>
+            </div>
+            <div class="modal-footer" style="border-top: 0px;align-content: center; text-align: center;"" >
+              <div class="col-md-12">
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
+              </div>
+            </div>
+          </div>
+      <p> </p>
 
+  <% end %>
 
-      <%= label_tag :password %>  <%= password_field_tag :password %>
+ <div>
 
-
-    <p> <%= submit_tag "Log in" %></p>
-
-<% end %>
+ </div>
   <footer>
     <div class="container">
       <section class="footer_left">

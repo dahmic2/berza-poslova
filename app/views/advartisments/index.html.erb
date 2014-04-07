@@ -22,9 +22,9 @@
         <td><%= advartisment.description %></td>
         <td><%= advartisment.published %></td>
         <td><%= advartisment.expire %></td>
-        <td><%= link_to 'Show', advartisment %></td>
-        <!-- < <td><%= link_to 'Edit', edit_advartisment_path(advartisment) %></td>-->
-        <td><%= link_to 'Destroy', advartisment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to (t "show"), advartisment %></td>
+        <!-- < <td><%= link_to (t "edit"), edit_advartisment_path(advartisment) %></td>-->
+        <td><%= link_to ( t "destroy"), advartisment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
@@ -32,4 +32,4 @@
 
 <br>
 
-<!--<%= link_to 'New Advartisment', new_advartisment_path %>-->
+<!--<%= link_to t("advartisment.new"), new_advartisment_path %>-->

@@ -283,7 +283,7 @@ bs:
     name: "Ime"
     lastname: "Prezime"
     email: "Mail adresa"
-    potvrda: "Potvrdite šifru"
+    potvrda: "Potvrdite lozinku"
     adress: "Adresa"
     telefon: "telefon"
     phone: "Telefon"
@@ -296,3 +296,14 @@ bs:
   edit: "Izmjeni"
   Destroy: "Obriši"
   back: "Nazad"
+  destroy: "Obriši"
+  admin:
+    dodajNovog: "Dodaj novog admina"
+  advartisment:
+    new: "Dodaj novi oglas"
+    add: "Kreiraj novi oglas"
+  title: "Naslov oglasa"
+  description: "Kratak opis"
+  published: "Datum objave"
+  expire: "Datum isteka"
+  category: "Kategorija oglasa"

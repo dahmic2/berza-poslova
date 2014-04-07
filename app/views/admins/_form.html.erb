@@ -1,3 +1,4 @@
+<div style="text-align: center">
 <%= form_for(@admin) do |f| %>
   <% if @admin.errors.any? %>
     <div id="error_explanation">
@@ -12,18 +13,19 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :username %><br>
+    <%= f.label (t "user.username") %><br>
     <%= f.text_field :username %>
   </div>
   <div class="field">
-    <%= f.label :password %><br>
+    <%= f.label (t "user.password") %><br>
     <%= f.text_field :password %>
   </div>
   <div class="field">
-    <%= f.label :email %><br>
+    <%= f.label (t "user.email") %><br>
     <%= f.text_field :email %>
   </div>
   <div class="actions">
     <%= f.submit %>
   </div>
 <% end %>
+</div>

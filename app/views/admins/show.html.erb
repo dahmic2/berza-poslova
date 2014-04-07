@@ -1,19 +1,19 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Username:</strong>
+  <strong><% (t "user.username")%></strong>
   <%= @admin.username %>
 </p>
 
 <p>
-  <strong>Password:</strong>
+  <strong><% (t "user.password")%></strong>
   <%= @admin.password %>
 </p>
 
 <p>
-  <strong>Email:</strong>
+  <strong><% (t "user.email")%></strong>
   <%= @admin.email %>
 </p>
 
-<%= link_to 'Edit', edit_admin_path(@admin) %> |
-<%= link_to 'Back', admins_path %>
+<%= link_to (t "edit"), edit_admin_path(@admin) %> |
+<%= link_to ( t "back"), admins_path %>

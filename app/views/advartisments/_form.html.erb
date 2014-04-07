@@ -12,27 +12,27 @@
   <% end %>
 
   <div class="field">
-    <%= f.label :title %><br>
+    <%= f.label (t "title") %><br>
     <%= f.text_field :title %>
   </div>
   <div class="field">
-    <%= f.label :description %><br>
+    <%= f.label (t "description") %><br>
     <%= f.text_area :description %>
   </div>
   <div class="field">
-    <%= f.label :published %><br>
+    <%= f.label (t "published")%><br>
     <%= f.date_select :published %>
   </div>
   <div class="field">
-    <%= f.label :expire %><br>
+    <%= f.label (t "expire") %><br>
     <%= f.date_select :expire %>
   </div>
   <div class="field">
-    <%= f.label :category_id %><br>
+    <%= f.label (t "category") %><br>
     <%= options_from_collection_for_select(Category.all, :id, :name) %>
     <%= collection_select(:category, :category_id, Category.all, :id, :name ) %>
   </div>
   <div class="actions">
-    <%= f.submit %>
+    <%= f.submit (t "advartisment.add")%>
   </div>
 <% end %>

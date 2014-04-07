@@ -1,25 +1,25 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong><% (t "title")%></strong>
   <%= @advartisment.title %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong><% (t "description")%></strong>
   <%= @advartisment.description %>
 </p>
 
 <p>
-  <strong>Published:</strong>
+  <strong><% (t "published")%></strong>
   <%= @advartisment.published %>
 </p>
 
 <p>
-  <strong>Expire:</strong>
+  <strong><% (t "expire")%></strong>
   <%= @advartisment.expire %>
 </p>
 
 
-<%= link_to 'Edit', edit_advartisment_path(@advartisment) %> |
-<%= link_to 'Back', home_index_path %>
+<%= link_to (t "edit"), edit_advartisment_path(@advartisment) %> |
+<%= link_to (t "back"), home_index_path %>
