@@ -89,5 +89,8 @@ BerzaPoslova::Application.routes.draw do
 
  wash_out :soap
 
+  ActionController::Routing::Routes.draw do |map|
+    map.simple_captcha '/simple_captcha/:action', :controller => 'simple_captcha'
+  end
 
 end
