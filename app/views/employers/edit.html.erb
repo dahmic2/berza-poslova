@@ -138,7 +138,22 @@
             <h3 class="panel-title"><i class="fa fa-money"></i> Slika profila</h3>
           </div>
           <div class="panel-body">
-           #ovjde dodati sliku za employera
+            <%= form_for(@employer) do |f| %>
+                <% if @employer.errors.any? %>
+                    <div id="error_explanation">
+                      <h2><%= pluralize(@employer.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+                      <ul>
+                        <% @employer.errors.full_messages.each do |msg| %>
+                            <li><%= msg %></li>
+                        <% end %>
+                      </ul>
+                    </div>
+                <% end %>
+                <%= image_tag(@employer.avatar_url) if @employer.avatar? %>
+                <%= f.file_field :avatar %>
+                <%= f.hidden_field :avatar_cache %>
+            <%end%>
           </div>
         </div>
       </div>

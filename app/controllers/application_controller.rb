@@ -5,8 +5,6 @@ class ApplicationController < ActionController::Base
   helper_method :current_user
   helper_method :current_employer
 
-  include SimpleCaptcha::ControllerHelpers
-
   private
 
   def current_user

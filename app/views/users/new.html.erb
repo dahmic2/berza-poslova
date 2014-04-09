@@ -1,107 +1,156 @@
-<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="index.html">Berza poslova</a>
-  </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav side-nav">
-      <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-      <li><a href="charts.html"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
-      <li><a href="tables.html"><i class="fa fa-table"></i> Tables</a></li>
-      <li><a href="forms.html"><i class="fa fa-edit"></i> Forms</a></li>
-      <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
-      <li><a href="bootstrap-elements.html"><i class="fa fa-desktop"></i> Bootstrap Elements</a></li>
-      <li><a href="bootstrap-grid.html"><i class="fa fa-wrench"></i> Bootstrap Grid</a></li>
-      <li><a href="blank-page.html"><i class="fa fa-file"></i> Blank Page</a></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Dropdown <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Dropdown Item</a></li>
-          <li><a href="#">Another Item</a></li>
-          <li><a href="#">Third Item</a></li>
-          <li><a href="#">Last Item</a></li>
-        </ul>
-      </li>
-    </ul>
+  <title>Dashboard - SB Admin</title>
 
-    <ul class="nav navbar-nav navbar-right navbar-user">
-      <li class="dropdown messages-dropdown">
-        <a href="#" ><i></i> <%= link_to (t "nav.register"),users_new_path %></b></a>
-      </li>
-      <li class="dropdown alerts-dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Default <span class="label label-default">Default</span></a></li>
-          <li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
-          <li><a href="#">Success <span class="label label-success">Success</span></a></li>
-          <li><a href="#">Info <span class="label label-info">Info</span></a></li>
-          <li><a href="#">Warning <span class="label label-warning">Warning</span></a></li>
-          <li><a href="#">Danger <span class="label label-danger">Danger</span></a></li>
-          <li class="divider"></li>
-          <li><a href="#">View All</a></li>
-        </ul>
-      </li>
-      <li class="dropdown user-dropdown">
-        <a href="#" ><%= link_to (t "nav.login"), log_in_path %></b></a>
-      </li>
-    </ul>
-  </div><!-- /.navbar-collapse -->
-</nav>
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
 
-<div style="text-align: center">
-<h1>Sign Up</h1>
+  <!-- Add custom CSS here -->
+  <link href="css/sb-admin.css" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+  <!-- Page Specific CSS -->
+  <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+</head>
 
-<%= form_for @user do |f| %>
-    <% if @user.errors.any? %>
-        <div class="error_messages">
-          <h2>Form is invalid</h2>
-          <ul>
-            <% for message in @user.errors.full_messages %>
-                <li><%= message %></li>
-            <% end %>
+<body>
+<div id="wrapper">
+
+  <!-- Sidebar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Berza poslova</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav side-nav">
+        <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li><a href="charts.html"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
+        <li><a href="tables.html"><i class="fa fa-table"></i> Tables</a></li>
+        <li><a href="forms.html"><i class="fa fa-edit"></i> Forms</a></li>
+        <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
+        <li><a href="bootstrap-elements.html"><i class="fa fa-desktop"></i> Bootstrap Elements</a></li>
+        <li><a href="bootstrap-grid.html"><i class="fa fa-wrench"></i> Bootstrap Grid</a></li>
+        <li><a href="blank-page.html"><i class="fa fa-file"></i> Blank Page</a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Dropdown <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Dropdown Item</a></li>
+            <li><a href="#">Another Item</a></li>
+            <li><a href="#">Third Item</a></li>
+            <li><a href="#">Last Item</a></li>
           </ul>
-        </div>
-    <% end %>
-    <p>
-      <%= f.label (t "user.name") %><br />
-      <%= f.text_field :name %>
-    </p>
-    <p>
-      <%= f.label (t "user.lastname") %><br />
-      <%= f.text_field :last_name%>
-    </p>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right navbar-user">
+        <li class="dropdown messages-dropdown">
+          <a href="#" > <%= link_to (t "nav.register"),users_new_path %></b></a>
+        </li>
+        <li class="dropdown alerts-dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Default <span class="label label-default">Default</span></a></li>
+            <li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
+            <li><a href="#">Success <span class="label label-success">Success</span></a></li>
+            <li><a href="#">Info <span class="label label-info">Info</span></a></li>
+            <li><a href="#">Warning <span class="label label-warning">Warning</span></a></li>
+            <li><a href="#">Danger <span class="label label-danger">Danger</span></a></li>
+            <li class="divider"></li>
+            <li><a href="#">View All</a></li>
+          </ul>
+        </li>
+        <li class="dropdown user-dropdown">
+          <a href="#" > <%= link_to (t "nav.login"), log_in_path %></b></a>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </nav>
+  <div id="page-wrapper">
+    <h1 align="center">Dobrodosao na poso ba</h1>
+    <br>
+    <br><br><br>
+    <div class="row">
+      <div class="col-lg-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Sing up</h3>
+          </div>
+          <div class="panel-body">
 
-    <p>
-      <%= f.label (t "user.email") %><br />
-      <%= f.text_field :email %>
-    </p>
-    <p>
-      <%= f.label (t "user.password") %><br />
-      <%= f.password_field :password %>
-    </p>
-    <p>
-      <%= f.label ( t"user.potvrda") %><br />
-      <%= f.password_field :password_confirmation %>
-    </p>
-    <p>
-      <%= f.label (t "user.adress") %><br />
-      <%= f.text_field :adress %>
-    </p>
-    <p>
-      <%= f.label (t "user.phone")%><br />
-      <%= f.text_field :phone %>
-    </p>
-      <div align="center" style="align-content: center; align-items: center; text-align: center">
-    <%= show_simple_captcha(:label => "human authentication", :image_style => 'embosed_silver') %>
+            <%= form_for @user do |f| %>
+                <% if @user.errors.any? %>
+                    <div class="error_messages">
+                      <h2>Form is invalid</h2>
+                      <ul>
+                        <% for message in @user.errors.full_messages %>
+                            <li><%= message %></li>
+                        <% end %>
+                      </ul>
+                    </div>
+                <% end %>
+                <p>
+                  <%= f.label (t "user.name") %><br />
+                  <%= f.text_field :name %>
+                </p>
+                <p>
+                  <%= f.label (t "user.lastname") %><br />
+                  <%= f.text_field :last_name%>
+                </p>
+
+                <p>
+                  <%= f.label (t "user.email") %><br />
+                  <%= f.text_field :email %>
+                </p>
+                <p>
+                  <%= f.label (t "user.password") %><br />
+                  <%= f.password_field :password %>
+                </p>
+                <p>
+                  <%= f.label ( t"user.potvrda") %><br />
+                  <%= f.password_field :password_confirmation %>
+                </p>
+                <p>
+                  <%= f.label (t "user.adress") %><br />
+                  <%= f.text_field :adress %>
+                </p>
+                <p>
+                  <%= f.label (t "user.phone")%><br />
+                  <%= f.text_field :phone %>
+                </p>
+                <div align="center" style="align-content: center; align-items: center; text-align: center">
+                </div>
+                <p class="button"><%= f.submit  (t "user.add")%></p>
+            <% end %>
+          </div>
+        </div>
       </div>
-    <p class="button"><%= f.submit  (t "user.add")%></p>
-<% end %>
-</div>
+      <div class="col-lg-4">
+        <div class="panel panel-primary">
+          <div class="panel-heading">
+            <h3 class="panel-title"><i class="fa fa-money"></i> Human authentification</h3>
+          </div>
+          <div class="panel-body">
+            <%= recaptcha_tags %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div><!-- /.row -->
+  <%= recaptcha_tags %>
+</div><!-- /#wrapper -->
+
+</body>
+</html>
