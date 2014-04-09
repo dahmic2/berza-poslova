@@ -24,59 +24,14 @@
   <%= javascript_include_tag "application" %>
   <%= csrf_meta_tags %>
 </head>
-<body class="pozadina">
-<div class="navbar navbar-inverse navbar-fixed-top">
-  <div class="container">
-    <div class="navbar-header">
-      <p class="berza"> Berza Poslova </p>
+<body >
+<div >
 
-    </div>
-    <ul class="nav navbar-nav">
-      <% if current_user  %>
-          <li><a class="linkovi" <%= link_to (t "nav.home"), home_index_path%> ></a></li>
-          <li><a class="linkovi" <%= link_to (t "nav.about"), home_about_path %> ></a></li>
-          <li ><a class="linkovi" <%= link_to  (t "nav.contact"), home_contact_path %> ></a></li>
-          <li><a  class="reg" style="  padding-left: 250px;" <%= link_to ( t "nav.profile"), current_user %> ></a></li>
-          <li><a class="reg"  <%= link_to ( t "nav.logout"), log_out_path %></a></li>
-          <div id="submenu">
-      <% else %>
-          <li><a class="linkovi" <%= link_to (t "nav.home"), root_path %> ></a></li>
-          <li><a class="linkovi" <%= link_to (t "nav.about"), home_about_path %> ></a></li>
-          <li ><a class="linkovi" <%= link_to (t "nav.contact"), home_contact_path %> ></a></li>
-          <li><a  class="reg" style="  padding-left: 250px;" <%= link_to (t "nav.register"), users_new_path %> ></a></li>
-          <li><a class="reg" <%= link_to ( t "nav.login"), log_in_path %> ></a></li>
-      <% end%>
-    </ul>
-  </div>
 </div>
 <%= yield %>
-<div id="user_nav" style="align-content: center">
-  <% if current_employer %>
-      Logged in as <%= current_employer.email %>.
-      <%= link_to "Log out", log_out_path %>
-      <% @employers=Employer.all%>
-      <% @employers.each do |employer| %>
-          <%if current_employer.email==employer.email %>
-              <%= link_to 'New Advartisments', new_advartisment_path %> |
-              <%= link_to ( t "nav.advartisments"), advartisments_path %> |
-              <%= link_to (t "nav.profile"), current_employer %>
-          <%end%>
-      <%end%>
-  <%end%>
 
 
-</div>
 
-
-<div class="container">
-  <% flash.each do |name, msg| %>
-      <%= content_tag :div, :class => "alert alert-#{ name == :error ? "danger" : "success" } alert-dismissable" do %>
-          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-          <%= msg %>
-      <% end %>
-  <% end %>
-
-</div>
 <!-- JavaScript -->
 <script src="js/jquery-1.10.2.js"></script>
 <script src="js/bootstrap.js"></script>

@@ -53,17 +53,15 @@
         </ul>
       </li>
       <li class="dropdown user-dropdown">
-        <a href="#" ></i><%= link_to (t "nav.login"), log_in_path %></b></a>
+        <a href="#" ><%= link_to (t "nav.login"), log_in_path %></b></a>
       </li>
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
 
------
-<div style="text-align: center; ">
-  ------
 
 <%= form_tag sessions_path do %>
+
       <!--login modal-->
 <div align="center">
           <div class="modal-content" aligne="center" style="  border: 2px solid black;width:400px;margin-top:40px">
@@ -84,14 +82,14 @@
                 </div>
               </form>
             </div>
-            <div class="modal-footer" style="border-top: 0px;align-content: center; text-align: center;"" >
+            <div class="modal-footer" style="border-top: 0px;align-content: center; text-align: center;" >
               <div class="col-md-12">
                 <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
               </div>
             </div>
           </div>
       </div>
-      <p> </p>
+
 
   <% end %>
 </body>
