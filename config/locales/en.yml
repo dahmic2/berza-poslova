@@ -13,7 +13,10 @@ en:
     successfully_created: "Password recovery token was successfully created."
     successfully_updated: "Password recovery token was successfully updated."
   profile: "Profil korisnika"
-  user: 
+  employer:
+    add: Add employer
+  user:
+    all: Users' list
     does_not_exist: "User does not exist."
     does_not_have_permission: "You do not have permision for that action."
     invalid_fields: "Some fields are invalid."

@@ -266,7 +266,12 @@ bs:
     users: "Korisnici"
     cvs: "Biografije"
     welcome: "Dobro došao/la"
+  employer:
+    all: Svi poslodavci
+    add: Novi poslodavac
   user:
+    edit: Postavke
+    all: Svi korisnici
     username: Korisničko ime
     password: Lozinka
     users: Korisnici
@@ -287,7 +292,7 @@ bs:
     adress: "Adresa"
     telefon: "telefon"
     phone: "Telefon"
-    add: "Kreiraj korisnika"
+    add: "Novi korisnik"
   password_recovery:
     successfully_created: 'Token za povrat passworda uspješno kreiran.'
     successfully_updated: 'Token za povrat passworda uspješno ažuriran.'
@@ -300,6 +305,7 @@ bs:
   admin:
     dodajNovog: "Dodaj novog admina"
   advartisment:
+    all: "Svi oglasi"
     new: "Dodaj novi oglas"
     add: "Kreiraj novi oglas"
   title: "Naslov oglasa"
