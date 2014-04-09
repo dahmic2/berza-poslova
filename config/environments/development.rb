@@ -27,8 +27,16 @@ BerzaPoslova::Application.configure do
   # number of complex assets.
   config.assets.debug = true
 
-  config.action_mailer.delivery_method = :sendmail
-  config.action_mailer.perform_deliveries = true
-  config.action_mailer.raise_delivery_errors = true
+  Rails.application.routes.default_url_options[:host] = 'localhost:3000'
+
+  ActionMailer::Base.delivery_method = :smtp
+  config.action_mailer.smtp_settings = {
+      address:              'smtp.gmail.com',
+      port:                 587,
+      domain:               'gmail.com',
+      user_name:            'nwtmhub',
+      password:             'mhubpass123',
+      authentication:       'plain',
+      enable_starttls_auto: true  }
 
 end
