@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="531aad26-debe-4623-9c4b-d439d70cd012" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/advartisments/show.html.erb" afterPath="$PROJECT_DIR$/app/views/advartisments/show.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="berza_poslova.iws" />
@@ -29,7 +28,7 @@
       <file leaf-file-name="show.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/advartisments/show.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="171" column="99" selection-start="6598" selection-end="6598" vertical-scroll-proportion="0.6060606" vertical-offset="2567" max-vertical-offset="3468">
+            <state line="175" column="0" selection-start="6722" selection-end="6722" vertical-scroll-proportion="0.72727275" vertical-offset="2567" max-vertical-offset="3468">
               <folding>
                 <element signature="e#1759#1775#0" expanded="true" />
                 <element signature="e#1903#1923#0" expanded="true" />
@@ -640,7 +639,11 @@
       <created>1397074055172</created>
       <updated>1397074055172</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="prikaz pojedinacnog oglasa za admina&#10;">
+      <created>1397076243150</created>
+      <updated>1397076243150</updated>
+    </task>
+    <option name="localTasksCounter" value="52" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -723,7 +726,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="popravka" />
     <MESSAGE value="popravka&#10;" />
     <MESSAGE value="neke validacije" />
     <MESSAGE value="login za employere" />
@@ -748,7 +750,8 @@
     <MESSAGE value="dizajn prikaz profila i edit profila , sa kontrolama" />
     <MESSAGE value="dizajn prikaz profila i edit profila , sa kontrolama&#10;" />
     <MESSAGE value=" prikaz oglasa za admina" />
-    <option name="LAST_COMMIT_MESSAGE" value=" prikaz oglasa za admina" />
+    <MESSAGE value="prikaz pojedinacnog oglasa za admina&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="prikaz pojedinacnog oglasa za admina&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1032,7 +1035,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/advartisments/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="171" column="99" selection-start="6598" selection-end="6598" vertical-scroll-proportion="0.6060606" vertical-offset="2567" max-vertical-offset="3468">
+        <state line="175" column="0" selection-start="6722" selection-end="6722" vertical-scroll-proportion="0.72727275" vertical-offset="2567" max-vertical-offset="3468">
           <folding>
             <element signature="e#1759#1775#0" expanded="true" />
             <element signature="e#1903#1923#0" expanded="true" />
