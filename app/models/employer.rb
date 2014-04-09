@@ -10,6 +10,7 @@ class Employer < ActiveRecord::Base
   VALID_EMAIL_REGEX = /\A[\w+\-.]+@[a-z\d\-.]+\.[a-z]+\z/i
   validates :email, format: { with: VALID_EMAIL_REGEX }
 #ovo ne radi
+  mount_uploader :avatar, AvatarUploader
 
   def self.authenticate(email, password)
     employer = find_by_email(email)
@@ -28,6 +29,10 @@ class Employer < ActiveRecord::Base
   end
   def self.search(query)
     where("name LIKE ?", "%#{query}%")
+  end
+
+  def avatar_url(i)
+    # code here
   end
 end
 

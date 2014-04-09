@@ -269,6 +269,8 @@ bs:
   employer:
     all: Svi poslodavci
     add: Novi poslodavac
+    website: "Web stranica"
+    location: "Lokacija"
   user:
     edit: Postavke
     all: Svi korisnici

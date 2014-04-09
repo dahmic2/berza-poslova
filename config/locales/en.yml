@@ -15,6 +15,7 @@ en:
   profile: "Profil korisnika"
   employer:
     add: Add employer
+    location: "Web stranica"
   user:
     all: Users' list
     does_not_exist: "User does not exist."
