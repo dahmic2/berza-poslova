@@ -1,35 +1,190 @@
-<h1>Listing advartisments</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Title</th>
-      <th>Description</th>
-      <th>Published</th>
-      <th>Expire</th>
-     <!-- <th>Employer</th>
-      <th>Category</th>-->
-      <th></th>
-      <th></th>
-      <th></th>
-    </tr>
-  </thead>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-  <tbody>
-    <% @advartisments.each do |advartisment| %>
-      <tr>
-        <td><%= advartisment.title %></td>
-        <td><%= advartisment.description %></td>
-        <td><%= advartisment.published %></td>
-        <td><%= advartisment.expire %></td>
-        <td><%= link_to (t "show"), advartisment %></td>
-        <!-- < <td><%= link_to (t "edit"), edit_advartisment_path(advartisment) %></td>-->
-        <td><%= link_to ( t "destroy"), advartisment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+  <title>Svi oglasi</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.css" rel="stylesheet">
+
+  <!-- Add custom CSS here -->
+  <link href="css/sb-admin.css" rel="stylesheet">
+  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+</head>
+
+<body>
+
+<div id="wrapper">
+
+  <!-- Sidebar -->
+  <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="index.html">Berza poslova</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse navbar-ex1-collapse">
+      <ul class="nav navbar-nav side-nav">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Jezik <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Engleski</a></li>
+            <li><a href="#">Bosanski</a></li>
+            <li><a href="#">Hrvatski</a></li>
+          </ul>
+        </li>
+        <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li>  <%= link_to (t "employer.add"), employers_new_path %> </li>
+        <li >  <%= link_to (t "employer.all"), employers_path %> </li>
+        <li >  <%= link_to (t "user.all"), users_path %> </li>
+        <li class="active">  <%= link_to (t "advartisment.all"), advartisments_path %> </li>
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right navbar-user">
+        <li class="dropdown messages-dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li class="dropdown-header">7 New Messages</li>
+            <li class="message-preview">
+              <a href="#">
+                <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                <span class="name"><% current_user %></span>
+                <span class="message">Hey there, I wanted to ask you something...</span>
+                <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li class="message-preview">
+              <a href="#">
+                <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                <span class="name">John Smith:</span>
+                <span class="message">Hey there, I wanted to ask you something...</span>
+                <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li class="message-preview">
+              <a href="#">
+                <span class="avatar"><img src="http://placehold.it/50x50"></span>
+                <span class="name">John Smith:</span>
+                <span class="message">Hey there, I wanted to ask you something...</span>
+                <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
+              </a>
+            </li>
+            <li class="divider"></li>
+            <li><a href="#">View Inbox <span class="badge">7</span></a></li>
+          </ul>
+        </li>
+        <li class="dropdown alerts-dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Default <span class="label label-default">Default</span></a></li>
+            <li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
+            <li><a href="#">Success <span class="label label-success">Success</span></a></li>
+            <li><a href="#">Info <span class="label label-info">Info</span></a></li>
+            <li><a href="#">Warning <span class="label label-warning">Warning</span></a></li>
+            <li><a href="#">Danger <span class="label label-danger">Danger</span></a></li>
+            <li class="divider"></li>
+            <li><a href="#">View All</a></li>
+          </ul>
+        </li>
+        <li class="dropdown user-dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <%= current_user.name %> <b class="caret"></b></a>
+          <ul class="dropdown-menu">
+            <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+            <li><a href="#"> <%= link_to (t "user.edit"), edit_user_path(current_user.id) %></a></li>
+            <li class="divider"></li>
+            <li><a href="#"></i> <%= link_to (t "nav.logout"), log_out_path %></a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </nav>
+
+  <div id="page-wrapper">
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h1>Svi oglasi <small> POSO.BA</small></h1>
+        <ol class="breadcrumb">
+          <li><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+          <li class="active"><i class="fa fa-table"></i> Tables</li>
+        </ol>
+        <div class="alert alert-info alert-dismissable">
+          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+          Prikazivanje svih oglasa. Moguće je svaki oglas prikazati, izmjeniti i obrisati.
+        </div>
+      </div>
+    </div><!-- /.row -->
+
+    <div class="row">
+      <div class="col-lg-12">
+        <h2>Lista svih oglasa</h2>
+
+
+        <div class="table-responsive">
+          <table class="table table-bordered table-hover table-striped tablesorter">
+            <thead>
+            <tr>
+              <th>Title <i class="fa fa-sort"></i></th>
+              <th>Description <i class="fa fa-sort"></i></th>
+              <th>Published <i class="fa fa-sort"></i></th>
+              <th>Expire <i class="fa fa-sort"></i></th>
+              <th></th>
+              <th></th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <% @advartisments.each do |advartisment| %>
+                <tr class="success">
+                  <td><%= advartisment.title %></td>
+                  <td><%= advartisment.description %></td>
+                  <td><%= advartisment.published %></td>
+                  <td><%= advartisment.expire %></td>
+                  <td><%= link_to (t "show"), advartisment %></td>
+                  <!-- < <td><%= link_to (t "edit"), edit_advartisment_path(advartisment) %></td>-->
+                  <td><%= link_to ( t "destroy"), advartisment, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                </tr>
+            <% end %>
+            </tbody>
+          </table>
+          </table>
+        </div>
+      </div>
+
+    </div><!-- /.row -->
+
+  </div><!-- /#page-wrapper -->
+
+</div><!-- /#wrapper -->
+
+<!-- JavaScript -->
+<script src="js/jquery-1.10.2.js"></script>
+<script src="js/bootstrap.js"></script>
+
+<!-- Page Specific Plugins -->
+<script src="js/tablesorter/jquery.tablesorter.js"></script>
+<script src="js/tablesorter/tables.js"></script>
+
+</body>
+</html>
 
 <br>
 
-<!--<%= link_to t("advartisment.new"), new_advartisment_path %>-->
+<%= link_to 'Back', home_index_path %>
+<!-- <%= link_to 'New User', new_user_path %> -->
+
+
