@@ -282,7 +282,7 @@ bs:
 
     name: "Ime"
     lastname: "Prezime"
-    email: "Mail adresa"
+    email: "E - mail"
     potvrda: "Potvrdite lozinku"
     adress: "Adresa"
     telefon: "telefon"
