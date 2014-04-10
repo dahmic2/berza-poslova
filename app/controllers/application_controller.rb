@@ -26,9 +26,19 @@ class ApplicationController < ActionController::Base
   def current_employer
     @current_employer ||= Employer.find(session[:employer_id]) if session[:employer_id]
   end
+  def provjera2
+    if !current_employer
+      redirect_to root_path
+    end
+  end
+  def provjera1
+    if !current_user
+      redirect_to root_path
+    end
+  end
   def provjera
     if !current_employer && !current_user
-      redirect_to home_index_path
+      redirect_to root_path
     end
   end
 end

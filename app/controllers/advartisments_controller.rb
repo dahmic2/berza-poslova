@@ -1,5 +1,6 @@
 class AdvartismentsController < ApplicationController
   before_filter :provjera
+  before_filter :provjera2 , :except => [:index, :show]
   before_action :set_advartisment, only: [:show, :edit, :update, :destroy]
 
   # GET /advartisments
@@ -26,7 +27,7 @@ class AdvartismentsController < ApplicationController
   # POST /advartisments.json
   def create
     @advartisment = Advartisment.new(advartisment_params)
-
+    @advartisment.employer_id = current_employer.id
     respond_to do |format|
       if @advartisment.save
         format.html { redirect_to @advartisment, notice: 'Advartisment was successfully created.' }
