@@ -1,22 +1,29 @@
 --- 
 en: 
-  Log: Prijava
-  LogOut: Odjava
-  about: "O nama"
+  Log: Log in
+  LogOut: Log out
+  about: About us
   ad: 
     ads: Ads
-  contact: "O nama"
-  forgotten_pass: "Forgot password?"
-  home: "Početna stranica"
+  contact: Contact
+  forgotten_pass: Forgot password?
+  home: Početna stranica
   nav: ~
   password_recovery: 
     successfully_created: "Password recovery token was successfully created."
     successfully_updated: "Password recovery token was successfully updated."
-  profile: "Profil korisnika"
+  profile: Profile
   employer:
     add: Add employer
-    location: "Web stranica"
+    location: Location
   user:
+    name: Name
+    lastname: Last name
+    email: E - mail
+    potvrda: Confirmation password
+    adress: Adress
+    phone: Phone number
+    add: New user
     all: Users' list
     does_not_exist: "User does not exist."
     does_not_have_permission: "You do not have permision for that action."

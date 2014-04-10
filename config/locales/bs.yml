@@ -287,14 +287,13 @@ bs:
     succesfully_updated: Korisnik je uspješno ažuriran.
     invalid_fields: Neka polja su neispravna.
 
-    name: "Ime"
-    lastname: "Prezime"
-    email: "E - mail"
-    potvrda: "Potvrdite lozinku"
-    adress: "Adresa"
-    telefon: "telefon"
-    phone: "Telefon"
-    add: "Novi korisnik"
+    name: Ime
+    lastname: Prezime
+    email: E - mail
+    potvrda: Potvrdite lozinku
+    adress: Adresa
+    phone: Telefon
+    add: Novi korisnik
   password_recovery:
     successfully_created: 'Token za povrat passworda uspješno kreiran.'
     successfully_updated: 'Token za povrat passworda uspješno ažuriran.'
