@@ -104,8 +104,6 @@ ActiveRecord::Schema.define(version: 20140410173110) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "avatar"
-    t.boolean  "active"
-    t.string   "activation_token"
   end
 
 end
