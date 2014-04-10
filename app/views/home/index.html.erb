@@ -16,6 +16,65 @@
   <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
   <!-- Page Specific CSS -->
   <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
+
+
+
+  <!--Load the AJAX API-->
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+
+      // Load the Visualization API and the piechart package.
+      google.load('visualization', '1.0', {'packages':['corechart']});
+
+      // Set a callback to run when the Google Visualization API is loaded.
+      google.setOnLoadCallback(drawChart);
+
+      // Callback that creates and populates a data table,
+      // instantiates the pie chart, passes in the data and
+      // draws it.
+      function drawChart() {
+
+
+          var sarajevo = 0;
+          var zavidovici = 0;
+          var tuzla = 0;
+          var ostali = 0;
+
+          <% @advartisments = Advartisment.all %>
+          <% @advartisments.each do |advartisment| %>
+
+
+              <% if advartisment.location == "Sarajevo" %>
+                    sarajevo += 1;
+                <% elsif advartisment.location == "Zavidovići" %> zavidovici=zavidovici+1;
+                 <% elsif advartisment.location == "Tuzla" %> tuzla=tuzla+1;
+          <%  else %> ostali = ostali +1;
+
+        <% end %>
+          <% end %>
+          // Create the data table.
+          var data = new google.visualization.DataTable();
+          data.addColumn('string', 'Topping');
+          data.addColumn('number', 'Slices');
+          data.addRows([
+              ['Sarajevo', sarajevo.valueOf()],
+              ['Zavidovići', zavidovici.valueOf()],
+              ['Tuzla', tuzla.valueOf()],
+              ['Ostali', ostali.valueOf()]
+          ]);
+
+          // Set chart options
+          var options = {'title':'Broj objavljenih oglasa po gradovima',
+              'width':400,
+              'height':300};
+
+          // Instantiate and draw our chart, passing in some options.
+          var chart = new google.visualization.PieChart(document.getElementById('chart'));
+          chart.draw(data, options);
+      }
+  </script>
+
+
 </head>
 
 <body>
@@ -245,13 +304,13 @@
             </div><!-- /.row -->
 
             <div class="row">
-              <div class="col-lg-12">
+              <div class="col-lg-6">
                 <div class="panel panel-primary">
                   <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Traffic Statistics: October 1, 2013 - October 31, 2013</h3>
+                    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Broj objavljenih oglasa po lokacijama</h3>
                   </div>
                   <div class="panel-body">
-                    <div id="morris-chart-area"></div>
+                    <div id="chart"></div>
                   </div>
                 </div>
               </div>
@@ -271,6 +330,10 @@
                   </div>
                 </div>
               </div>
+
+
+
+
               <div class="col-lg-4">
                 <div class="panel panel-primary">
                   <div class="panel-heading">
@@ -882,5 +945,12 @@
 <script src="js/morris/chart-data-morris.js"></script>
 <script src="js/tablesorter/jquery.tablesorter.js"></script>
 <script src="js/tablesorter/tables.js"></script>
+
+
+
+
+
+
+
 </body>
 </html>

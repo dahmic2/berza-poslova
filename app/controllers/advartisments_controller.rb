@@ -70,6 +70,6 @@ class AdvartismentsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def advartisment_params
-      params.require(:advartisment).permit(:title, :description, :published, :expire, :employer_id, :category_id)
+      params.require(:advartisment).permit(:title, :description, :published, :expire, :employer_id, :category_id, :location)
     end
 end

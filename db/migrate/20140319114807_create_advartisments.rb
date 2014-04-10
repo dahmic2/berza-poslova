@@ -7,7 +7,7 @@ class CreateAdvartisments < ActiveRecord::Migration
       t.date :expire
       t.references :employer, index: true
       t.references :category, index: true
-
+      t.string :location
       t.timestamps
     end
   end

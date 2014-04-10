@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140409184324) do
+ActiveRecord::Schema.define(version: 20140410153448) do
 
   create_table "admins", force: true do |t|
     t.string   "username"
@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20140409184324) do
     t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "location"
   end
 
   add_index "advartisments", ["category_id"], name: "index_advartisments_on_category_id"

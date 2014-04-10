@@ -29,9 +29,12 @@
   </div>
   <div class="field">
     <%= f.label (t "category") %><br>
-    <%= options_from_collection_for_select(Category.all, :id, :name) %>
-    <%= collection_select(:category, :category_id, Category.all, :id, :name ) %>
+    <%= f.text_field :category %>
   </div>
+    <div class="field">
+      <%= f.label :location %><br>
+      <%= f.text_field :location %>
+    </div>
   <div class="actions">
     <%= f.submit (t "advartisment.add")%>
   </div>
