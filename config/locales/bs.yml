@@ -294,6 +294,7 @@ bs:
     adress: Adresa
     phone: Telefon
     add: Novi korisnik
+    settings: "Postavke"
   password_recovery:
     successfully_created: 'Token za povrat passworda uspješno kreiran.'
     successfully_updated: 'Token za povrat passworda uspješno ažuriran.'

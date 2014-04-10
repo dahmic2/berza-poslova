@@ -118,13 +118,12 @@
             </ul>
           </li>
           <li class="dropdown user-dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <%= current_user %> <b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <%= current_user.name %> <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><i class="fa fa-user"></i> <%= link_to (t "nav.profile"),current_user%></li>
-              <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
-              <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
+              <li> <%= link_to (t "nav.profile"),current_user%></li>
+              <li> <%= link_to (t "user.settings"), edit_user_path(@current_user)%></li>
               <li class="divider"></li>
-              <li><a href="#"><i class="fa fa-power-off"></i> <%= link_to (t "nav.logout"), log_out_path %></a></li>
+              <li><a href="#"> <%= link_to (t "nav.logout"), log_out_path %></a></li>
             </ul>
           </li>
         </ul>
@@ -175,9 +174,11 @@
             </div>
           </div>
         </div>
+        <% if !current_user.email="admin@poso.ba" %>
         <div class="col-lg-4">
           <div class="panel panel-primary">
             <div class="panel-heading">
+
               <h3 class="panel-title"><i class="fa fa-clock-o"></i> Moje kategorije</h3>
             </div>
             <div class="panel-body">
@@ -221,6 +222,7 @@
             </div>
           </div>
         </div>
+              <% end %>
         <div class="col-lg-4">
           <div class="panel panel-primary">
             <div class="panel-heading">

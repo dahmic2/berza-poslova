@@ -165,7 +165,50 @@
           chart.draw(data, options);
       }
   </script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
 
+          var sarajevo = 0;
+          var zavidovici = 0;
+          var tuzla = 0;
+          var ostali = 0;
+          var tr=0;
+
+          <% @employers = Employer.all %>
+          <% @employers.each do |employer| %>
+
+
+          <% if employer.location == "Sarajevo" %>
+          sarajevo += 1;
+          <% elsif employer.location == "Zavidovići" %> zavidovici=zavidovici+1;
+          <% elsif employer.location == "Tuzla" %> tuzla=tuzla+1;
+          <% elsif employer.location == "Travnik" %> tr=tr+1;
+
+          <%  else %> ostali = ostali +1;
+
+          <% end %>
+          <% end %>
+          var data = google.visualization.arrayToDataTable([
+              ['Lokacija', 'Broj poslodavaca', { role: 'style' } ],
+              ['Sarajevo', sarajevo.valueOf(), 'color: gray'],
+              ['Zavidovići', zavidovici.valueOf(), 'color: #76A7FA'],
+              ['Tuzla', tuzla.valueOf(), 'opacity: 0.2'],
+              ['Ostali', ostali.valueOf(), 'stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF'],
+              ['Travnik', tr.valueOf(), 'stroke-color: #871B47; stroke-opacity: 0.6; stroke-width: 8; fill-color: #BC5679; fill-opacity: 0.2'],
+          ]);
+          var options = {
+              title: 'Broj poslodavaca u određenom gradu',
+              vAxis: {title: 'Lokacija',  titleTextStyle: {color: 'red'}}, 'width':400,
+              'height':300
+          };
+
+          var chart = new google.visualization.BarChart(document.getElementById('chart_div1'));
+          chart.draw(data, options);
+      }
+  </script>
 
 </head>
 
@@ -445,8 +488,20 @@
                   </div>
                 </div>
               </div>
-            </div><!-- /.row -->
 
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Broj poslodavaca u određenom gradu</h3>
+                  </div>
+                  <div class="panel-body">
+
+                    <div id="chart_div1"></div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.row -->
 
             <div class="row">
               <div class="col-lg-12">
@@ -461,7 +516,10 @@
               </div>
             </div><!-- /.row -->
 
-              <div class="col-lg-16">
+
+
+
+            <div class="col-lg-16">
                 <div class="panel panel-primary">
                   <div class="panel-heading">
                     <h3 class="panel-title"><i class="fa fa-clock-o"></i> Recent Activity</h3>
