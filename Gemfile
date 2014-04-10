@@ -49,8 +49,6 @@ gem 'haml-rails'
 
 gem 'slim-rails'
 
-gem 'recaptcha', :require => "recaptcha/rails"
-
 gem 'wash_out'
 
 gem 'prawn'
@@ -58,3 +56,7 @@ gem 'prawn'
 gem 'prawn-layout'
 
 gem 'carrierwave'
+
+gem 'recaptcha', :require => "recaptcha/rails"
+
+gem 'chartkick', '~> 1.2.4'

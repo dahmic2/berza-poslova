@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140410153448) do
+ActiveRecord::Schema.define(version: 20140410173110) do
 
   create_table "admins", force: true do |t|
     t.string   "username"
@@ -27,13 +27,12 @@ ActiveRecord::Schema.define(version: 20140410153448) do
     t.date     "published"
     t.date     "expire"
     t.integer  "employer_id"
-    t.integer  "category_id"
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "location"
+    t.string   "category"
   end
 
-  add_index "advartisments", ["category_id"], name: "index_advartisments_on_category_id"
   add_index "advartisments", ["employer_id"], name: "index_advartisments_on_employer_id"
 
   create_table "categories", force: true do |t|
@@ -105,6 +104,8 @@ ActiveRecord::Schema.define(version: 20140410153448) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.string   "avatar"
+    t.boolean  "active"
+    t.string   "activation_token"
   end
 
 end

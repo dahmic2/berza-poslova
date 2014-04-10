@@ -28,6 +28,7 @@
 
       // Set a callback to run when the Google Visualization API is loaded.
       google.setOnLoadCallback(drawChart);
+      google.setOnLoadCollback(drawChart1);
 
       // Callback that creates and populates a data table,
       // instantiates the pie chart, passes in the data and
@@ -71,6 +72,48 @@
           // Instantiate and draw our chart, passing in some options.
           var chart = new google.visualization.PieChart(document.getElementById('chart'));
           chart.draw(data, options);
+
+      }
+
+      function drawChart1() {
+          var adm = 2;
+          var eko = 0;
+          var arh = 3;
+          var men = 4;
+          var etf = 0;
+
+          <% @advartisments = Advartisment.all %>
+          <% @advartisments.each do |advartisment| %>
+
+
+          <% if advartisment.category == "Administrativne usluge" %>
+          adm += 1;
+          <% elsif advartisment.category == "Ekonomija i finansije" %> eko=eko+1;
+          <% elsif advartisment.category == "Elektrotehnika i informatika" %> etf=etf+1;
+          <% elsif advartisment.category == "Građevinarstvo i arhitektura" %> arh = arh +1;
+          <%elsif advartisment.category == "Menadžment i upravljanje" %>  men+=1;
+          <% end %>
+          <% end %>
+          // Create the data table.
+          var data1 = new google.visualization.DataTable();
+          data1.addColumn('string', 'Topping');
+          data1.addColumn('number', 'Slices');
+          data1.addRows([
+              ['Administrativne usluge', adm.valueOf()],
+              ['Ekonomija i finansije', eko.valueOf()],
+              ['Elektrotehnika i informatika', etf.valueOf()],
+              ['Građevinarstvo i arhitektura', arh.valueOf()],
+              ['Menadžment i upravljanje', men.valueOf()]
+          ]);
+
+          // Set chart options
+          var options1 = {'title':'Postotak odnosa najčešćih kategorija oglasa',
+              'width':700,
+              'height':300};
+
+          // Instantiate and draw our chart, passing in some options.
+          var chart1 = new google.visualization.PieChart(document.getElementById('chart_1'));
+          chart1.draw(data1, options1);
       }
   </script>
 
@@ -311,6 +354,20 @@
                   </div>
                   <div class="panel-body">
                     <div id="chart"></div>
+                  </div>
+                </div>
+              </div>
+            </div><!-- /.row -->
+
+
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Poređenje najčešćih kategorija po broju oglasa</h3>
+                  </div>
+                  <div class="panel-body">
+                    <div id="chart_1"></div>
                   </div>
                 </div>
               </div>
