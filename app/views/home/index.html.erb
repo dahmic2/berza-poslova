@@ -74,51 +74,95 @@
 
       }
       </script>
-      <script type="text/javascript">
-          // Load the Visualization API and the piechart package.
-          google.load('visualization', '1.0', {'packages':['corechart']});
-          google.setOnLoadCollback(drawChart1);
-
-
-              function drawChart1() {
-          var adm = 2;
-          var eko = 0;
-          var arh = 3;
-          var men = 4;
-          var etf = 0;
-
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+          var a= 0,b1= 0,b2= 0,d1= 0,d2= 0,e1= 0,e2= 0,e3= 0,f= 0,g1= 0,g2= 0,k= 0,m1= 0,m2= 0,m3= 0,m4= 0,o1= 0,o2= 0,ostalo= 0,p1= 0,p2= 0,p3= 0,p4= 0,p5= 0,r= 0,s1= 0,s2= 0,t1= 0,t2= 0,t3= 0,u1= 0,u2= 0,z1= 0,z2=0;
           <% @advartisments = Advartisment.all %>
           <% @advartisments.each do |advartisment| %>
+          <% if advartisment.category == "Administrativne usluge" %> a++;
+          <% elsif advartisment.category == "Bankarstvo"%> b1++;
+          <% elsif advartisment.category == "Biotehnologija i farmacija"%> b2++;
+          <% elsif advartisment.category == "Drvna industrija"%> d1++
+          <% elsif advartisment.category == "Državna služba i uprava"%> d2++;
+          <% elsif advartisment.category == "Ekonomija i finansije"%> e1++;
+          <% elsif advartisment.category == "Elektrotehnika i informatika"%> e2++;
+          <% elsif advartisment.category == "Energetika i rudarstvo"%> e3++;
+          <% elsif advartisment.category == "Frizeri i kozmetičari"%> f++;
+          <% elsif advartisment.category == "Geologija"%> g1++;
+          <% elsif advartisment.category == "Građevinarstvo i arhitektura"%> g2++;
+          <% elsif advartisment.category == "Komercijala i prodaja"%> k++;
+          <% elsif advartisment.category == "Marketing i PR"%> m1++;
+          <% elsif advartisment.category == "Mašinstvo i metalurgija"%> m2++;
+          <% elsif advartisment.category == "Mediji"%> m3++;
+          <% elsif advartisment.category == "Menadžment i upravljanje"%> m4++
+          <% elsif advartisment.category == "Obrazovanj, kultura i sport"%> o1++;
+          <% elsif advartisment.category == "Osiguranje"%> o2++;
+          <% elsif advartisment.category == "Ostalo"%> ostalo++;
+          <% elsif advartisment.category == "Policija i zaštitarske usluge"%> p1++;
+          <% elsif advartisment.category == "Poljoprivreda i šumarstvo"%> p2++;
+          <% elsif advartisment.category == "Pravo i društvene nauke"%> p3++;
+          <% elsif advartisment.category == "Prevodilačke usluge"%> p4++;
+          <% elsif advartisment.category == "Proizvodnja"%> p5++;
+          <% elsif advartisment.category == "Računovodstvo i revizija"%> r++;
+          <% elsif advartisment.category == "Socijalne usluge"%> s1++;
+          <% elsif advartisment.category == "Stipendije"%> s2++;
+          <% elsif advartisment.category == "Teleprodaja i telemarketing"%> t1++;
+          <% elsif advartisment.category == "Transport i skladištenje"%> t2++;
+          <% elsif advartisment.category == "Trgovina"%> t3++;
+          <% elsif advartisment.category == "Ugostiteljstvo i turizan"%> u1++;
+          <% elsif advartisment.category == "Umjetnost i dizajn"%> u2++;
+          <% elsif advartisment.category == "Zanatske usluge"%> z1++;
+          <% elsif advartisment.category == "Zdravstvo i medicina"%> z2++;
+          <%end%>
+          <%end%>
+          var data = google.visualization.arrayToDataTable([
+              ['Dinosaur', 'Length'],
+              ['Administrativne usluge', a.valueOf()],
+              ['Bankarstvo', b1.valueOf()],
+              ['Biotehnologija i farmacija', b2.valueOf()],
+              ['Drvna industrija', d1.valueOf()],
+              ['Državna služba i uprava', d2.valueOf()],
+              ['Ekonomija i finansije', e1.valueOf()],
+              ['Elektrotehnika i informatika', e2.valueOf()],
+              ['Energetika i rudarstvo', e3.valueOf()],
+              ['Frizeri i kozmetičari', f.valueOf()],
+              ['Geologija', g1.valueOf()],
+              ['Građevinarstvo i arhitektura', g2.valueOf()],
+              ['Komercijala i prodaja', k.valueOf()],
+              ['Marketing i PR', m1.valueOf()],
+              ['Mašinstvo i metalurgija', m2.valueOf()],
+              ['Mediji', m3.valueOf()],
+              ['Menadžment i upravljanje', m4.valueOf()],
+              ['Obrazovanj, kultura i sport', o1.valueOf()],
+              ['Osiguranje', o2.valueOf()],
+              ['Ostalo', ostalo.valueOf()],
+              ['Policija i zaštitarske usluge', p1.valueOf()],
+              ['Poljoprivreda i šumarstvo', p2.valueOf()],
+              ['Pravo i društvene nauke', p3.valueOf()],
+              ['Prevodilačke usluge', p4.valueOf()],
+              ['Proizvodnja',p5.valueOf()],
+              ['Računovodstvo i revizija', r.valueOf()],
+              ['Socijalne usluge', s1.valueOf()],
+              ['Stipendije', s2.valueOf()],
+              ['Teleprodaja i telemarketing', t1.valueOf()],
+              ['Transport i skladištenje', t2.valueOf()],
+              ['Trgovina', t3.valueOf()],
+              ['Ugostiteljstvo i turizan', u1.valueOf()],
+              ['Umjetnost i dizajn', u2.valueOf()],
+              ['Zanatske usluge', z1.valueOf()],
+              ['Zanatske usluge', z2.valueOf()]]);
 
 
-          <% if advartisment.category == "Administrativne usluge" %>
-          adm += 1;
-          <% elsif advartisment.category == "Ekonomija i finansije" %> eko=eko+1;
-          <% elsif advartisment.category == "Elektrotehnika i informatika" %> etf=etf+1;
-          <%elsif advartisment.category == "Građevinarstvo i arhitektura" %> arh = arh +1;
-          <%elsif advartisment.category == "Menadžment i upravljanje" %>  men+=1;
-          <% end %>
-          <% end %>
-          // Create the data table.
-          var data1 = new google.visualization.DataTable();
-          data1.addColumn('string', 'Topping');
-          data1.addColumn('number', 'Slices');
-          data1.addRows([
-              ['Administrativne usluge', adm.valueOf()],
-              ['Ekonomija i finansije', eko.valueOf()],
-              ['Elektrotehnika i informatika', etf.valueOf()],
-              ['Građevinarstvo i arhitektura', arh.valueOf()],
-              ['Menadžment i upravljanje', men.valueOf()]
-          ]);
+          var options = {
+              title: 'Broj oglasa po kategorijama',
+              legend: { position: 'none' },
+          };
 
-          // Set chart options
-          var options1 = {'title':'Postotak odnosa najčešćih kategorija oglasa',
-              'width':700,
-              'height':300};
-
-          // Instantiate and draw our chart, passing in some options.
-          var chart1 = new google.visualization.PieChart(document.getElementById('chart_1'));
-          chart1.draw(data1, options1);
+          var chart = new google.visualization.Histogram(document.getElementById('chart_div'));
+          chart.draw(data, options);
       }
   </script>
 
@@ -405,13 +449,13 @@
 
 
             <div class="row">
-              <div class="col-lg-6">
+              <div class="col-lg-12">
                 <div class="panel panel-primary">
                   <div class="panel-heading">
                     <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Poređenje najčešćih kategorija po broju oglasa</h3>
                   </div>
                   <div class="panel-body">
-                    <div id="chart_1"></div>
+                    <div id="chart_div" style="width: 900px; height: 400px;"></div>
                   </div>
                 </div>
               </div>
