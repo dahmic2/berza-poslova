@@ -35,7 +35,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html">Berza poslova</a>
+              <a class="navbar-brand" href="#">Berza poslova</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -44,8 +44,8 @@
                 <li class="dropdown">
                   <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Jezik <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Engleski</a></li>
-                    <li><a href="#">Bosanski</a></li>
+                    <li><a href="?locale=bs#" data-no-turbolink="true">BS</a></li>
+                    <li><a href="?locale=en#" data-no-turbolink="true">EN</a></li>
                     <li><a href="#">Hrvatski</a></li>
                   </ul>
                 </li>
@@ -409,7 +409,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
               </button>
-              <a class="navbar-brand" href="index.html">Berza poslova</a>
+              <a class="navbar-brand" href="#">Berza poslova</a>
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
@@ -508,12 +508,20 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <a class="navbar-brand" href="index.html">Berza poslova</a>
+        <a class="navbar-brand" href="#">Berza poslova</a>
       </div>
 
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav side-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Jezik <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="?locale=bs#" data-no-turbolink="true">BS</a></li>
+              <li><a href="?locale=en#" data-no-turbolink="true">EN</a></li>
+              <li><a href="#">Hrvatski</a></li>
+            </ul>
+          </li>
           <li>  <%= link_to (t "nav.home"), home_index_path %> </li>
           <li>  <%= link_to (t "nav.about"), home_about_path %> </li>
           <li>  <%= link_to (t "nav.contact"), home_contact_path %> </li>
@@ -580,7 +588,7 @@
       </li>
       <li class="dropdown user-dropdown">
       <a href="#" > <%= link_to (t "nav.login"), log_in_path %> </b></a>
-</li>
+    </li>
     </ul>
   </div><!-- /.navbar-collapse -->
 </nav>
