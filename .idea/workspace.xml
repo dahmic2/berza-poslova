@@ -29,23 +29,23 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="282" column="44" selection-start="12162" selection-end="12162" vertical-scroll-proportion="0.31006494" vertical-offset="4603" max-vertical-offset="18734">
+            <state line="224" column="41" selection-start="10094" selection-end="10094" vertical-scroll-proportion="0.30194804" vertical-offset="3622" max-vertical-offset="18768">
               <folding>
-                <element signature="e#14094#14110#0" expanded="true" />
-                <element signature="e#18170#18185#0" expanded="true" />
-                <element signature="e#18255#18268#0" expanded="true" />
-                <element signature="e#18411#18425#0" expanded="true" />
+                <element signature="e#14034#14050#0" expanded="true" />
+                <element signature="e#18110#18125#0" expanded="true" />
+                <element signature="e#18195#18208#0" expanded="true" />
+                <element signature="e#18351#18365#0" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
                 <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#35508#35523#0" expanded="true" />
-                <element signature="e#35840#35854#0" expanded="true" />
-                <element signature="e#41114#41129#0" expanded="true" />
-                <element signature="e#41451#41465#0" expanded="true" />
-                <element signature="e#42924#42936#0" expanded="true" />
-                <element signature="e#42993#43006#0" expanded="true" />
-                <element signature="e#43063#43078#0" expanded="true" />
-                <element signature="e#46361#46377#0" expanded="true" />
-                <element signature="e#46470#46483#0" expanded="true" />
+                <element signature="e#35438#35453#0" expanded="true" />
+                <element signature="e#35770#35784#0" expanded="true" />
+                <element signature="e#41044#41059#0" expanded="true" />
+                <element signature="e#41381#41395#0" expanded="true" />
+                <element signature="e#42854#42866#0" expanded="true" />
+                <element signature="e#42923#42936#0" expanded="true" />
+                <element signature="e#42993#43008#0" expanded="true" />
+                <element signature="e#46291#46307#0" expanded="true" />
+                <element signature="e#46400#46413#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -705,7 +705,11 @@
       <created>1397201368206</created>
       <updated>1397201368206</updated>
     </task>
-    <option name="localTasksCounter" value="59" />
+    <task id="LOCAL-00059" summary="graf za trajanje oglasa">
+      <created>1397205431735</created>
+      <updated>1397205431735</updated>
+    </task>
+    <option name="localTasksCounter" value="60" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -734,16 +738,16 @@
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32305434" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842416" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33761328" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14879154" sideWeight="0.49911505" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27643505" sideWeight="0.50088495" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32892805" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32305434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48164463" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48164463" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -788,7 +792,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="sigurnost web servisa&#10;" />
     <MESSAGE value="validacije" />
     <MESSAGE value="izmjena css-a početne stranice" />
     <MESSAGE value="remember me and reset password&#10;" />
@@ -813,7 +816,8 @@
     <MESSAGE value="popravka validacije webservisa i employer_id koa advartisment = current employer&#10;" />
     <MESSAGE value="početna stranica sa prikazom oglasa" />
     <MESSAGE value="pravnanje top nov na početnoj" />
-    <option name="LAST_COMMIT_MESSAGE" value="pravnanje top nov na početnoj" />
+    <MESSAGE value="graf za trajanje oglasa" />
+    <option name="LAST_COMMIT_MESSAGE" value="graf za trajanje oglasa" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1083,23 +1087,23 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="282" column="44" selection-start="12162" selection-end="12162" vertical-scroll-proportion="0.31006494" vertical-offset="4603" max-vertical-offset="18734">
+        <state line="224" column="41" selection-start="10094" selection-end="10094" vertical-scroll-proportion="0.30194804" vertical-offset="3622" max-vertical-offset="18768">
           <folding>
-            <element signature="e#14094#14110#0" expanded="true" />
-            <element signature="e#18170#18185#0" expanded="true" />
-            <element signature="e#18255#18268#0" expanded="true" />
-            <element signature="e#18411#18425#0" expanded="true" />
+            <element signature="e#14034#14050#0" expanded="true" />
+            <element signature="e#18110#18125#0" expanded="true" />
+            <element signature="e#18195#18208#0" expanded="true" />
+            <element signature="e#18351#18365#0" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#35508#35523#0" expanded="true" />
-            <element signature="e#35840#35854#0" expanded="true" />
-            <element signature="e#41114#41129#0" expanded="true" />
-            <element signature="e#41451#41465#0" expanded="true" />
-            <element signature="e#42924#42936#0" expanded="true" />
-            <element signature="e#42993#43006#0" expanded="true" />
-            <element signature="e#43063#43078#0" expanded="true" />
-            <element signature="e#46361#46377#0" expanded="true" />
-            <element signature="e#46470#46483#0" expanded="true" />
+            <element signature="e#35438#35453#0" expanded="true" />
+            <element signature="e#35770#35784#0" expanded="true" />
+            <element signature="e#41044#41059#0" expanded="true" />
+            <element signature="e#41381#41395#0" expanded="true" />
+            <element signature="e#42854#42866#0" expanded="true" />
+            <element signature="e#42923#42936#0" expanded="true" />
+            <element signature="e#42993#43008#0" expanded="true" />
+            <element signature="e#46291#46307#0" expanded="true" />
+            <element signature="e#46400#46413#0" expanded="true" />
           </folding>
         </state>
       </provider>
