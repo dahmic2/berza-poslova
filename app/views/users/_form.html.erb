@@ -174,7 +174,8 @@
             </div>
           </div>
         </div>
-        <% if !current_user.email="admin@poso.ba" %>
+        <% if current_user.email =="admin@poso.ba" %>
+            <%else%>>
         <div class="col-lg-4">
           <div class="panel panel-primary">
             <div class="panel-heading">
