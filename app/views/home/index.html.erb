@@ -209,6 +209,51 @@
           chart.draw(data, options);
       }
   </script>
+<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+
+          var sarajevo = 0;
+          var zavidovici = 0;
+          var tuzla = 0;
+          var ostali = 0;
+          var tr=0;
+
+          <% @advartisments = Advartisment.all %>
+          <% @advartisments.each do |advartisment| %>
+          <% @employers = Employer.all %>
+          <% @employers.each do |employer| %>
+
+          <% if employer.name=="Konzum" %>
+                    <% @id= employer.id %>
+          <% if advartisment.employer == @id %>
+          sarajevo += 1;
+                    <% end %>
+
+          <% end %>
+
+          <% end %>
+          <% end %>
+          var data = google.visualization.arrayToDataTable([
+              ['Poslodavac', 'Broj oglasa', { role: 'style' } ],
+              ['Konzum', sarajevo.valueOf(), 'color: gray'],
+              ['Zavidovići', 2, 'color: #76A7FA'],
+              ['Tuzla', 1, 'opacity: 0.2'],
+              ['Ostali', 1, 'stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF'],
+              ['Travnik', 3, 'stroke-color: #871B47; stroke-opacity: 0.6; stroke-width: 8; fill-color: #BC5679; fill-opacity: 0.2'],
+          ]);
+          var options = {
+              title: 'Broj poslodavaca u određenom gradu',
+              vAxis: {title: 'Lokacija',  titleTextStyle: {color: 'red'}}, 'width':400,
+              'height':300
+          };
+
+          var chart = new google.visualization.BarChart(document.getElementById('chart_div2'));
+          chart.draw(data, options);
+      }
+  </script>
 
 </head>
 
@@ -243,7 +288,7 @@
                     <li><a href="#">Hrvatski</a></li>
                   </ul>
                 </li>
-                <li class="active"><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                <li class="active"> <%= link_to "Dashboard", root_path %>
                 <li>  <%= link_to (t "employer.add"), employers_new_path %> </li>
                 <li>  <%= link_to (t "employer.all"), employers_path %> </li>
                 <li>  <%= link_to (t "user.all"), users_path %> </li>
@@ -501,6 +546,18 @@
                   </div>
                 </div>
               </div>
+              <div class="row">
+                            <div class="col-lg-6">
+                              <div class="panel panel-primary">
+                                <div class="panel-heading">
+                                  <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Broj oglasa po poslodavcu</h3>
+                                </div>
+                                <div class="panel-body">
+
+                                  <div id="chart_div2"></div>
+                                </div>
+                              </div>
+                            </div>
             </div><!-- /.row -->
 
             <div class="row">

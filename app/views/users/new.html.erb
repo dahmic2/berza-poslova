@@ -168,8 +168,9 @@
                   <%= f.label (t "user.phone")%><br />
                   <%= f.text_field :phone %>
                 </p>
-                <div align="center" style="align-content: center; align-items: center; text-align: center">
-                </div>
+                <p>
+                <%= recaptcha_tags %>
+                 </p>
                 <p class="button"><%= f.submit  (t "user.add")%></p>
             <% end %>
           </div>
@@ -180,9 +181,7 @@
           <div class="panel-heading">
             <h3 class="panel-title"><i class="fa fa-money"></i> Human authentification</h3>
           </div>
-          <div class="panel-body">
-            <%= recaptcha_tags %>
-          </div>
+
         </div>
       </div>
     </div>

@@ -1,7 +1,21 @@
 class UsersController < ApplicationController
-  before_filter :provjera , :except => [:create, :new]
+  before_filter :provjera , :except => [:create, :new, :activation]
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
+  def activation
+    act_hash = params[:act_hash]
+    user = User.where(hashed_password: act_hash ).first
+
+    if user.nil?
+      redirect_to root_path, :notice => (t "user.does_not_exist")
+    else
+      user.is_activated = 1
+      user.save
+      redirect_to root_path, :notice => (t "user.potvrda")
+    end
+
+
+  end
 
 
 

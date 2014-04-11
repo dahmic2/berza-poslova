@@ -27,9 +27,9 @@ ActiveRecord::Schema.define(version: 20140410173110) do
     t.date     "published"
     t.date     "expire"
     t.integer  "employer_id"
+    t.string   "location"
     t.datetime "created_at"
     t.datetime "updated_at"
-    t.string   "location"
     t.string   "category"
   end
 
