@@ -209,45 +209,41 @@
           chart.draw(data, options);
       }
   </script>
-<script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
 
-          var sarajevo = 0;
-          var zavidovici = 0;
-          var tuzla = 0;
-          var ostali = 0;
-          var tr=0;
-
           <% @advartisments = Advartisment.all %>
-          <% @employers = Employer.all %>
+
+
+
+          var brojac = 0;
+          var ostalo = 0;
+
           <% @advartisments.each do |advartisment| %>
 
-          <% @employers.each do |employer| %>
-
-          <% if employer.name=="Konzum" %>
-                    <% @id= employer.id %>
-          <% if advartisment.employer == @id %>
-          sarajevo += 1;
-                    <% end %>
-
-          <% end %>
-
+          <% if "EU" ==  advartisment.location %> brojac += 1;
+          <% else  %> ostalo += 1;
           <% end %>
           <% end %>
+
+
+
+
+
           var data = google.visualization.arrayToDataTable([
-              ['Poslodavac', 'Broj oglasa', { role: 'style' } ],
-              ['Konzum', sarajevo.valueOf(), 'color: gray'],
-              ['Zavidovići', 2, 'color: #76A7FA'],
-              ['Tuzla', 1, 'opacity: 0.2'],
-              ['Ostali', 1, 'stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF'],
-              ['Travnik', 3, 'stroke-color: #871B47; stroke-opacity: 0.6; stroke-width: 8; fill-color: #BC5679; fill-opacity: 0.2'],
+              ['Region', 'Broj oglasa', { role: 'style' } ],
+              ["EU", brojac.valueOf(), 'color: gray'],
+              ["BiH", ostalo.valueOf()+1, 'color: gray']
+
           ]);
+
+
           var options = {
-              title: 'Broj poslodavaca u određenom gradu',
-              vAxis: {title: 'Lokacija',  titleTextStyle: {color: 'red'}}, 'width':400,
+              title: 'Broj oglasa u određenom regionu',
+              vAxis: {title: 'Region',  titleTextStyle: {color: 'red'}}, 'width':400,
               'height':300
           };
 
@@ -255,7 +251,6 @@
           chart.draw(data, options);
       }
   </script>
-
   <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
@@ -644,7 +639,7 @@
                             <div class="col-lg-6">
                               <div class="panel panel-primary">
                                 <div class="panel-heading">
-                                  <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Broj oglasa po poslodavcu</h3>
+                                  <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Broj oglasa po regionu</h3>
                                 </div>
                                 <div class="panel-body">
 
