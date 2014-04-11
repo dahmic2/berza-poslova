@@ -45,7 +45,7 @@
             <li><a href="#">Hrvatski</a></li>
           </ul>
         </li>
-        <li><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+        <li class="active"> <%= link_to "Dashboard", root_path %> </li>
         <li>  <%= link_to (t "employer.add"), employers_new_path %> </li>
         <li >  <%= link_to (t "employer.all"), employers_path %> </li>
         <li class="active">  <%= link_to (t "user.all"), users_path %> </li>
@@ -103,7 +103,7 @@
         <li class="dropdown user-dropdown">
           <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <%= current_user.name %> <b class="caret"></b></a>
           <ul class="dropdown-menu">
-            <li><a href="#"><i class="fa fa-user"></i> Profile</a></li>
+            <li><%= link_to (t "nav.profile"),current_user%></li>
             <li><a href="#"> <%= link_to (t "user.edit"), edit_user_path(current_user.id) %></a></li>
             <li class="divider"></li>
             <li><a href="#"></i> <%= link_to (t "nav.logout"), log_out_path %></a></li>

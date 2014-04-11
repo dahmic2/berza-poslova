@@ -47,7 +47,7 @@
             <li><a href="#">Hrvatski</a></li>
           </ul>
         </li>
-        <li ><a href="#"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+       <li class="active"> <%= link_to "Dashboard", root_path %> </li>
         <li class="active">  <%= link_to (t "employer.add"), employers_new_path %> </li>
         <li >  <%= link_to (t "employer.all"), employers_path %> </li>
         <li>  <%= link_to (t "user.all"), users_path %> </li>
@@ -114,14 +114,10 @@
       </ul>
     </div><!-- /.navbar-collapse -->
   </nav>
-
-
-
-
   <div id="page-wrapper">
     <br><br><br>
     <div class="row">
-      <div class="col-lg-4">
+      <div class="col-lg-4" >
         <div class="panel panel-primary">
           <div class="panel-heading">
             <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Unesi podatke o poslodavcu</h3>
@@ -131,17 +127,7 @@
           </div>
         </div>
       </div>
-      <div class="col-lg-4">
-        <div class="panel panel-primary">
-          <div class="panel-heading">
-            <h3 class="panel-title"><i class="fa fa-money"></i> Logo kompanije</h3>
-          </div>
-          <div class="panel-body">
 
-          </div>
-        </div>
-      </div>
-    </div>
   </div><!-- /.row -->
 
 </div><!-- /#page-wrapper -->

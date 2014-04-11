@@ -153,7 +153,7 @@
               ['Ugostiteljstvo i turizan', u1.valueOf()],
               ['Umjetnost i dizajn', u2.valueOf()],
               ['Zanatske usluge', z1.valueOf()],
-              ['Zanatske usluge', z2.valueOf()]]);
+              ['Zdravstvo i medicina', z2.valueOf()]]);
 
 
           var options = {
@@ -255,6 +255,40 @@
       }
   </script>
 
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+  <script type="text/javascript">
+      google.load("visualization", "1", {packages:["corechart"]});
+      google.setOnLoadCallback(drawChart);
+      function drawChart() {
+          var april= 0,maj= 0,juni= 0,juli=0;
+          <% @advartisments = Advartisment.all %>
+          <% @advartisments.each do |advartisment| %>
+          <% if advartisment.expire.month == 4 %> april++;
+          <%end%>
+          <% if advartisment.expire.month == 5 %> maj++;
+          <%end%>
+          <% if advartisment.expire.month == 6 %> juni++;
+          <%end%>
+          <% if advartisment.expire.month == 7 %> juli++;
+          <%end%>
+          <%end%>
+          var data = google.visualization.arrayToDataTable([
+              ['Mjesec', 'Oglasa ističe'],
+              ['April',  april.valueOf()],
+              ['Maj',  maj.valueOf()],
+              ['Juni',  juni.valueOf()],
+              ['Juli',  juli.valueOf()]
+          ]);
+
+          var options = {
+              title: 'Oglasi koji ističu po mjesecima'
+          };
+
+          var chart = new google.visualization.LineChart(document.getElementById('chart_div3'));
+          chart.draw(data, options);
+      }
+  </script>
+
 </head>
 
 <body>
@@ -288,7 +322,7 @@
                     <li><a href="#">Hrvatski</a></li>
                   </ul>
                 </li>
-                <li class="active"> <%= link_to "Dashboard", root_path %>
+                <li class="active"> <%= link_to "Dashboard", root_path %> </li>
                 <li>  <%= link_to (t "employer.add"), employers_new_path %> </li>
                 <li>  <%= link_to (t "employer.all"), employers_path %> </li>
                 <li>  <%= link_to (t "user.all"), users_path %> </li>
@@ -564,7 +598,7 @@
               <div class="col-lg-12">
                 <div class="panel panel-primary">
                   <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Poređenje najčešćih kategorija po broju oglasa</h3>
+                    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Poređenje kategorija po broju oglasa</h3>
                   </div>
                   <div class="panel-body">
                     <div id="chart_div" style="width: 900px; height: 400px;"></div>
@@ -573,7 +607,18 @@
               </div>
             </div><!-- /.row -->
 
-
+              <div class="row">
+                <div class="col-lg-12">
+                  <div class="panel panel-primary">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Prikaz oglasa koji uskoro ističu po mjesecima</h3>
+                    </div>
+                    <div class="panel-body">
+                      <div id="chart_div3" style="width: 900px; height: 400px;"></div>
+                    </div>
+                  </div>
+                </div>
+              </div><!-- /.row -->
 
 
             <div class="col-lg-16">
