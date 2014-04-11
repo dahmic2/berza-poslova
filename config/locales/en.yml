@@ -8,14 +8,16 @@ en:
   contact: Contact
   forgotten_pass: Forgot password?
   home: Početna stranica
-  nav: ~
+  nav:
+  language: "Language"
   password_recovery: 
     successfully_created: "Password recovery token was successfully created."
     successfully_updated: "Password recovery token was successfully updated."
   profile: Profile
   employer:
-    add: Add employer
+    add: "New employer"
     location: Location
+    all: "Listing employers"
   user:
     name: Name
     lastname: Last name
@@ -23,8 +25,8 @@ en:
     potvrda: Confirmation password
     adress: Adress
     phone: Phone number
-    add: New user
-    all: Users' list
+    add: "New user"
+    all: "Listing users"
     does_not_exist: "User does not exist."
     does_not_have_permission: "You do not have permision for that action."
     invalid_fields: "Some fields are invalid."
@@ -37,3 +39,5 @@ en:
     succesfully_updated: "User was successfully updated."
     username: Username
     users: Users
+  advartisment:
+    all: "Listing advartisments"

@@ -266,6 +266,8 @@ bs:
     users: "Korisnici"
     cvs: "Biografije"
     welcome: "Dobro došao/la"
+    jezik: "Jezik"
+    language: "Jezik"
   employer:
     all: Svi poslodavci
     add: Novi poslodavac
