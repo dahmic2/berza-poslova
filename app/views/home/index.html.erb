@@ -266,8 +266,8 @@
           <% @advartisments.each do |advartisment| %>
 
           var datum = <%= advartisment.expire %> ;
-          if (danasnji > datum) istekli += 1;
-          else if (danasnji == datum + 3) tri += 1;
+          if (danasnji+3 == datum) tri += 1;
+          else if (danasnji > datum) istekli += 1;
           else novi += 1;
 
 
@@ -302,7 +302,6 @@
           chart.draw(view, options);
       }
   </script>
-
   <script type="text/javascript" src="https://www.google.com/jsapi"></script>
     <script type="text/javascript">
             google.load("visualization", "1", {packages:["corechart"]});
