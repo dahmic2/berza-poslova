@@ -259,27 +259,25 @@
 
           var istekli = 0;
           var novi = 0;
-          var tri = 0;
-          var danasnji = new Date().getDate();
+
+
 
           <% @advartisments = Advartisment.all %>
           <% @advartisments.each do |advartisment| %>
 
-          var datum = <%= advartisment.expire %> ;
-          if (danasnji+3 == datum) tri += 1;
-          else if (danasnji > datum) istekli += 1;
-          else novi += 1;
-
+                <% if advartisment.expire.past? %> istekli++;
+                  
+                <% else %> novi++;
+                 <% end %>
 
           <% end %>
 
 
 
           var data = google.visualization.arrayToDataTable([
-              ["Element", "Density", { role: "style" } ],
-              ["Novi oglasi", novi.valueOf(), "green"],
-              ["Ističu za 3 dana", tri.valueOf(), "blue"],
-              ["Istekli oglasi", istekli.valueOf(), "red"],
+              ["Datum", "Broj oglasa", { role: "style" } ],
+              ["Aktuelni oglasi", novi.valueOf(), "green"],
+              ["Istekli oglasi", istekli.valueOf(), "red"]
 
           ]);
 
@@ -292,7 +290,7 @@
               2]);
 
           var options = {
-              title: "Trajanje oglasa",
+              title: 'Trajanje oglasa',
               width: 500,
               height: 300,
               bar: {groupWidth: "95%"},
