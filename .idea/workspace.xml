@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="531aad26-debe-4623-9c4b-d439d70cd012" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/advartisments/_form.html.erb" afterPath="$PROJECT_DIR$/app/views/advartisments/_form.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="berza_poslova.iws" />
@@ -114,7 +115,7 @@
       <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/advartisments/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="41" column="0" selection-start="1081" selection-end="1081" vertical-scroll-proportion="1.5201613" vertical-offset="320" max-vertical-offset="799">
+            <state line="27" column="30" selection-start="775" selection-end="775" vertical-scroll-proportion="0.5604839" vertical-offset="320" max-vertical-offset="816">
               <folding />
             </state>
           </provider>
@@ -652,7 +653,11 @@
       <created>1397174363303</created>
       <updated>1397174363303</updated>
     </task>
-    <option name="localTasksCounter" value="55" />
+    <task id="LOCAL-00055" summary="popravka validacije webservisa i employer_id koa advartisment = current employer&#10;">
+      <created>1397174496867</created>
+      <updated>1397174496867</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -677,7 +682,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="1" y="1" width="1364" height="726" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32305434" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842416" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -690,7 +695,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.27643505" sideWeight="0.50088495" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4830918" sideWeight="0.5" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32305434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4830918" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.4830918" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917318" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -735,7 +740,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="dorada rola" />
     <MESSAGE value="bootstrep" />
     <MESSAGE value="sigurnost web servisa" />
     <MESSAGE value="sigurnost web servisa&#10;" />
@@ -760,7 +764,8 @@
     <MESSAGE value="pokusaj grapha i uredjivanje kategorije" />
     <MESSAGE value="bar chats za poslodavce(prikaz broja poslodavaca po gradovima)&#10;" />
     <MESSAGE value="popravka validacije webservisa i employer_id koa advartisment = current employer" />
-    <option name="LAST_COMMIT_MESSAGE" value="popravka validacije webservisa i employer_id koa advartisment = current employer" />
+    <MESSAGE value="popravka validacije webservisa i employer_id koa advartisment = current employer&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="popravka validacije webservisa i employer_id koa advartisment = current employer&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1066,7 +1071,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/advartisments/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="41" column="0" selection-start="1081" selection-end="1081" vertical-scroll-proportion="1.5201613" vertical-offset="320" max-vertical-offset="799">
+        <state line="27" column="30" selection-start="775" selection-end="775" vertical-scroll-proportion="0.5604839" vertical-offset="320" max-vertical-offset="816">
           <folding />
         </state>
       </provider>
