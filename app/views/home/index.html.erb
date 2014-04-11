@@ -308,6 +308,39 @@
       }
   </script>
 
+  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type="text/javascript">
+            google.load("visualization", "1", {packages:["corechart"]});
+            google.setOnLoadCallback(drawChart);
+            function drawChart() {
+                    var april= 0,maj= 0,juni= 0,juli=0;
+                    <% @advartisments = Advartisment.all %>
+                            <% @advartisments.each do |advartisment| %>
+                                    <% if advartisment.expire.month == 4 %> april++;
+                    <%end%>
+                            <% if advartisment.expire.month == 5 %> maj++;
+                    <%end%>
+                            <% if advartisment.expire.month == 6 %> juni++;
+                    <%end%>
+                            <% if advartisment.expire.month == 7 %> juli++;
+                    <%end%>
+                            <%end%>
+                                    var data = google.visualization.arrayToDataTable([
+                            ['Mjesec', 'Oglasa ističe'],
+                            ['April',  april.valueOf()],
+                            ['Maj',  maj.valueOf()],
+                            ['Juni',  juni.valueOf()],
+                            ['Juli',  juli.valueOf()]
+                                ]);
+
+                           var options = {
+                               title: 'Oglasi koji ističu po mjesecima'
+                    };
+
+                        var chart = new google.visualization.LineChart(document.getElementById('chart_div3'));
+                chart.draw(data, options);
+            }
+        </script>
 
 
 
@@ -653,7 +686,7 @@
                 <div class="col-lg-12">
                   <div class="panel panel-primary">
                     <div class="panel-heading">
-                      <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Prikaz oglasa koji uskoro ističu po mjesecima</h3>
+                      <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Prikaz oglasa koji ističu po mjesecima</h3>
                     </div>
                     <div class="panel-body">
                       <div id="chart_div3" style="width: 900px; height: 400px;"></div>
