@@ -255,39 +255,61 @@
       }
   </script>
 
-  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
   <script type="text/javascript">
       google.load("visualization", "1", {packages:["corechart"]});
       google.setOnLoadCallback(drawChart);
       function drawChart() {
-          var april= 0,maj= 0,juni= 0,juli=0;
+
+
+          var istekli = 0;
+          var novi = 0;
+          var tri = 0;
+          var danasnji = new Date();
+
           <% @advartisments = Advartisment.all %>
           <% @advartisments.each do |advartisment| %>
-          <% if advartisment.expire.month == 4 %> april++;
-          <%end%>
-          <% if advartisment.expire.month == 5 %> maj++;
-          <%end%>
-          <% if advartisment.expire.month == 6 %> juni++;
-          <%end%>
-          <% if advartisment.expire.month == 7 %> juli++;
-          <%end%>
-          <%end%>
+                    var datum = advartisment.expire;
+                    <% if danasnji > datum %> istekli += 1;
+                    <% elsif danasnji == datum + 3%> tri += 1;
+                    <% else %> novi += 1;
+                    <% end %>
+
+          <% end %>
+
+
+
           var data = google.visualization.arrayToDataTable([
-              ['Mjesec', 'Oglasa ističe'],
-              ['April',  april.valueOf()],
-              ['Maj',  maj.valueOf()],
-              ['Juni',  juni.valueOf()],
-              ['Juli',  juli.valueOf()]
+              ["Element", "Density", { role: "style" } ],
+              ["Novi oglasi", novi.valueOf(), "green"],
+              ["Ističu za 3 dana", tri.valueOf(), "blue"],
+              ["Istekli oglasi", istekli.valueOf(), "red"],
+
           ]);
 
-          var options = {
-              title: 'Oglasi koji ističu po mjesecima'
-          };
+          var view = new google.visualization.DataView(data);
+          view.setColumns([0, 1,
+              { calc: "stringify",
+                  sourceColumn: 1,
+                  type: "string",
+                  role: "annotation" },
+              2]);
 
-          var chart = new google.visualization.LineChart(document.getElementById('chart_div3'));
-          chart.draw(data, options);
+          var options = {
+              title: "Trajanje oglasa",
+              width: 500,
+              height: 300,
+              bar: {groupWidth: "95%"},
+              legend: { position: "none" },
+          };
+          var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
+          chart.draw(view, options);
       }
   </script>
+
+
+
+
+
 
 </head>
 
@@ -568,7 +590,7 @@
                 </div>
               </div>
 
-            <div class="row">
+
               <div class="col-lg-6">
                 <div class="panel panel-primary">
                   <div class="panel-heading">
@@ -580,7 +602,10 @@
                   </div>
                 </div>
               </div>
-              <div class="row">
+            </div><!-- /.row -->
+
+            <div class="row">
+
                             <div class="col-lg-6">
                               <div class="panel panel-primary">
                                 <div class="panel-heading">
@@ -592,6 +617,21 @@
                                 </div>
                               </div>
                             </div>
+
+              <div class="col-lg-6">
+                <div class="panel panel-primary">
+                  <div class="panel-heading">
+                    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Broj oglasa po poslodavcu</h3>
+                  </div>
+                  <div class="panel-body">
+
+                    <div id="barchart_values"></div>
+                  </div>
+                </div>
+              </div>
+
+
+
             </div><!-- /.row -->
 
             <div class="row">
@@ -893,7 +933,7 @@
             <ul class="dropdown-menu">
               <li><a href="?locale=bs#" data-no-turbolink="true">Bosanski</a></li>
               <li><a href="?locale=en#" data-no-turbolink="true">Engleski</a></li>
-              <li><a href="?locale=cr#" data-no-turbolink="true">Hrvatski</a></li>
+              <li><a href="?locale=hr#" data-no-turbolink="true">Hrvatski</a></li>
             </ul>
           </li>
           <li>  <%= link_to (t "nav.home"), home_index_path %> </li>

@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="531aad26-debe-4623-9c4b-d439d70cd012" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
@@ -30,9 +29,23 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="969" column="0" selection-start="45748" selection-end="45748" vertical-scroll-proportion="0.6525974" vertical-offset="16071" max-vertical-offset="18054">
+            <state line="282" column="44" selection-start="12162" selection-end="12162" vertical-scroll-proportion="0.31006494" vertical-offset="4603" max-vertical-offset="18734">
               <folding>
-                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#14094#14110#0" expanded="true" />
+                <element signature="e#18170#18185#0" expanded="true" />
+                <element signature="e#18255#18268#0" expanded="true" />
+                <element signature="e#18411#18425#0" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="e#35508#35523#0" expanded="true" />
+                <element signature="e#35840#35854#0" expanded="true" />
+                <element signature="e#41114#41129#0" expanded="true" />
+                <element signature="e#41451#41465#0" expanded="true" />
+                <element signature="e#42924#42936#0" expanded="true" />
+                <element signature="e#42993#43006#0" expanded="true" />
+                <element signature="e#43063#43078#0" expanded="true" />
+                <element signature="e#46361#46377#0" expanded="true" />
+                <element signature="e#46470#46483#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -212,14 +225,10 @@
             <option name="mySupportsDeletion" value="false" />
             <option name="myCanBeAbsent" value="false" />
             <option name="myId" value="UPDATED" />
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/advartisments/index.html.erb</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/employers/index.html.erb</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/employers/new.html.erb</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/.idea/dataSources.xml</PATH>
             <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/home/index.html.erb</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/users/_form.html.erb</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/users/index.html.erb</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/users/new.html.erb</PATH>
-            <PATH vcs="Git" revision="">$PROJECT_DIR$/app/views/users/show.html.erb</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/config/locales/bs.yml</PATH>
+            <PATH vcs="Git" revision="">$PROJECT_DIR$/config/locales/en.yml</PATH>
           </FILE-GROUP>
           <FILE-GROUP>
             <option name="myUpdateName" value="Created" />
@@ -692,7 +701,11 @@
       <created>1397180545869</created>
       <updated>1397180545869</updated>
     </task>
-    <option name="localTasksCounter" value="58" />
+    <task id="LOCAL-00058" summary="pravnanje top nov na početnoj">
+      <created>1397201368206</created>
+      <updated>1397201368206</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -719,8 +732,9 @@
     <frame x="-8" y="-8" width="1382" height="784" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32305434" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842416" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.10279001" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.0" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33761328" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -734,7 +748,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917318" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32305434" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33073324" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -775,7 +788,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="sigurnost web servisa" />
     <MESSAGE value="sigurnost web servisa&#10;" />
     <MESSAGE value="validacije" />
     <MESSAGE value="izmjena css-a početne stranice" />
@@ -800,7 +812,8 @@
     <MESSAGE value="popravka validacije webservisa i employer_id koa advartisment = current employer" />
     <MESSAGE value="popravka validacije webservisa i employer_id koa advartisment = current employer&#10;" />
     <MESSAGE value="početna stranica sa prikazom oglasa" />
-    <option name="LAST_COMMIT_MESSAGE" value="početna stranica sa prikazom oglasa" />
+    <MESSAGE value="pravnanje top nov na početnoj" />
+    <option name="LAST_COMMIT_MESSAGE" value="pravnanje top nov na početnoj" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1063,14 +1076,30 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="15" selection-start="927" selection-end="927" vertical-scroll-proportion="0.41379312" vertical-offset="381" max-vertical-offset="816" />
+        <state line="33" column="15" selection-start="927" selection-end="927" vertical-scroll-proportion="0.41379312" vertical-offset="381" max-vertical-offset="816">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="969" column="0" selection-start="45748" selection-end="45748" vertical-scroll-proportion="0.6525974" vertical-offset="16071" max-vertical-offset="18054">
+        <state line="282" column="44" selection-start="12162" selection-end="12162" vertical-scroll-proportion="0.31006494" vertical-offset="4603" max-vertical-offset="18734">
           <folding>
-            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#2;n#div#1;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#14094#14110#0" expanded="true" />
+            <element signature="e#18170#18185#0" expanded="true" />
+            <element signature="e#18255#18268#0" expanded="true" />
+            <element signature="e#18411#18425#0" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#4;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#1;n#div#0;n#div#0;n#div#5;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="e#35508#35523#0" expanded="true" />
+            <element signature="e#35840#35854#0" expanded="true" />
+            <element signature="e#41114#41129#0" expanded="true" />
+            <element signature="e#41451#41465#0" expanded="true" />
+            <element signature="e#42924#42936#0" expanded="true" />
+            <element signature="e#42993#43006#0" expanded="true" />
+            <element signature="e#43063#43078#0" expanded="true" />
+            <element signature="e#46361#46377#0" expanded="true" />
+            <element signature="e#46470#46483#0" expanded="true" />
           </folding>
         </state>
       </provider>
