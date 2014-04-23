@@ -7,6 +7,8 @@ class AdminsController < ApplicationController
     @admins = Admin.all
   end
 
+
+  
   # GET /admins/1
   # GET /admins/1.json
   def show
