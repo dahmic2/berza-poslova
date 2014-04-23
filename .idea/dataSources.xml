@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="DataSourceManagerImpl" format="xml" hash="2546234920">
+  <component name="DataSourceManagerImpl" format="xml" hash="1917997268">
     <data-source source="LOCAL" name="Rails berza-poslova: development" uuid="08fcf023-20df-4b12-a78a-f4f856fb640f">
       <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Sites\NoviProjekat\blabla\berza-poslova\db\development.sqlite3</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5433/berza_d</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfd8dfc5dfc5dfde</user-password>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails berza--poslova: development" uuid="d1cb9d51-2ad2-4cfe-821b-f07e48770bfb">
@@ -15,8 +17,18 @@
     </data-source>
     <data-source source="LOCAL" name="Rails berza-poslova: test" uuid="537c5850-6947-4b85-8ca2-888d3ef07964">
       <driver-ref>sqlite.xerial</driver-ref>
-      <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Sites\NoviProjekat\blabla\berza-poslova\db\test.sqlite3</jdbc-url>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5433/berza_t</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfd8dfc5dfc5dfde</user-password>
+      <libraries />
+    </data-source>
+    <data-source source="LOCAL" name="Rails berza-poslova: production" uuid="d09d1564-504c-4bf7-b1d4-2a9e5c14439e">
+      <driver-ref>postgresql</driver-ref>
+      <jdbc-driver>org.postgresql.Driver</jdbc-driver>
+      <jdbc-url>jdbc:postgresql://127.0.0.1:5433/berza_p</jdbc-url>
+      <user-name>postgres</user-name>
+      <user-password>dfd8dfc5dfc5dfde</user-password>
       <libraries />
     </data-source>
   </component>

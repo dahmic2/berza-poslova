@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20140410173110) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "admins", force: true do |t|
     t.string   "username"
     t.string   "password"
@@ -33,7 +36,7 @@ ActiveRecord::Schema.define(version: 20140410173110) do
     t.string   "category"
   end
 
-  add_index "advartisments", ["employer_id"], name: "index_advartisments_on_employer_id"
+  add_index "advartisments", ["employer_id"], name: "index_advartisments_on_employer_id", using: :btree
 
   create_table "categories", force: true do |t|
     t.string   "name"
@@ -51,7 +54,7 @@ ActiveRecord::Schema.define(version: 20140410173110) do
     t.datetime "updated_at"
   end
 
-  add_index "cvs", ["user_id"], name: "index_cvs_on_user_id"
+  add_index "cvs", ["user_id"], name: "index_cvs_on_user_id", using: :btree
 
   create_table "employers", force: true do |t|
     t.string   "name"
@@ -72,8 +75,8 @@ ActiveRecord::Schema.define(version: 20140410173110) do
     t.datetime "updated_at"
   end
 
-  add_index "notifications", ["category_id"], name: "index_notifications_on_category_id"
-  add_index "notifications", ["user_id"], name: "index_notifications_on_user_id"
+  add_index "notifications", ["category_id"], name: "index_notifications_on_category_id", using: :btree
+  add_index "notifications", ["user_id"], name: "index_notifications_on_user_id", using: :btree
 
   create_table "projects", force: true do |t|
     t.datetime "created_at"
@@ -92,7 +95,7 @@ ActiveRecord::Schema.define(version: 20140410173110) do
     t.datetime "updated_at"
   end
 
-  add_index "simple_captcha_data", ["key"], name: "idx_key"
+  add_index "simple_captcha_data", ["key"], name: "idx_key", using: :btree
 
   create_table "users", force: true do |t|
     t.string   "name"
