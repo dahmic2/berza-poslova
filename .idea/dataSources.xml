@@ -4,7 +4,7 @@
     <data-source source="LOCAL" name="Rails berza-poslova: development" uuid="08fcf023-20df-4b12-a78a-f4f856fb640f">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Sites\NoviProjekat\berza-poslova\db\development.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Sites\NoviProjekat\blabla\berza-poslova\db\development.sqlite3</jdbc-url>
       <libraries />
     </data-source>
     <data-source source="LOCAL" name="Rails berza--poslova: development" uuid="d1cb9d51-2ad2-4cfe-821b-f07e48770bfb">
@@ -16,7 +16,7 @@
     <data-source source="LOCAL" name="Rails berza-poslova: test" uuid="537c5850-6947-4b85-8ca2-888d3ef07964">
       <driver-ref>sqlite.xerial</driver-ref>
       <jdbc-driver>org.sqlite.JDBC</jdbc-driver>
-      <jdbc-url>jdbc:sqlite:C:\Sites\NoviProjekat\berza-poslova\db\test.sqlite3</jdbc-url>
+      <jdbc-url>jdbc:sqlite:C:\Sites\NoviProjekat\blabla\berza-poslova\db\test.sqlite3</jdbc-url>
       <libraries />
     </data-source>
   </component>
