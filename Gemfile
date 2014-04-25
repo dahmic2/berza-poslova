@@ -64,4 +64,7 @@ gem 'recaptcha', :require => "recaptcha/rails"
 
 gem 'chartkick', '~> 1.2.4'
 
-gem 'rspec'
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0.beta'
+end
+
