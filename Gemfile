@@ -63,3 +63,5 @@ gem 'carrierwave'
 gem 'recaptcha', :require => "recaptcha/rails"
 
 gem 'chartkick', '~> 1.2.4'
+
+gem 'rspec'
