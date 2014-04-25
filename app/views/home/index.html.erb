@@ -260,7 +260,6 @@
           var istekli = 0;
           var novi = 0;
 
-
           <% @advartisments = Advartisment.all %>
           <% @advartisments.each do |advartisment| %>
 
@@ -272,7 +271,7 @@
           <% end %>
 
 
-         
+
           var data = google.visualization.arrayToDataTable([
               ["Datum", "Broj oglasa", { role: "style" } ],
               ["Aktuelni oglasi", novi.valueOf(), "green"],

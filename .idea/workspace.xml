@@ -56,7 +56,7 @@
       <file leaf-file-name="index.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="274" column="9" selection-start="11282" selection-end="11282" vertical-scroll-proportion="0.8456221" vertical-offset="4291" max-vertical-offset="19176">
+            <state line="261" column="0" selection-start="11018" selection-end="11018" vertical-scroll-proportion="0.3946731" vertical-offset="4274" max-vertical-offset="19159">
               <folding />
             </state>
           </provider>
@@ -799,7 +799,11 @@
       <created>1398429177353</created>
       <updated>1398429177353</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="jos jedan enter&#10;zadnji">
+      <created>1398429488719</created>
+      <updated>1398429488719</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -828,7 +832,7 @@
     <layout>
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32305434" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842416" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23348695" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.265745" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33761328" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -882,7 +886,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="slanje verifikacijskog maila" />
     <MESSAGE value="slanje verifikacijskog maila&#10;" />
     <MESSAGE value="metamorfoza -kafka" />
     <MESSAGE value="promjene pocetne" />
@@ -907,7 +910,8 @@
     <MESSAGE value="codeship image rspec sa fileovimafdgdegfdgdfg&#10;" />
     <MESSAGE value="deploy konacno&#10;" />
     <MESSAGE value="jos jedan enter&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="jos jedan enter&#10;" />
+    <MESSAGE value="jos jedan enter&#10;zadnji" />
+    <option name="LAST_COMMIT_MESSAGE" value="jos jedan enter&#10;zadnji" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1177,7 +1181,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="274" column="9" selection-start="11282" selection-end="11282" vertical-scroll-proportion="0.8456221" vertical-offset="4291" max-vertical-offset="19176">
+        <state line="261" column="0" selection-start="11018" selection-end="11018" vertical-scroll-proportion="0.3946731" vertical-offset="4274" max-vertical-offset="19159">
           <folding />
         </state>
       </provider>
