@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source source="LOCAL" name="Rails berza-poslova: development" uuid="08fcf023-20df-4b12-a78a-f4f856fb640f">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails berza--poslova: development" uuid="d1cb9d51-2ad2-4cfe-821b-f07e48770bfb">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails berza-poslova: test" uuid="537c5850-6947-4b85-8ca2-888d3ef07964">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+  <data-source source="LOCAL" name="Rails berza-poslova: production" uuid="d09d1564-504c-4bf7-b1d4-2a9e5c14439e">
+    <database-info product="" version="" jdbc-version="" driver-name="" driver-version=""/>
+  </data-source>
+</component>
