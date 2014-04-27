@@ -7,7 +7,7 @@ development:
   adapter: postgresql
   database: berza_d
   pool: 5
-  port: 5432
+  port: 5433
   timeout: 5000
   password: root
   username: postgres
@@ -21,14 +21,14 @@ test:
   database: berza_t
   pool: 5
   username: postgres
-  port: 5432
+  port: 5433
   password: root
   timeout: 5000
 
 production:
   adapter: postgresql
   database: berza_p
-  port: 5432
+  port: 5433
   pool: 5
   username: postgres
   password: root
