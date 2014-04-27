@@ -1,33 +1,27 @@
 <%= form_for(@cv) do |f| %>
-  <% if @cv.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@cv.errors.count, "error") %> prohibited this cv from being saved:</h2>
+    <% if @cv.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(@cv.errors.count, "error") %> prohibited this cv from being saved:</h2>
 
-      <ul>
-      <% @cv.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
+          <ul>
+            <% @cv.errors.full_messages.each do |msg| %>
+                <li><%= msg %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <strong>Naslov:</strong>
+    <div>
+      <%= f.text_field :personal_skills %>
     </div>
-  <% end %>
+<br>
+    <div>
+      <%= f.text_area :additional_information, :class => 'ckeditor' %>
+    </div>
+    <br>
+    <div class="actions">
+      <%= f.submit %>
+    </div>
 
-  <div class="field">
-    <%= f.label :work_experience %><br>
-    <%= f.text_area :work_experience %>
-  </div>
-  <div class="field">
-    <%= f.label :education %><br>
-    <%= f.text_area :education %>
-  </div>
-  <div class="field">
-    <%= f.label :personal_skills %><br>
-    <%= f.text_area :personal_skills %>
-  </div>
-  <div class="field">
-    <%= f.label :additional_information %><br>
-    <%= f.text_area :additional_information %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
 <% end %>

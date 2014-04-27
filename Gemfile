@@ -66,4 +66,9 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
 end
 
+gem 'paperclip'
+
+gem "ckeditor"
+
+
 ruby '2.0.0'
