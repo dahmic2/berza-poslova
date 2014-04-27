@@ -751,28 +751,78 @@
               </button>
               <a class="navbar-brand" href="#">Berza poslova</a>
             </div>
-
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse navbar-ex1-collapse">
               <ul class="nav navbar-nav side-nav">
-                <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> Home </a></li>
-                <li><a href="charts.html"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
-                <li><a href="tables.html"><i class="fa fa-table"></i> Tables</a></li>
-                <li><a href="forms.html"><i class="fa fa-edit"></i> Forms</a></li>
-                <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
-                <li><a href="bootstrap-elements.html"><i class="fa fa-desktop"></i> Bootstrap Elements</a></li>
-                <li><a href="bootstrap-grid.html"><i class="fa fa-wrench"></i> Bootstrap Grid</a></li>
-                <li><a href="blank-page.html"><i class="fa fa-file"></i> Blank Page</a></li>
                 <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Dropdown <b class="caret"></b></a>
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-font"></i> Jezik <b class="caret"></b></a>
                   <ul class="dropdown-menu">
-                    <li><a href="#">Dropdown Item</a></li>
-                    <li><a href="#">Another Item</a></li>
-                    <li><a href="#">Third Item</a></li>
-                    <li><a href="#">Last Item</a></li>
+                    <li><a href="?locale=bs#" data-no-turbolink="true">Bosanski</a></li>
+                    <li><a href="?locale=en#" data-no-turbolink="true">Engleski</a></li>
+                    <li><a href="?locale=hr#" data-no-turbolink="true">Hrvatski</a></li>
                   </ul>
                 </li>
-              </ul>
+                <li class="active"><a href="home/index"><i class="fa fa-dashboard"></i> Home </a></li>
+                <li><a href="home/about"><i class="fa fa-file"></i> About </a></li>
+                <li><a href="home/contact"><i class="fa fa-edit"></i> Contact </a></li>
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Lokacije <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <li><a href="#">Sve lokacije </a></li>
+                    <li><a href="#">Sarajevo </a></li>
+                    <li><a href="#">Banja Luka</a></li>
+                    <li><a href="#">Mostar</a></li>
+                    <li><a href="#">Zenica</a></li>
+                    <li><a href="#">Tuzla</a></li>
+                    <li><a href="#">Bihać</a></li>
+                    <li><a href="#">Travnik</a></li>
+                    <li><a href="#">Zavidovići</a></li>
+                    <li><a href="#">Brčko</a></li>
+                  </ul>
+                </li>
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Kategorije <b class="caret"></b></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Administrativne usluge </a></li>
+                      <li><a href="#">Bankarstvo </a></li>
+                      <li><a href="#">Biotehnologija i farmacija</a></li>
+                      <li><a href="#">Drvna industrija</a></li>
+                      <li><a href="#">Državna služba i uprava</a></li>
+                      <li><a href="#">Ekonomija i finansije </a></li>
+                      <li><a href="#">Elektrotehnika i informatika </a></li>
+                      <li><a href="#">Energetika i rudarstvo</a></li>
+                      <li><a href="#">Frizeri i kozmetičari </a></li>
+                      <li><a href="#">Geologija</a></li>
+                      <li><a href="#">Građevinarstvo i arhitektura </a></li>
+                      <li><a href="#">Komercijala i prodaja</a></li>
+                      <li><a href="#">Konsalting</a></li>
+                      <li><a href="#">Marketing i PR</a></li>
+                      <li><a href="#">Mašinstvo i metalurgija </a></li>
+                      <li><a href="#">Mediji </a>
+                      <li><a href="#">Menadžment i upravljanje </a></li>
+                      <li><a href="#">Obrazovanje, kultura i sport </a></li>
+                      <li><a href="#">Osiguranje </a></li>
+                      <li><a href="#">Ostalo</a></li>
+                      <li><a href="#">Policija i zaštitarske usluge</a></li>
+                      <li><a href="#">Političke nauke </a></li>
+                      <li><a href="#">Poljoprivreda i šumarstvo </a></li>
+                      <li><a href="#">Pravo i društvene nauke</a></li>
+                      <li><a href="#">Prevodilačke usluge </a></li>
+                      <li><a href="#">Proizvodnja</a></li>
+                      <li><a href="#">Računovodstvo i revizija</a></li>
+                      <li><a href="#">Socijalne usluge</a></li>
+                      <li><a href="#">Stipendije </a></li>
+                      <li><a href="#">Teleprodaja i telemarketing</a></li>
+                      <li><a href="#">Transport i skladištenje</a></li>
+                      <li><a href="#">Trgovina </a></li>
+                      <li><a href="#">Ugostiteljstvo i turizam </a></li>
+                      <li><a href="#">Umjetnost i dizajn</a></li>
+                      <li><a href="#">Zanatske usluge </a></li>
+                      <li><a href="#">Zdravstvo i medicina  </a></li>
+                    </ul>
+                </li>
+                <li><a href="cvs/new"><i class="fa fa-edit"></i> Kreiraj CV </a></li>
+               </ul>
         <ul class="nav navbar-nav navbar-right navbar-user">
           <li class="dropdown messages-dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
@@ -825,15 +875,77 @@
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <%= current_user.name %> <b class="caret"></b></a>
             <ul class="dropdown-menu">
               <li> <%= link_to (t "nav.profile"),current_user%></li>
-              <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
-              <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
-              <li class="divider"></li>
-              <li><a href="#"><i class="fa fa-power-off"></i> <%= link_to (t "nav.logout"), log_out_path %></a></li>
+              <li><a href="#"> <%= link_to (t "user.edit"), edit_user_path(current_user.id) %></a></li>
+              <li><a href=""> <%= link_to (t "nav.logout"), log_out_path %></a></li>
             </ul>
           </li>
         </ul>
         </div><!-- /.navbar-collapse -->
         </nav>
+
+          <div class="row">
+            <div class="col-lg-12">
+              <h1>Berza poslova <small> POSO.BA</small></h1>
+              <ol class="breadcrumb">
+                <li class="active"><i class="fa fa-dashboard"></i> Početna stranica</li>
+              </ol>
+              <div class="alert alert-success alert-dismissable">
+                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                Dobro došli na berzu poslova <a class="alert-link" href="localhost:3000">poso.ba</a>!
+              </div>
+            </div>
+          </div><!-- /.row -->
+
+          <div class="row">
+            <div class="col-lg-12">
+              <h2>Oglasi</h2>
+            </div>
+          </div><!-- /.row -->
+
+          <div class="row">
+
+            <% @advartisments = Advartisment.all %>
+            <% @advartisments.each do |advartisment| %>
+
+                <div class="col-lg-4">
+                  <div class="panel panel-info">
+                    <div class="panel-heading">
+                      <h3 class="panel-title"><%= advartisment.title %></h3>
+                    </div>
+                    <div class="panel-body">
+                      <%= advartisment.description %>
+                    </div>
+                  </div>
+                </div>
+
+
+            <% end %>
+
+
+
+            <div class="row">
+              <div class="col-lg-8">
+
+              </div>
+
+
+              <div class="col-lg-4">
+                <ul class="pagination pagination-sm">
+                  <li class="disabled"><a href="#">&laquo;</a></li>
+                  <li class="active"><a href="#">1</a></li>
+                  <li><a href="#">2</a></li>
+                  <li><a href="#">3</a></li>
+                  <li><a href="#">&raquo;</a></li>
+                </ul>
+              </div>
+            </div><!-- /.row -->
+
+
+          </div><!-- /.row -->
+
+
+
+        </div><!-- /#page-wrapper -->
 <% end %>
         <%elsif current_employer%>
     <div id="wrapper">
@@ -1043,7 +1155,7 @@
             </ol>
             <div class="alert alert-success alert-dismissable">
               <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-              Dobro došli na berzu poslova <a class="alert-link" href="localhost:3000">poso.ba</a>! Niste niste logovani i možete vidjeti samo neke objavljene oglase.
+              Dobro došli na berzu poslova <a class="alert-link" href="localhost:3000">poso.ba</a>! Niste  logovani i možete vidjeti samo neke objavljene oglase.
             </div>
           </div>
         </div><!-- /.row -->

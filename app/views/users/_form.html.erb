@@ -202,25 +202,74 @@
       <!-- Collect the nav links, forms, and other content for toggling -->
       <div class="collapse navbar-collapse navbar-ex1-collapse">
         <ul class="nav navbar-nav side-nav">
-          <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-          <li><a href="charts.html"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
-          <li><a href="tables.html"><i class="fa fa-table"></i> Tables</a></li>
-          <li><a href="forms.html"><i class="fa fa-edit"></i> Forms</a></li>
-          <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
-          <li><a href="bootstrap-elements.html"><i class="fa fa-desktop"></i> Bootstrap Elements</a></li>
-          <li><a href="bootstrap-grid.html"><i class="fa fa-wrench"></i> Bootstrap Grid</a></li>
-          <li><a href="blank-page.html"><i class="fa fa-file"></i> Blank Page</a></li>
           <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Dropdown <b class="caret"></b></a>
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-font"></i> Jezik <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Dropdown Item</a></li>
-              <li><a href="#">Another Item</a></li>
-              <li><a href="#">Third Item</a></li>
-              <li><a href="#">Last Item</a></li>
+              <li><a href="?locale=bs#" data-no-turbolink="true">Bosanski</a></li>
+              <li><a href="?locale=en#" data-no-turbolink="true">Engleski</a></li>
+              <li><a href="?locale=hr#" data-no-turbolink="true">Hrvatski</a></li>
+            </ul>
+          </li>
+          <li class="active"><%= link_to (t "nav.home"),home_index_path %></li>
+          <li><%= link_to (t "nav.about"),home_about_path %></li>
+          <li><%= link_to (t "nav.contact"), home_contact_path%></li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Lokacije <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Sve lokacije </a></li>
+              <li><a href="#">Sarajevo </a></li>
+              <li><a href="#">Banja Luka</a></li>
+              <li><a href="#">Mostar</a></li>
+              <li><a href="#">Zenica</a></li>
+              <li><a href="#">Tuzla</a></li>
+              <li><a href="#">Bihać</a></li>
+              <li><a href="#">Travnik</a></li>
+              <li><a href="#">Zavidovići</a></li>
+              <li><a href="#">Brčko</a></li>
+            </ul>
+          </li>
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Kategorije <b class="caret"></b></a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Administrativne usluge </a></li>
+              <li><a href="#">Bankarstvo </a></li>
+              <li><a href="#">Biotehnologija i farmacija</a></li>
+              <li><a href="#">Drvna industrija</a></li>
+              <li><a href="#">Državna služba i uprava</a></li>
+              <li><a href="#">Ekonomija i finansije </a></li>
+              <li><a href="#">Elektrotehnika i informatika </a></li>
+              <li><a href="#">Energetika i rudarstvo</a></li>
+              <li><a href="#">Frizeri i kozmetičari </a></li>
+              <li><a href="#">Geologija</a></li>
+              <li><a href="#">Građevinarstvo i arhitektura </a></li>
+              <li><a href="#">Komercijala i prodaja</a></li>
+              <li><a href="#">Konsalting</a></li>
+              <li><a href="#">Marketing i PR</a></li>
+              <li><a href="#">Mašinstvo i metalurgija </a></li>
+              <li><a href="#">Mediji </a>
+              <li><a href="#">Menadžment i upravljanje </a></li>
+              <li><a href="#">Obrazovanje, kultura i sport </a></li>
+              <li><a href="#">Osiguranje </a></li>
+              <li><a href="#">Ostalo</a></li>
+              <li><a href="#">Policija i zaštitarske usluge</a></li>
+              <li><a href="#">Političke nauke </a></li>
+              <li><a href="#">Poljoprivreda i šumarstvo </a></li>
+              <li><a href="#">Pravo i društvene nauke</a></li>
+              <li><a href="#">Prevodilačke usluge </a></li>
+              <li><a href="#">Proizvodnja</a></li>
+              <li><a href="#">Računovodstvo i revizija</a></li>
+              <li><a href="#">Socijalne usluge</a></li>
+              <li><a href="#">Stipendije </a></li>
+              <li><a href="#">Teleprodaja i telemarketing</a></li>
+              <li><a href="#">Transport i skladištenje</a></li>
+              <li><a href="#">Trgovina </a></li>
+              <li><a href="#">Ugostiteljstvo i turizam </a></li>
+              <li><a href="#">Umjetnost i dizajn</a></li>
+              <li><a href="#">Zanatske usluge </a></li>
+              <li><a href="#">Zdravstvo i medicina  </a></li>
             </ul>
           </li>
         </ul>
-
         <ul class="nav navbar-nav navbar-right navbar-user">
           <li class="dropdown messages-dropdown">
             <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
