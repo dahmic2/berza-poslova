@@ -2,22 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="531aad26-debe-4623-9c4b-d439d70cd012" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-311954e7cc701f29277869930a98f68e.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-82285f95ade85af35894c744c8c58e85.css.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/chartkick-163b7fc0c742514f6792d5fb0ced6f92.js.gz" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/contact-us-67f14dc390700e2f60bfccc22de1ced3.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-171c97066e4db52896df4e14c2905e8e.eot" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-7206a6a5553d1b106dc988b6af7e29df.ttf" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-a6d95d67a6db3f50ff64b2103e8c9348.woff" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/job-8f2b73c889e2b32f34a92682707d750f.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-311954e7cc701f29277869930a98f68e.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/application-82285f95ade85af35894c744c8c58e85.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/chartkick-163b7fc0c742514f6792d5fb0ced6f92.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-e327cd5918c69ba34cb1c92b9c7c424a.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/assets/manifest-2d18498430e153a7460d5616bc411d4e.json" />
-      <change type="DELETED" beforePath="C:\Users\Nusreta\RubymineProjects\deployment\berza-poslova\app\views\layouts\application.html.haml" afterPath="" />
-      <change type="DELETED" beforePath="C:\Users\Nusreta\RubymineProjects\deployment\berza-poslova\app\views\layouts\application.html.slim" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/cvs/new.html.erb" afterPath="$PROJECT_DIR$/app/views/cvs/new.html.erb" />
+      <change type="DELETED" beforePath="C:\Users\Nusreta\RubymineProjects\deployment\berza-poslova\lib\templates\haml\controller\view.html.haml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nusreta\RubymineProjects\deployment\berza-poslova\lib\templates\haml\scaffold\_form.html.haml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nusreta\RubymineProjects\deployment\berza-poslova\lib\templates\haml\scaffold\edit.html.haml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nusreta\RubymineProjects\deployment\berza-poslova\lib\templates\haml\scaffold\index.html.haml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nusreta\RubymineProjects\deployment\berza-poslova\lib\templates\haml\scaffold\new.html.haml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nusreta\RubymineProjects\deployment\berza-poslova\lib\templates\haml\scaffold\show.html.haml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nusreta\RubymineProjects\deployment\berza-poslova\lib\templates\slim\controller\view.html.slim" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nusreta\RubymineProjects\deployment\berza-poslova\lib\templates\slim\scaffold\_form.html.slim" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nusreta\RubymineProjects\deployment\berza-poslova\lib\templates\slim\scaffold\edit.html.slim" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nusreta\RubymineProjects\deployment\berza-poslova\lib\templates\slim\scaffold\index.html.slim" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nusreta\RubymineProjects\deployment\berza-poslova\lib\templates\slim\scaffold\new.html.slim" afterPath="" />
+      <change type="DELETED" beforePath="C:\Users\Nusreta\RubymineProjects\deployment\berza-poslova\lib\templates\slim\scaffold\show.html.slim" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="berza_poslova.iws" />
@@ -411,24 +407,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="berza-poslova" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="berza-poslova" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -452,6 +430,122 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="bootstrap" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="berza-poslova" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="berza-poslova" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="log" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="berza-poslova" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="berza-poslova" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="berza-poslova" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="berza-poslova" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="scaffold" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="berza-poslova" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="berza-poslova" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="templates" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="erb" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controller" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="berza-poslova" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="berza-poslova" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="tasks" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="berza-poslova" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="berza-poslova" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="lib" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1161,7 +1255,11 @@
       <created>1398684719513</created>
       <updated>1398684719513</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="jos crvenih ckeditor fajlova&#10;">
+      <created>1398686096111</created>
+      <updated>1398686096111</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TodoView" selected-index="0">
@@ -1244,7 +1342,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="dizajn prikaz profila i edit profila , sa kontrolama" />
     <MESSAGE value="dizajn prikaz profila i edit profila , sa kontrolama&#10;" />
     <MESSAGE value=" prikaz oglasa za admina" />
     <MESSAGE value="prikaz pojedinacnog oglasa za admina&#10;" />
@@ -1269,7 +1366,8 @@
     <MESSAGE value="timeout" />
     <MESSAGE value="online editior cv-a, prikaz cv-a" />
     <MESSAGE value="ckeditor files" />
-    <option name="LAST_COMMIT_MESSAGE" value="ckeditor files" />
+    <MESSAGE value="jos crvenih ckeditor fajlova&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="jos crvenih ckeditor fajlova&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
