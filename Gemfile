@@ -58,7 +58,7 @@ gem 'prawn-layout'
 
 gem 'carrierwave'
 
-gem 'recaptcha', :require => "recaptcha/rails"
+gem 'recaptcha', :require => 'recaptcha/rails'
 
 gem 'chartkick', '~> 1.2.4'
 
@@ -69,6 +69,3 @@ end
 gem 'paperclip'
 
 gem 'ckeditor'
-
-
-ruby '2.0.0'
