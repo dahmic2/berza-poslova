@@ -68,7 +68,7 @@ end
 
 gem 'paperclip'
 
-gem "ckeditor"
+gem 'ckeditor'
 
 
 ruby '2.0.0'
