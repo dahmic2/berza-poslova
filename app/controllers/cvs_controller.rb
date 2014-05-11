@@ -25,18 +25,24 @@ class CvsController < ApplicationController
   # POST /cvs
   # POST /cvs.json
   def create
-    @cv = Cv.new(cv_params)
-
     respond_to do |format|
+      @cv = Cv.new
       if @cv.save
-        format.html { redirect_to @cv, notice: 'Cv was successfully created.' }
-        format.json { render action: 'show', status: :created, location: @cv }
+      @cv.additional_information=params[:additional_information]
+      @cv.personal_skills=params[:personal_skills]
+      @cv.save
+      format.json {
+        msg = { :status => "ok", :message => "Success!", :html => cv.errors.messages}
+        render :json => msg
+      }
+      format.html { redirect_to @cv, notice: 'Cv was successfully updated.' } ## Specify the format in which you are rendering "new" page
+
       else
-        format.html { render action: 'new' }
-        format.json { render json: @cv.errors, status: :unprocessable_entity }
+    format.html { render 'new'} ## Specify the format in which you are rendering "new" page
+    format.json { render json: cv.errors } ## You might want to specify a json format as well
+    end
       end
     end
-  end
 
   # PATCH/PUT /cvs/1
   # PATCH/PUT /cvs/1.json

@@ -69,3 +69,4 @@ end
 gem 'paperclip'
 
 gem 'ckeditor'
+gem 'angularjs-rails'

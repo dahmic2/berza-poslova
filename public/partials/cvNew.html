@@ -1,0 +1,27 @@
+<div class="container" ng-app="App" ng-controller="controller">
+    <div class="hero-unit">
+        <h1>Unos  novog cv-a</h1>
+        <br>
+        <form class="form-horizontal">
+            <div class="control-group">
+                <label class="control-label" for="naslov"> Naslov:</label>
+                <div class="controls">
+                    <input type="text" id="naslov" ng-model="cv.personal_skills"/>
+                </div>
+            </div>
+            <div class="control-group">
+                <label class="control-label" for="dodatno"> Dodatno:</label>
+                <div class="controls">
+                    <textarea id="dodatno" ng-model="cv.additional_information"> </textarea>
+                </div>
+            </div>
+            <div class="control-group">
+                <div class="controls">
+                    <button class="btn-primary" ng-click="posalji()">
+                        Kreiraj
+                    </button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -148,14 +148,14 @@
                 </thead>
                 <tbody>
                 <% @cvs.each do |cv| %>
-                <tr class="success">
-                  <td><%= cv.personal_skills %></td>
-                  <td><%= link_to 'Show', cv %></td>
-                  <td><%= link_to 'Edit', edit_cv_path(cv) %></td>
-                  <td><%= link_to 'Destroy', cv, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-                </tr>
+                    <tr class="success">
+                      <td><%= cv.personal_skills %></td>
+                      <td><%= link_to 'Show', cv %></td>
+                      <td><%= link_to 'Edit', edit_cv_path(cv) %></td>
+                      <td><%= link_to 'Destroy', cv, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+                    </tr>
 
-<% end %>
+                <% end %>
                 </tbody>
               </table>
             </div>
@@ -165,13 +165,17 @@
           </ul>
 
 
-      </div><!-- /#page-wrapper -->
+        </div><!-- /#page-wrapper -->
 
-    </div><!-- /#wrapper -->
+      </div><!-- /#wrapper -->
 <%end%>
 <!-- JavaScript -->
-<script src="//berza-poslova/app/assets/javascript/js/jquery-1.10.2.js"></script>
-<script src="//berza-poslova/app/assets/javascript/js/bootstrap.js"></script>
+<script src="jquery-1.10.2.js"></script>
+<script src="bootstrap.js"></script>
+<script src="services.js"></script>
+<script src="controller.js"></script>
+<script src="app.js"></script>
+
 
 </body>
 </html>
