@@ -15,7 +15,7 @@
 //= require bootstrap
 //= require_tree .
 //= require angular
-//= require angular-animate
+//= require angular-resource
 //= require angular-cookies
 //= require angular-route
 //= require app
