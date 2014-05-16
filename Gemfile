@@ -70,3 +70,7 @@ gem 'paperclip'
 
 gem 'ckeditor'
 gem 'angularjs-rails'
+
+
+
+gem 'devise'
