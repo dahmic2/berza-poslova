@@ -4,20 +4,8 @@
     <bookmark url="file://$PROJECT_DIR$/app/assets/javascripts/app.js" line="6" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="531aad26-debe-4623-9c4b-d439d70cd012" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/login/app.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/login/login.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/login/login.tpl.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/.rakeTasks" afterPath="$PROJECT_DIR$/.idea/.rakeTasks" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/berza-poslova.iml" afterPath="$PROJECT_DIR$/.idea/berza-poslova.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="$PROJECT_DIR$/db/schema.rb" />
+    <list default="true" id="531aad26-debe-4623-9c4b-d439d70cd012" name="Default" comment="signin/signup ne radi jos uvijek :/&#10;">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/login/angular.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="berza_poslova.iws" />
@@ -41,24 +29,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/app.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.yml" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/database.yml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="30" column="0" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="697">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
@@ -95,10 +65,28 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="routes.rb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="routes.rb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/config/routes.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="0" selection-start="84" selection-end="84" vertical-scroll-proportion="0.14072847" vertical-offset="0" max-vertical-offset="1785">
+            <state line="29" column="23" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="9" column="2" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="385373">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="angular.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/login/angular.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="385373">
               <folding />
             </state>
           </provider>
@@ -117,7 +105,9 @@
         <entry file="file://$PROJECT_DIR$/app/login/login.js">
           <provider selected="true" editor-type-id="text-editor">
             <state line="31" column="10" selection-start="934" selection-end="934" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-              <folding />
+              <folding>
+                <marker date="1400232686736" expanded="true" signature="697:1069" placeholder="{...}" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -507,11 +497,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Nusreta\RubymineProjects\nwt\berza-poslova\app\login" />
       <recent name="C:\Users\Nusreta\RubymineProjects\najnoviji\berza-poslova\app\assets\javascripts" />
       <recent name="C:\Users\Nusreta\RubymineProjects\najnoviji\berza-poslova\public" />
       <recent name="C:\Sites\Berza\berza-poslova\app\views\user_mailer" />
       <recent name="C:\Sites\Berza\berza-poslova\app\models" />
-      <recent name="C:\Sites\Berza\berza-poslova\app\views\password_resets" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Sites\posljednjiPokusaj\berza-poslova\app\assets\javascripts" />
@@ -994,10 +984,14 @@
       <created>1398686096111</created>
       <updated>1398686096111</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="signin/signup ne radi jos uvijek :/">
+      <created>1400234047684</created>
+      <updated>1400234047684</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
-  <component name="TodoView" selected-index="0">
+  <component name="TodoView" selected-index="4">
     <todo-panel id="selected-file">
       <are-packages-shown value="false" />
       <are-modules-shown value="false" />
@@ -1024,10 +1018,10 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32104453" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842416" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32718894" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32718894" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33761328" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3836858" sideWeight="0.32983193" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3836858" sideWeight="0.32983193" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35649547" sideWeight="0.67016804" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771823" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
@@ -1077,8 +1071,6 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <MESSAGE value="dizajn prikaz profila i edit profila , sa kontrolama&#10;" />
-    <MESSAGE value=" prikaz oglasa za admina" />
     <MESSAGE value="prikaz pojedinacnog oglasa za admina&#10;" />
     <MESSAGE value="pokusaj grapha i uredjivanje kategorije" />
     <MESSAGE value="bar chats za poslodavce(prikaz broja poslodavaca po gradovima)&#10;" />
@@ -1102,22 +1094,14 @@
     <MESSAGE value="online editior cv-a, prikaz cv-a" />
     <MESSAGE value="ckeditor files" />
     <MESSAGE value="jos crvenih ckeditor fajlova&#10;" />
-    <option name="LAST_COMMIT_MESSAGE" value="jos crvenih ckeditor fajlova&#10;" />
+    <MESSAGE value="signin/signup ne radi jos uvijek :/" />
+    <MESSAGE value="signin/signup ne radi jos uvijek :/&#10;" />
+    <option name="LAST_COMMIT_MESSAGE" value="signin/signup ne radi jos uvijek :/&#10;" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Gemfile.lock">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="164" column="0" selection-start="4168" selection-end="4168" vertical-scroll-proportion="0.0" vertical-offset="2713" max-vertical-offset="3264" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/cv.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="394" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/advartisments/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="151" column="12" selection-start="0" selection-end="7042" vertical-scroll-proportion="0.0" vertical-offset="2212" max-vertical-offset="3468" />
@@ -1265,7 +1249,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="7" selection-start="489" selection-end="919" vertical-scroll-proportion="0.6736292" vertical-offset="371" max-vertical-offset="1377" />
+        <state line="37" column="7" selection-start="489" selection-end="919" vertical-scroll-proportion="0.6736292" vertical-offset="371" max-vertical-offset="1377">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/cvs_controller.rb">
@@ -1384,13 +1370,29 @@
     <entry file="file://$PROJECT_DIR$/app/login/login.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="31" column="10" selection-start="934" selection-end="934" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <folding />
+          <folding>
+            <marker date="1400232686736" expanded="true" signature="697:1069" placeholder="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="84" selection-end="84" vertical-scroll-proportion="0.14072847" vertical-offset="0" max-vertical-offset="1785">
+        <state line="29" column="23" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="9" column="2" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="385373">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/login/angular.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="385373">
           <folding />
         </state>
       </provider>
