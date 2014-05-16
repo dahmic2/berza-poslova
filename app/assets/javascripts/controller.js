@@ -16,4 +16,4 @@ app.controller('CvCreationCtrl',    function($scope) {
             })
         };
 
-        }]);
+        });

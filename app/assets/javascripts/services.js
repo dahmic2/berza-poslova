@@ -14,3 +14,10 @@ services.factory('CvFactory', function($resource){
     })
 });
 
+services.factory('UserFactory', function($resource){
+    return $resource('/users/:id', {}, {
+        show: { method: 'GET', params:{id: '@id'}},
+        update: { method: 'PUT', params:{id: '@id'}},
+        delete: {method:'DELETE', params: {id:'@id'}}
+    })
+});
