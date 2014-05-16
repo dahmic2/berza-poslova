@@ -1,4 +1,4 @@
-app.controller('UserUpdateCtrl',    function($scope) {
+app.controller('UserViewCtrl',    function($scope) {
     $scope.user = {};
     $scope.update = function() {
         data = {
@@ -21,7 +21,7 @@ app.controller('UserUpdateCtrl',    function($scope) {
 
         //var skills = $scope.newCv.additional_information;
         //$http.post('/cvs/'+newCv.id+'.json' , { personal_skills: skills }).success(function() {
-         //   $scope.newCv.personal_skills = '';
+        //   $scope.newCv.personal_skills = '';
         //    $location.path("cvs");
         //})
     };
