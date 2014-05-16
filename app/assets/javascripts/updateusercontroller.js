@@ -18,6 +18,7 @@ app.controller('UserUpdateCtrl',    function($scope) {
         $scope.user.adress.push($scope.user.adress);
         $scope.user.phone.push($scope.phone);
         UserFactory.save($scope.updateUser, backToList);
+        
         //var skills = $scope.newCv.additional_information;
         //$http.post('/cvs/'+newCv.id+'.json' , { personal_skills: skills }).success(function() {
          //   $scope.newCv.personal_skills = '';
