@@ -1,0 +1,208 @@
+<% @problem.update_attribute(:additional, 'Pitanje je riješeno. Pogledajte komentare.')%>
+<% @problem.update_attribute(:status, 'Riješeno')%>
+
+
+
+
+<%= form_for(@problem, :html => { :class => "form-horizontal" }) do |f| %>
+
+
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <div class="navbar-brand"> <%= link_to 'Pravni savjeti', root_path %></div>
+        </div>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+
+            <% if current_user %>
+                <% b=0 %>
+                <% @problems = Problem.all %>
+                <% @problems.each do |p| %>
+                    <% if p.user == current_user.id %>
+
+                        <% @comments = Comment.all %>
+                        <% @comments.each do |c| %>
+                            <% if c.additional == "Nepročitan"  %>
+                                <% if c.problem_id == p.id %>
+                                    <% b = b+1; %>
+                                <% end %>
+                            <% end %>
+                        <% end %>
+                    <% end %>
+                <% end %>
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-info" > </i> Obavještenja (<%=b%>) <b class="caret"></b></a>
+                  <ul class="dropdown-menu">
+                    <% @problems = Problem.all %>
+                    <% @problems.each do |p| %>
+                        <% if p.user == current_user.id %>
+
+                            <% @comments = Comment.all %>
+                            <% @comments.each do |c| %>
+                                <% if c.additional == "Nepročitan"  %>
+                                    <% if c.problem_id == p.id %>
+                                        <% komentar = ' Imate novi komentar na ' + p.title %>
+                                        <li>  <%= link_to komentar, problem_path(p.id) %>  </li>
+                                    <% end %>
+                                <% end %>
+                            <% end %>
+                        <% end %>
+                    <% end %>
+                    <% if b==0 %> <li><a>Nemate novih obavještenja</a></li><% end %>
+                  </ul>
+                </li>
+
+
+
+                <li class="dropdown">
+                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-male" > </i> <%= current_user.name %> <%= current_user.surname %> <b class="caret"> </b></a>
+                  <ul class="dropdown-menu">
+                    <li>  <%= link_to 'Moj profil', user_path(current_user.id) %>  </li>
+                    <li>  <%= link_to 'Postavke', edit_user_path(current_user.id) %>  </li>
+                    <li>  <%= link_to 'Odjava', log_out_path %> </li>
+                  </ul>
+                </li>
+
+
+            <% else %>
+                <li>
+                  <%= link_to 'Registracija', new_user_path %>
+                </li>
+                <li>
+                  <%= link_to 'Prijava', log_in_path %>
+                </li>
+
+            <% end %>
+          </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+      </div>
+      <!-- /.container -->
+    </nav>
+
+    <!-- Page Content -->
+    <div class="container">
+
+      <!-- Page Heading/Breadcrumbs -->
+      <div class="row">
+        <div class="col-lg-12">
+
+          <h1 class="page-header"><i class="fa fa-question-circle"> </i> Pravni savjeti
+            <small>Podijelite svoja iskustva</small>
+          </h1>
+          <ol class="breadcrumb">
+            <li> <%= link_to 'Početna', root_path %> </li>
+            <li class="active">Pitanje je riješeno</li>
+          </ol>
+        </div>
+      </div>
+      <!-- /.row -->
+
+      <!-- Content Row -->
+      <div class="row">
+
+
+        <% if @problem.errors.any? %>
+            <div class="alert alert-danger alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              <h4><%= pluralize(@problem.errors.count, "error") %> prohibited this problem from being saved:</h4>
+
+              <ul>
+                <% @problem.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+              </ul>
+            </div>
+        <% end %>
+
+        <!-- Blog Post Content Column -->
+        <div class="col-lg-9">
+          <div class="well">
+
+Pitanje je riješeno. Opcionalno, možete ukratko opisati koje je bilo rješenje ovog pitanja, što bi pomoglo ostalim korisnicima.
+            <div class="form-group">
+<br>
+              <div class="col-sm-12">
+                <%= f.label :Rješenje_pitanja %>
+                <%= f.text_area :additional, :class => "form-control", :rows => "3" %>
+              </div>
+            </div>
+
+            <div class="form-group">
+                <div class="col-sm-12 text-right">
+                <%= f.submit "Objavi rješenje", :class => "btn btn-primary" %>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+
+
+        <div class="col-md-3">
+
+          <div class="panel panel-default ">
+
+
+            <div class="panel-heading text-center">
+              <h3 class="panel-title">Sva moja pitanja </h3>
+            </div>
+
+            <ul class="list-group">
+              <% @problems = Problem.all %>
+              <% @problems.each do |p| %>
+                  <% if current_user.id == p.user %>
+                      <li class="list-group-item"> <i class="fa fa-question-circle"> </i>   <%= link_to p.title, problem_path(p.id) %> </li>
+                  <% end %>
+              <% end %>
+            </ul>
+
+
+          </div>
+          <p> <a class="fa fa-male"> </a> <%= link_to 'Moj profil', user_path(current_user.id) %></p>
+        </div>
+
+
+
+
+
+
+
+
+      </div>
+      <!-- /.row -->
+
+      <hr>
+
+      <!-- Footer -->
+      <footer>
+        <div class="row">
+          <div class="col-lg-12">
+            <p>Copyright &copy; Nusreta Sinanović 2014 | nusretasinanovic@gmail.com</p>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <!-- /.container -->
+
+    <!-- jQuery Version 1.11.0 -->
+    <script src="js/jquery-1.11.0.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <div style="visibility: hidden">
+      <%= f.text_field :user, :value => current_user.id %>
+
+      <%= f.text_field :username, :value => current_user.username %>
+
+    </div>
+<% end %>
+

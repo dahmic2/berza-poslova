@@ -1,55 +1,70 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <title>Pravni savjeti</title>
+  <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
+  <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
+  <%= csrf_meta_tags %>
+
+
   <meta charset="utf-8">
-  <title>Berza Poslova</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="">
   <meta name="author" content="">
 
-  <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- Bootstrap Core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="css/modern-business.css" rel="stylesheet">
+
+  <!-- Custom Fonts -->
+  <link href="font-awesome-4.1.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
   <!--[if lt IE 9]>
-    <%= javascript_include_tag "https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js", "https://oss.maxcdn.com/libs/respond.js/1.3.0/respond.min.js" %>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+
+
   <![endif]-->
 
 
-  <!-- Bootstrap core CSS -->
-  <link href="/css/bootstrap.css" rel="stylesheet">
 
-  <!-- Add custom CSS here -->
-  <link href="/css/sb-admin.css" rel="stylesheet">
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-  <!-- Page Specific CSS -->
-  <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
- 
-  <%= csrf_meta_tags %>
-  <%= javascript_include_tag 'ckeditor/ckeditor.js' %>
 </head>
-<script type="text/javascript">$(document).ready(function() {
-    if ($('textarea').length > 0) {
-        var data = $('textarea');
-        $.each(data, function(i) {
-            CKEDITOR.replace(data[i].id);
-        });
-    }
-});</script>
 <body>
-<div >
+<%
 
-</div>
+   @users = User.all
+   @users.each do |user|
+     z = 0
+
+     @problems = Problem.all
+     @problems.each do |problem|
+       if problem.user == user.id
+         z = z + 5
+       end
+     end
+
+     @comments = Comment.all
+     @comments.each do |comment|
+       if comment.user == user.id
+         l = comment.likes
+         z = z + 8 + l*13
+       end
+     end
+
+     user.update_attribute(:stars, z)
+   end
+
+
+%>
+
+
 <%= yield %>
 
-
-
-<!-- JavaScript -->
-<script src="js/jquery-1.10.2.js"></script>
-<script src="js/bootstrap.js"></script>
-
-<!-- Page Specific Plugins -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
-<script src="js/morris/chart-data-morris.js"></script>
-<script src="js/tablesorter/jquery.tablesorter.js"></script>
-<script src="js/tablesorter/tables.js"></script>
 </body>
 </html>

@@ -1,14 +1,8 @@
 class UserMailer < ActionMailer::Base
-default from: 'dan@posao.com'
+  default from: "pravnisavjeti@gmail.com"
 
-def welcome_email(user)
-  @user = user
-  @url  = 'http://localhost:3000/log_in'
-  mail(to: @user.email, subject: 'Dobro doslao/la na berzu poslova')
-end
-
-#def activate_account(user)
- # @user = user
-  #mail(to: @user.email, subject: 'Posao.ba - Link za aktivaciju naloga')
-#end
+  def welcome_email(user)
+    @user = user
+    mail(to: @user.email, subject: 'Vaša šifra')
+  end
 end

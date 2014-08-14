@@ -1,1230 +1,267 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
 
-  <title>Berza poslova</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="/css/bootstrap.css" rel="stylesheet">
-
-  <!-- Add custom CSS here -->
-  <link href="/css/sb-admin.css" rel="stylesheet">
-  <link rel="stylesheet" href="/font-awesome/css/font-awesome.min.css">
-  <!-- Page Specific CSS -->
-  <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
-
-
-
-  <!--Load the AJAX API-->
-  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-  <script type="text/javascript">
-
-      // Load the Visualization API and the piechart package.
-      google.load('visualization', '1.0', {'packages':['corechart']});
-
-      // Set a callback to run when the Google Visualization API is loaded.
-      google.setOnLoadCallback(drawChart);
-
-      // Callback that creates and populates a data table,
-      // instantiates the pie chart, passes in the data and
-      // draws it.
-      function drawChart() {
-
-
-          var sarajevo = 0;
-          var zavidovici = 0;
-          var tuzla = 0;
-          var ostali = 0;
-
-          <% @advartisments = Advartisment.all %>
-          <% @advartisments.each do |advartisment| %>
-
-
-              <% if advartisment.location == "Sarajevo" %>
-                    sarajevo += 1;
-                <% elsif advartisment.location == "Zavidovići" %> zavidovici=zavidovici+1;
-                 <% elsif advartisment.location == "Tuzla" %> tuzla=tuzla+1;
-          <%  else %> ostali = ostali +1;
-
-        <% end %>
-          <% end %>
-          // Create the data table.
-          var data = new google.visualization.DataTable();
-          data.addColumn('string', 'Topping');
-          data.addColumn('number', 'Slices');
-          data.addRows([
-              ['Sarajevo', sarajevo.valueOf()],
-              ['Zavidovići', zavidovici.valueOf()],
-              ['Tuzla', tuzla.valueOf()],
-              ['Ostali', ostali.valueOf()]
-          ]);
-
-          // Set chart options
-          var options = {'title':'Broj objavljenih oglasa po gradovima',
-              'width':400,
-              'height':300};
-
-          // Instantiate and draw our chart, passing in some options.
-          var chart = new google.visualization.PieChart(document.getElementById('chart'));
-          chart.draw(data, options);
-
-      }
-      </script>
-  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-  <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(drawChart);
-      function drawChart() {
-          var a= 0,b1= 0,b2= 0,d1= 0,d2= 0,e1= 0,e2= 0,e3= 0,f= 0,g1= 0,g2= 0,k= 0,m1= 0,m2= 0,m3= 0,m4= 0,o1= 0,o2= 0,ostalo= 0,p1= 0,p2= 0,p3= 0,p4= 0,p5= 0,r= 0,s1= 0,s2= 0,t1= 0,t2= 0,t3= 0,u1= 0,u2= 0,z1= 0,z2=0;
-          <% @advartisments = Advartisment.all %>
-          <% @advartisments.each do |advartisment| %>
-          <% if advartisment.category == "Administrativne usluge" %> a++;
-          <% elsif advartisment.category == "Bankarstvo"%> b1++;
-          <% elsif advartisment.category == "Biotehnologija i farmacija"%> b2++;
-          <% elsif advartisment.category == "Drvna industrija"%> d1++
-          <% elsif advartisment.category == "Državna služba i uprava"%> d2++;
-          <% elsif advartisment.category == "Ekonomija i finansije"%> e1++;
-          <% elsif advartisment.category == "Elektrotehnika i informatika"%> e2++;
-          <% elsif advartisment.category == "Energetika i rudarstvo"%> e3++;
-          <% elsif advartisment.category == "Frizeri i kozmetičari"%> f++;
-          <% elsif advartisment.category == "Geologija"%> g1++;
-          <% elsif advartisment.category == "Građevinarstvo i arhitektura"%> g2++;
-          <% elsif advartisment.category == "Komercijala i prodaja"%> k++;
-          <% elsif advartisment.category == "Marketing i PR"%> m1++;
-          <% elsif advartisment.category == "Mašinstvo i metalurgija"%> m2++;
-          <% elsif advartisment.category == "Mediji"%> m3++;
-          <% elsif advartisment.category == "Menadžment i upravljanje"%> m4++
-          <% elsif advartisment.category == "Obrazovanj, kultura i sport"%> o1++;
-          <% elsif advartisment.category == "Osiguranje"%> o2++;
-          <% elsif advartisment.category == "Ostalo"%> ostalo++;
-          <% elsif advartisment.category == "Policija i zaštitarske usluge"%> p1++;
-          <% elsif advartisment.category == "Poljoprivreda i šumarstvo"%> p2++;
-          <% elsif advartisment.category == "Pravo i društvene nauke"%> p3++;
-          <% elsif advartisment.category == "Prevodilačke usluge"%> p4++;
-          <% elsif advartisment.category == "Proizvodnja"%> p5++;
-          <% elsif advartisment.category == "Računovodstvo i revizija"%> r++;
-          <% elsif advartisment.category == "Socijalne usluge"%> s1++;
-          <% elsif advartisment.category == "Stipendije"%> s2++;
-          <% elsif advartisment.category == "Teleprodaja i telemarketing"%> t1++;
-          <% elsif advartisment.category == "Transport i skladištenje"%> t2++;
-          <% elsif advartisment.category == "Trgovina"%> t3++;
-          <% elsif advartisment.category == "Ugostiteljstvo i turizan"%> u1++;
-          <% elsif advartisment.category == "Umjetnost i dizajn"%> u2++;
-          <% elsif advartisment.category == "Zanatske usluge"%> z1++;
-          <% elsif advartisment.category == "Zdravstvo i medicina"%> z2++;
-          <%end%>
-          <%end%>
-          var data = google.visualization.arrayToDataTable([
-              ['Dinosaur', 'Length'],
-              ['Administrativne usluge', a.valueOf()],
-              ['Bankarstvo', b1.valueOf()],
-              ['Biotehnologija i farmacija', b2.valueOf()],
-              ['Drvna industrija', d1.valueOf()],
-              ['Državna služba i uprava', d2.valueOf()],
-              ['Ekonomija i finansije', e1.valueOf()],
-              ['Elektrotehnika i informatika', e2.valueOf()],
-              ['Energetika i rudarstvo', e3.valueOf()],
-              ['Frizeri i kozmetičari', f.valueOf()],
-              ['Geologija', g1.valueOf()],
-              ['Građevinarstvo i arhitektura', g2.valueOf()],
-              ['Komercijala i prodaja', k.valueOf()],
-              ['Marketing i PR', m1.valueOf()],
-              ['Mašinstvo i metalurgija', m2.valueOf()],
-              ['Mediji', m3.valueOf()],
-              ['Menadžment i upravljanje', m4.valueOf()],
-              ['Obrazovanj, kultura i sport', o1.valueOf()],
-              ['Osiguranje', o2.valueOf()],
-              ['Ostalo', ostalo.valueOf()],
-              ['Policija i zaštitarske usluge', p1.valueOf()],
-              ['Poljoprivreda i šumarstvo', p2.valueOf()],
-              ['Pravo i društvene nauke', p3.valueOf()],
-              ['Prevodilačke usluge', p4.valueOf()],
-              ['Proizvodnja',p5.valueOf()],
-              ['Računovodstvo i revizija', r.valueOf()],
-              ['Socijalne usluge', s1.valueOf()],
-              ['Stipendije', s2.valueOf()],
-              ['Teleprodaja i telemarketing', t1.valueOf()],
-              ['Transport i skladištenje', t2.valueOf()],
-              ['Trgovina', t3.valueOf()],
-              ['Ugostiteljstvo i turizan', u1.valueOf()],
-              ['Umjetnost i dizajn', u2.valueOf()],
-              ['Zanatske usluge', z1.valueOf()],
-              ['Zdravstvo i medicina', z2.valueOf()]]);
-
-
-          var options = {
-              title: 'Broj oglasa po kategorijama',
-              legend: { position: 'none' },
-          };
-
-          var chart = new google.visualization.Histogram(document.getElementById('chart_div'));
-          chart.draw(data, options);
-      }
-  </script>
-  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-  <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(drawChart);
-      function drawChart() {
-
-          var sarajevo = 0;
-          var zavidovici = 0;
-          var tuzla = 0;
-          var ostali = 0;
-          var tr=0;
-
-          <% @employers = Employer.all %>
-          <% @employers.each do |employer| %>
-
-
-          <% if employer.location == "Sarajevo" %>
-          sarajevo += 1;
-          <% elsif employer.location == "Zavidovići" %> zavidovici=zavidovici+1;
-          <% elsif employer.location == "Tuzla" %> tuzla=tuzla+1;
-          <% elsif employer.location == "Travnik" %> tr=tr+1;
-
-          <%  else %> ostali = ostali +1;
-
-          <% end %>
-          <% end %>
-          var data = google.visualization.arrayToDataTable([
-              ['Lokacija', 'Broj poslodavaca', { role: 'style' } ],
-              ['Sarajevo', sarajevo.valueOf(), 'color: gray'],
-              ['Zavidovići', zavidovici.valueOf(), 'color: #76A7FA'],
-              ['Tuzla', tuzla.valueOf(), 'opacity: 0.2'],
-              ['Ostali', ostali.valueOf(), 'stroke-color: #703593; stroke-width: 4; fill-color: #C5A5CF'],
-              ['Travnik', tr.valueOf(), 'stroke-color: #871B47; stroke-opacity: 0.6; stroke-width: 8; fill-color: #BC5679; fill-opacity: 0.2'],
-          ]);
-          var options = {
-              title: 'Broj poslodavaca u određenom gradu',
-              vAxis: {title: 'Lokacija',  titleTextStyle: {color: 'red'}}, 'width':400,
-              'height':300
-          };
-
-          var chart = new google.visualization.BarChart(document.getElementById('chart_div1'));
-          chart.draw(data, options);
-      }
-  </script>
-  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-  <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(drawChart);
-      function drawChart() {
-
-          <% @advartisments = Advartisment.all %>
-
-
-
-          var brojac = 0;
-          var ostalo = 0;
-
-          <% @advartisments.each do |advartisment| %>
-
-          <% if "EU" ==  advartisment.location %> brojac += 1;
-          <% else  %> ostalo += 1;
-          <% end %>
-          <% end %>
-
-
-
-
-
-          var data = google.visualization.arrayToDataTable([
-              ['Region', 'Broj oglasa', { role: 'style' } ],
-              ["EU", brojac.valueOf(), 'color: gray'],
-              ["BiH", ostalo.valueOf()+1, 'color: gray']
-
-          ]);
-
-
-          var options = {
-              title: 'Broj oglasa u određenom regionu',
-              vAxis: {title: 'Region',  titleTextStyle: {color: 'red'}}, 'width':400,
-              'height':300
-          };
-
-          var chart = new google.visualization.BarChart(document.getElementById('chart_div2'));
-          chart.draw(data, options);
-      }
-  </script>
-  <script type="text/javascript">
-      google.load("visualization", "1", {packages:["corechart"]});
-      google.setOnLoadCallback(drawChart);
-      function drawChart() {
-
-
-          var istekli = 0;
-          var novi = 0;
-
-          <% @advartisments = Advartisment.all %>
-          <% @advartisments.each do |advartisment| %>
-
-                <% if advartisment.expire.past? %> istekli++;
-
-                <% else %> novi++;
-                 <% end %>
-
-          <% end %>
-
-
-
-          var data = google.visualization.arrayToDataTable([
-              ["Datum", "Broj oglasa", { role: "style" } ],
-              ["Aktuelni oglasi", novi.valueOf(), "green"],
-              ["Istekli oglasi", istekli.valueOf(), "red"]
-
-          ]);
-
-          var view = new google.visualization.DataView(data);
-          view.setColumns([0, 1,
-              { calc: "stringify",
-                  sourceColumn: 1,
-                  type: "string",
-                  role: "annotation" },
-              2]);
-
-          var options = {
-              title: 'Trajanje oglasa',
-              width: 500,
-              height: 300,
-              bar: {groupWidth: "95%"},
-              legend: { position: "none" },
-          };
-          var chart = new google.visualization.BarChart(document.getElementById("barchart_values"));
-          chart.draw(view, options);
-      }
-  </script>
-  <script type="text/javascript" src="https://www.google.com/jsapi"></script>
-    <script type="text/javascript">
-            google.load("visualization", "1", {packages:["corechart"]});
-            google.setOnLoadCallback(drawChart);
-            function drawChart() {
-                    var april= 0,maj= 0,juni= 0,juli=0;
-                    <% @advartisments = Advartisment.all %>
-                            <% @advartisments.each do |advartisment| %>
-                                    <% if advartisment.expire.month == 4 %> april++;
-                    <%end%>
-                            <% if advartisment.expire.month == 5 %> maj++;
-                    <%end%>
-                            <% if advartisment.expire.month == 6 %> juni++;
-                    <%end%>
-                            <% if advartisment.expire.month == 7 %> juli++;
-                    <%end%>
-                            <%end%>
-                                    var data = google.visualization.arrayToDataTable([
-                            ['Mjesec', 'Oglasa ističe'],
-                            ['April',  april.valueOf()],
-                            ['Maj',  maj.valueOf()],
-                            ['Juni',  juni.valueOf()],
-                            ['Juli',  juli.valueOf()]
-                                ]);
-
-                           var options = {
-                               title: 'Oglasi koji ističu po mjesecima'
-                    };
-
-                        var chart = new google.visualization.LineChart(document.getElementById('chart_div3'));
-                chart.draw(data, options);
-            }
-        </script>
-
-
-
-
-
-</head>
-
-<body>
-
-
-    <% if current_user %>
-        <% if current_user.email=="admin@poso.ba" %>
-          <div id="wrapper">
-
-          <!-- Sidebar -->
-          <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Berza poslova</a>
-            </div>
-
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-              <ul class="nav navbar-nav side-nav">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> <%= t "nav.language" %> <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="?locale=bs#" data-no-turbolink="true">BS</a></li>
-                    <li><a href="?locale=en#" data-no-turbolink="true">EN</a></li>
-                    <li><a href="#">Hrvatski</a></li>
-                  </ul>
-                </li>
-                <li class="active"> <%= link_to "Dashboard", root_path %> </li>
-                <li>  <%= link_to (t "employer.add"), employers_new_path %> </li>
-                <li>  <%= link_to (t "employer.all"), employers_path %> </li>
-                <li>  <%= link_to (t "user.all"), users_path %> </li>
-                <li>  <%= link_to (t "advartisment.all"), advartisments_path %> </li>
-
-              </ul>
-            <ul class="nav navbar-nav navbar-right navbar-user">
-              <li class="dropdown messages-dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-header">7 New Messages</li>
-                  <li class="message-preview">
-                    <a href="#">
-                      <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                      <span class="name"><% current_user %></span>
-                      <span class="message">Hey there, I wanted to ask you something...</span>
-                      <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                    </a>
-                  </li>
-                  <li class="divider"></li>
-                  <li class="message-preview">
-                    <a href="#">
-                      <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                      <span class="name">John Smith:</span>
-                      <span class="message">Hey there, I wanted to ask you something...</span>
-                      <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                    </a>
-                  </li>
-                  <li class="divider"></li>
-                  <li class="message-preview">
-                    <a href="#">
-                      <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                      <span class="name">John Smith:</span>
-                      <span class="message">Hey there, I wanted to ask you something...</span>
-                      <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                    </a>
-                  </li>
-                  <li class="divider"></li>
-                  <li><a href="#">View Inbox <span class="badge">7</span></a></li>
-                </ul>
-              </li>
-              <li class="dropdown alerts-dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Default <span class="label label-default">Default</span></a></li>
-                  <li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
-                  <li><a href="#">Success <span class="label label-success">Success</span></a></li>
-                  <li><a href="#">Info <span class="label label-info">Info</span></a></li>
-                  <li><a href="#">Warning <span class="label label-warning">Warning</span></a></li>
-                  <li><a href="#">Danger <span class="label label-danger">Danger</span></a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">View All</a></li>
-                </ul>
-              </li>
-              <li class="dropdown user-dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <%= current_user.name %> <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><%= link_to (t "nav.profile"),current_user%></li>
-                  <li><a href="#"> <%= link_to (t "user.edit"), edit_user_path(current_user.id) %></a></li>
-                  <li class="divider"></li>
-                  <li><a href="#"></i> <%= link_to (t "nav.logout"), log_out_path %></a></li>
-                </ul>
-              </li>
-            </ul>
-            </div><!-- /.navbar-collapse -->
-            </nav>
-
-
-            <div id="page-wrapper">
-
-            <div class="row">
-              <div class="col-lg-12">
-                <h1>Dashboard <small>Statistics Overview</small></h1>
-                <ol class="breadcrumb">
-                  <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
-                </ol>
-                <div class="alert alert-success alert-dismissable">
-                  <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                  Welcome to SB Admin by <a class="alert-link" href="http://startbootstrap.com">Start Bootstrap</a>! Feel free to use this template for your admin needs! We are using a few different plugins to handle the dynamic tables and charts, so make sure you check out the necessary documentation links provided.
-                </div>
-              </div>
-            </div><!-- /.row -->
-
-            <div class="row">
-              <div class="col-lg-3">
-                <div class="panel panel-info">
-                  <div class="panel-heading">
-                    <div class="row">
-                      <div class="col-xs-6">
-                        <i class="fa fa-comments fa-5x"></i>
-                      </div>
-                      <div class="col-xs-6 text-right">
-                        <p class="announcement-heading">
-
-
-                          <% @users = User.all %>
-
-
-                            <%=@users.length%>
-
-                        </p>
-                        <p class="announcement-text"><br>Registriranih korisnika</p>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#">
-                    <div class="panel-footer announcement-bottom">
-                      <div class="row">
-                        <div class="col-xs-6">
-                          Broj registriranih korisnika
-                        </div>
-                        <div class="col-xs-6 text-right">
-                          <i class="fa fa-arrow-circle-right"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="panel panel-warning">
-                  <div class="panel-heading">
-                    <div class="row">
-                      <div class="col-xs-6">
-                        <i class="fa fa-check fa-5x"></i>
-                      </div>
-                      <div class="col-xs-6 text-right">
-                        <p class="announcement-heading">
-
-
-                          <% @sessions = Session.all %>
-
-
-                          <%=@sessions.length%>
-
-
-
-
-                        </p>
-                        <p class="announcement-text"><br>Korisnika</p>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#">
-                    <div class="panel-footer announcement-bottom">
-                      <div class="row">
-                        <div class="col-xs-6">
-                          Broj logovanih korisnika
-                        </div>
-                        <div class="col-xs-6 text-right">
-                          <i class="fa fa-arrow-circle-right"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="panel panel-danger">
-                  <div class="panel-heading">
-                    <div class="row">
-                      <div class="col-xs-6">
-                        <i class="fa fa-tasks fa-5x"></i>
-                      </div>
-                      <div class="col-xs-6 text-right">
-                        <p class="announcement-heading">
-
-
-                          <% @advartisments = Advartisment.all %>
-
-
-                          <%=@advartisments.length%>
-
-
-
-                        </p>
-                        <p class="announcement-text"><br>Oglasa</p>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#">
-                    <div class="panel-footer announcement-bottom">
-                      <div class="row">
-                        <div class="col-xs-6">
-                          Broj objavljenih oglasa
-                        </div>
-                        <div class="col-xs-6 text-right">
-                          <i class="fa fa-arrow-circle-right"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-              <div class="col-lg-3">
-                <div class="panel panel-success">
-                  <div class="panel-heading">
-                    <div class="row">
-                      <div class="col-xs-6">
-                        <i class="fa fa-comments fa-5x"></i>
-                      </div>
-                      <div class="col-xs-6 text-right">
-                        <p class="announcement-heading">
-
-
-                          <% @employers = Employer.all %>
-
-
-                          <%=@employers.length%>
-
-
-
-                        </p><br>
-                        <p class="announcement-text">Kompanija</p>
-                      </div>
-                    </div>
-                  </div>
-                  <a href="#">
-                    <div class="panel-footer announcement-bottom">
-                      <div class="row">
-                        <div class="col-xs-6">
-                          Broj registriranih poslodavaca
-                        </div>
-                        <div class="col-xs-6 text-right">
-                          <i class="fa fa-arrow-circle-right"></i>
-                        </div>
-                      </div>
-                    </div>
-                  </a>
-                </div>
-              </div>
-            </div><!-- /.row -->
-
-            <div class="row">
-              <div class="col-lg-6">
-                <div class="panel panel-primary">
-                  <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Broj objavljenih oglasa po lokacijama</h3>
-                  </div>
-                  <div class="panel-body">
-                    <div id="chart"></div>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="col-lg-6">
-                <div class="panel panel-primary">
-                  <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Broj poslodavaca u određenom gradu</h3>
-                  </div>
-                  <div class="panel-body">
-
-                    <div id="chart_div1"></div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- /.row -->
-
-            <div class="row">
-
-                            <div class="col-lg-6">
-                              <div class="panel panel-primary">
-                                <div class="panel-heading">
-                                  <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Broj oglasa po regionu</h3>
-                                </div>
-                                <div class="panel-body">
-
-                                  <div id="chart_div2"></div>
-                                </div>
-                              </div>
-                            </div>
-
-              <div class="col-lg-6">
-                <div class="panel panel-primary">
-                  <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Trajanje oglasa</h3>
-                  </div>
-                  <div class="panel-body">
-
-                    <div id="barchart_values"></div>
-                  </div>
-                </div>
-              </div>
-
-
-
-            </div><!-- /.row -->
-
-            <div class="row">
-              <div class="col-lg-12">
-                <div class="panel panel-primary">
-                  <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Poređenje kategorija po broju oglasa</h3>
-                  </div>
-                  <div class="panel-body">
-                    <div id="chart_div" style="width: 900px; height: 400px;"></div>
-                  </div>
-                </div>
-              </div>
-            </div><!-- /.row -->
-
-              <div class="row">
-                <div class="col-lg-12">
-                  <div class="panel panel-primary" >
-                    <div class="panel-heading">
-                      <h3 class="panel-title"><i class="fa fa-bar-chart-o"></i> Prikaz oglasa koji ističu po mjesecima</h3>
-                    </div>
-                    <div class="panel-body">
-                      <div id="chart_div3" style="width: 900px; height: 400px;"></div>
-                    </div>
-                  </div>
-                </div>
-              </div><!-- /.row -->
-
-
-            <div class="col-lg-16">
-                <div class="panel panel-primary">
-                  <div class="panel-heading">
-                    <h3 class="panel-title"><i class="fa fa-clock-o"></i> Recent Activity</h3>
-                  </div>
-                  <div class="panel-body">
-                    <div class="list-group">
-                      <a href="#" class="list-group-item">
-                        <span class="badge">just now</span>
-                        <i class="fa fa-calendar"></i> Calendar updated
-                      </a>
-                      <a href="#" class="list-group-item">
-                        <span class="badge">4 minutes ago</span>
-                        <i class="fa fa-comment"></i> Commented on a post
-                      </a>
-                      <a href="#" class="list-group-item">
-                        <span class="badge">23 minutes ago</span>
-                        <i class="fa fa-truck"></i> Order 392 shipped
-                      </a>
-                      <a href="#" class="list-group-item">
-                        <span class="badge">46 minutes ago</span>
-                        <i class="fa fa-money"></i> Invoice 653 has been paid
-                      </a>
-                      <a href="#" class="list-group-item">
-                        <span class="badge">1 hour ago</span>
-                        <i class="fa fa-user"></i> A new user has been added
-                      </a>
-                      <a href="#" class="list-group-item">
-                        <span class="badge">2 hours ago</span>
-                        <i class="fa fa-check"></i> Completed task: "pick up dry cleaning"
-                      </a>
-                      <a href="#" class="list-group-item">
-                        <span class="badge">yesterday</span>
-                        <i class="fa fa-globe"></i> Saved the world
-                      </a>
-                      <a href="#" class="list-group-item">
-                        <span class="badge">two days ago</span>
-                        <i class="fa fa-check"></i> Completed task: "fix error on sales page"
-                      </a>
-                    </div>
-                    <div class="text-right">
-                      <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div><!-- /#page-wrapper -->
-            </div><!-- /#wrapper -->
-
-        <%else %>
-        <div id="wrapper">
-
-          <!-- Sidebar -->
-          <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-              </button>
-              <a class="navbar-brand" href="#">Berza poslova</a>
-            </div>
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse navbar-ex1-collapse">
-              <ul class="nav navbar-nav side-nav">
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-font"></i> Jezik <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="?locale=bs#" data-no-turbolink="true">Bosanski</a></li>
-                    <li><a href="?locale=en#" data-no-turbolink="true">Engleski</a></li>
-                    <li><a href="?locale=hr#" data-no-turbolink="true">Hrvatski</a></li>
-                  </ul>
-                </li>
-                <li class="active"><a href="home/index"><i class="fa fa-dashboard"></i> Home </a></li>
-                <li><a href="home/about"><i class="fa fa-file"></i> About </a></li>
-                <li><a href="home/contact"><i class="fa fa-edit"></i> Contact </a></li>
-                <li class="dropdown">
-                  <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Lokacije <b class="caret"></b></a>
-                  <ul class="dropdown-menu">
-                    <li><a href="#">Sve lokacije </a></li>
-                    <li><a href="#">Sarajevo </a></li>
-                    <li><a href="#">Banja Luka</a></li>
-                    <li><a href="#">Mostar</a></li>
-                    <li><a href="#">Zenica</a></li>
-                    <li><a href="#">Tuzla</a></li>
-                    <li><a href="#">Bihać</a></li>
-                    <li><a href="#">Travnik</a></li>
-                    <li><a href="#">Zavidovići</a></li>
-                    <li><a href="#">Brčko</a></li>
-                  </ul>
-                </li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Kategorije <b class="caret"></b></a>
-                    <ul class="dropdown-menu">
-                      <li><a href="#">Administrativne usluge </a></li>
-                      <li><a href="#">Bankarstvo </a></li>
-                      <li><a href="#">Biotehnologija i farmacija</a></li>
-                      <li><a href="#">Drvna industrija</a></li>
-                      <li><a href="#">Državna služba i uprava</a></li>
-                      <li><a href="#">Ekonomija i finansije </a></li>
-                      <li><a href="#">Elektrotehnika i informatika </a></li>
-                      <li><a href="#">Energetika i rudarstvo</a></li>
-                      <li><a href="#">Frizeri i kozmetičari </a></li>
-                      <li><a href="#">Geologija</a></li>
-                      <li><a href="#">Građevinarstvo i arhitektura </a></li>
-                      <li><a href="#">Komercijala i prodaja</a></li>
-                      <li><a href="#">Konsalting</a></li>
-                      <li><a href="#">Marketing i PR</a></li>
-                      <li><a href="#">Mašinstvo i metalurgija </a></li>
-                      <li><a href="#">Mediji </a>
-                      <li><a href="#">Menadžment i upravljanje </a></li>
-                      <li><a href="#">Obrazovanje, kultura i sport </a></li>
-                      <li><a href="#">Osiguranje </a></li>
-                      <li><a href="#">Ostalo</a></li>
-                      <li><a href="#">Policija i zaštitarske usluge</a></li>
-                      <li><a href="#">Političke nauke </a></li>
-                      <li><a href="#">Poljoprivreda i šumarstvo </a></li>
-                      <li><a href="#">Pravo i društvene nauke</a></li>
-                      <li><a href="#">Prevodilačke usluge </a></li>
-                      <li><a href="#">Proizvodnja</a></li>
-                      <li><a href="#">Računovodstvo i revizija</a></li>
-                      <li><a href="#">Socijalne usluge</a></li>
-                      <li><a href="#">Stipendije </a></li>
-                      <li><a href="#">Teleprodaja i telemarketing</a></li>
-                      <li><a href="#">Transport i skladištenje</a></li>
-                      <li><a href="#">Trgovina </a></li>
-                      <li><a href="#">Ugostiteljstvo i turizam </a></li>
-                      <li><a href="#">Umjetnost i dizajn</a></li>
-                      <li><a href="#">Zanatske usluge </a></li>
-                      <li><a href="#">Zdravstvo i medicina  </a></li>
-                    </ul>
-                </li>
-                <li><a href="cvs/new"><i class="fa fa-edit"></i> Kreiraj CV </a></li>
-               </ul>
-        <ul class="nav navbar-nav navbar-right navbar-user">
-          <li class="dropdown messages-dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-header">7 New Messages</li>
-              <li class="message-preview">
-                <a href="#">
-                  <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                  <span class="name"><% current_user %></span>
-                  <span class="message">Hey there, I wanted to ask you something...</span>
-                  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                </a>
-              </li>
-              <li class="divider"></li>
-              <li class="message-preview">
-                <a href="#">
-                  <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                  <span class="name">John Smith:</span>
-                  <span class="message">Hey there, I wanted to ask you something...</span>
-                  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                </a>
-              </li>
-              <li class="divider"></li>
-              <li class="message-preview">
-                <a href="#">
-                  <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                  <span class="name">John Smith:</span>
-                  <span class="message">Hey there, I wanted to ask you something...</span>
-                  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                </a>
-              </li>
-              <li class="divider"></li>
-              <li><a href="#">View Inbox <span class="badge">7</span></a></li>
-            </ul>
-          </li>
-          <li class="dropdown alerts-dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Default <span class="label label-default">Default</span></a></li>
-              <li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
-              <li><a href="#">Success <span class="label label-success">Success</span></a></li>
-              <li><a href="#">Info <span class="label label-info">Info</span></a></li>
-              <li><a href="#">Warning <span class="label label-warning">Warning</span></a></li>
-              <li><a href="#">Danger <span class="label label-danger">Danger</span></a></li>
-              <li class="divider"></li>
-              <li><a href="#">View All</a></li>
-            </ul>
-          </li>
-          <li class="dropdown user-dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <%= current_user.name %> <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li> <%= link_to (t "nav.profile"),current_user%></li>
-              <li><a href="#"> <%= link_to (t "user.edit"), edit_user_path(current_user.id) %></a></li>
-              <li><a href=""> <%= link_to (t "nav.logout"), log_out_path %></a></li>
-            </ul>
-          </li>
-        </ul>
-        </div><!-- /.navbar-collapse -->
-        </nav>
-
-          <div class="row">
-            <div class="col-lg-12">
-              <h1>Berza poslova <small> POSO.BA</small></h1>
-              <ol class="breadcrumb">
-                <li class="active"><i class="fa fa-dashboard"></i> Početna stranica</li>
-              </ol>
-              <div class="alert alert-success alert-dismissable">
-                <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-                Dobro došli na berzu poslova <a class="alert-link" href="localhost:3000">poso.ba</a>!
-              </div>
-            </div>
-          </div><!-- /.row -->
-
-          <div class="row">
-            <div class="col-lg-12">
-              <h2>Oglasi</h2>
-            </div>
-          </div><!-- /.row -->
-
-          <div class="row">
-
-            <% @advartisments = Advartisment.all %>
-            <% @advartisments.each do |advartisment| %>
-
-                <div class="col-lg-4">
-                  <div class="panel panel-info">
-                    <div class="panel-heading">
-                      <h3 class="panel-title"><%= advartisment.title %></h3>
-                    </div>
-                    <div class="panel-body">
-                      <%= advartisment.description %>
-                    </div>
-                  </div>
-                </div>
-
-
+<!-- Navigation -->
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+     <div class="navbar-brand"> <%= link_to 'Pravni savjeti', root_path %></div>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+
+        <% if current_user %>
+            <% b=0 %>
+            <% @problems = Problem.all %>
+            <% @problems.each do |p| %>
+                <% if p.user == current_user.id %>
+
+                    <% @comments = Comment.all %>
+                    <% @comments.each do |c| %>
+                        <% if c.additional == "Nepročitan"  %>
+                            <% if c.problem_id == p.id %>
+                                     <% b = b+1; %>
+                            <% end %>
+                        <% end %>
+                    <% end %>
+                <% end %>
             <% end %>
 
-
-
-            <div class="row">
-              <div class="col-lg-8">
-
-              </div>
-
-
-              <div class="col-lg-4">
-                <ul class="pagination pagination-sm">
-                  <li class="disabled"><a href="#">&laquo;</a></li>
-                  <li class="active"><a href="#">1</a></li>
-                  <li><a href="#">2</a></li>
-                  <li><a href="#">3</a></li>
-                  <li><a href="#">&raquo;</a></li>
-                </ul>
-              </div>
-            </div><!-- /.row -->
-
-
-          </div><!-- /.row -->
-
-
-
-        </div><!-- /#page-wrapper -->
-<% end %>
-        <%elsif current_employer%>
-    <div id="wrapper">
-
-    <!-- Sidebar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Berza poslova</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav side-nav">
-          <li class="active"><a href="index.html"><i class="fa fa-dashboard"></i> Home </a></li>
-          <li><a href="charts.html"><i class="fa fa-bar-chart-o"></i> Charts</a></li>
-          <li><a href="tables.html"><i class="fa fa-table"></i> Tables</a></li>
-          <li><a href="forms.html"><i class="fa fa-edit"></i> Forms</a></li>
-          <li><a href="typography.html"><i class="fa fa-font"></i> Typography</a></li>
-          <li><a href="bootstrap-elements.html"><i class="fa fa-desktop"></i> Bootstrap Elements</a></li>
-          <li><a href="bootstrap-grid.html"><i class="fa fa-wrench"></i> Bootstrap Grid</a></li>
-          <li><a href="blank-page.html"><i class="fa fa-file"></i> Blank Page</a></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Dropdown <b class="caret"></b></a>
+            <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-info" > </i> Obavještenja (<%=b%>) <b class="caret"></b></a>
             <ul class="dropdown-menu">
-              <li><a href="#">Dropdown Item</a></li>
-              <li><a href="#">Another Item</a></li>
-              <li><a href="#">Third Item</a></li>
-              <li><a href="#">Last Item</a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right navbar-user">
-          <li class="dropdown messages-dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-header">7 New Messages</li>
-              <li class="message-preview">
-                <a href="#">
-                  <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                  <span class="name"><% current_employer %></span>
-                  <span class="message">Hey there, I wanted to ask you something...</span>
-                  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                </a>
-              </li>
-              <li class="divider"></li>
-              <li class="message-preview">
-                <a href="#">
-                  <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                  <span class="name">John Smith:</span>
-                  <span class="message">Hey there, I wanted to ask you something...</span>
-                  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                </a>
-              </li>
-              <li class="divider"></li>
-              <li class="message-preview">
-                <a href="#">
-                  <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                  <span class="name">John Smith:</span>
-                  <span class="message">Hey there, I wanted to ask you something...</span>
-                  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                </a>
-              </li>
-              <li class="divider"></li>
-              <li><a href="#">View Inbox <span class="badge">7</span></a></li>
-            </ul>
-          </li>
-          <li class="dropdown alerts-dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Default <span class="label label-default">Default</span></a></li>
-              <li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
-              <li><a href="#">Success <span class="label label-success">Success</span></a></li>
-              <li><a href="#">Info <span class="label label-info">Info</span></a></li>
-              <li><a href="#">Warning <span class="label label-warning">Warning</span></a></li>
-              <li><a href="#">Danger <span class="label label-danger">Danger</span></a></li>
-              <li class="divider"></li>
-              <li><a href="#">View All</a></li>
-            </ul>
-          </li>
-          <li class="dropdown user-dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <%= current_employer.name %> <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li> <%= link_to (t "nav.profile"),current_employer%></li>
-              <li><a href="#"><i class="fa fa-envelope"></i> Inbox <span class="badge">7</span></a></li>
-              <li><a href="#"><i class="fa fa-gear"></i> Settings</a></li>
+              <% @problems = Problem.all %>
+              <% @problems.each do |p| %>
+                  <% if p.user == current_user.id %>
 
-              <li class="divider"></li>
-              <li><a href="#"><i class="fa fa-power-off"></i> <%= link_to (t "nav.logout"), log_out_path %></a></li>
+                      <% @comments = Comment.all %>
+                      <% @comments.each do |c| %>
+                          <% if c.additional == "Nepročitan"  %>
+                              <% if c.problem_id == p.id %>
+                                  <% komentar = ' Imate novi komentar na ' + p.title %>
+                                        <li>  <%= link_to komentar, problem_path(p.id) %>  </li>
+                              <% end %>
+                          <% end %>
+                      <% end %>
+                  <% end %>
+              <% end %>
+              <% if b==0 %> <li><a>Nemate novih obavještenja</a></li><% end %>
             </ul>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </nav>
-    <%else%>
-    <div id="wrapper">
+           </li>
 
-    <!-- Sidebar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Berza poslova</a>
-      </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav side-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Jezik <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="?locale=bs#" data-no-turbolink="true">Bosanski</a></li>
-              <li><a href="?locale=en#" data-no-turbolink="true">Engleski</a></li>
-              <li><a href="?locale=hr#" data-no-turbolink="true">Hrvatski</a></li>
-            </ul>
-          </li>
-          <li>  <%= link_to (t "nav.home"), home_index_path %> </li>
-          <li>  <%= link_to (t "nav.about"), home_about_path %> </li>
-          <li>  <%= link_to (t "nav.contact"), home_contact_path %> </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Lokacije <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Sve lokacije </a></li>
-              <li><a href="#">Sarajevo </a></li>
-              <li><a href="#">Banja Luka</a></li>
-              <li><a href="#">Mostar</a></li>
-              <li><a href="#">Zenica</a></li>
-              <li><a href="#">Tuzla</a></li>
-              <li><a href="#">Bihać</a></li>
-              <li><a href="#">Travnik</a></li>
-              <li><a href="#">Zavidovići</a></li>
-              <li><a href="#">Brčko</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Kategorije <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Administrativne usluge </a></li>
-              <li><a href="#">Bankarstvo </a></li>
-              <li><a href="#">Biotehnologija i farmacija</a></li>
-              <li><a href="#">Drvna industrija</a></li>
-              <li><a href="#">Državna služba i uprava</a></li>
-              <li><a href="#">Ekonomija i finansije </a></li>
-              <li><a href="#">Elektrotehnika i informatika </a></li>
-              <li><a href="#">Energetika i rudarstvo</a></li>
-              <li><a href="#">Frizeri i kozmetičari </a></li>
-              <li><a href="#">Geologija</a></li>
-              <li><a href="#">Građevinarstvo i arhitektura </a></li>
-              <li><a href="#">Komercijala i prodaja</a></li>
-              <li><a href="#">Konsalting</a></li>
-              <li><a href="#">Marketing i PR</a></li>
-              <li><a href="#">Mašinstvo i metalurgija </a></li>
-              <li><a href="#">Mediji </a>
-              <li><a href="#">Menadžment i upravljanje </a></li>
-              <li><a href="#">Obrazovanje, kultura i sport </a></li>
-              <li><a href="#">Osiguranje </a></li>
-              <li><a href="#">Ostalo</a></li>
-              <li><a href="#">Policija i zaštitarske usluge</a></li>
-              <li><a href="#">Političke nauke </a></li>
-              <li><a href="#">Poljoprivreda i šumarstvo </a></li>
-              <li><a href="#">Pravo i društvene nauke</a></li>
-              <li><a href="#">Prevodilačke usluge </a></li>
-              <li><a href="#">Proizvodnja</a></li>
-              <li><a href="#">Računovodstvo i revizija</a></li>
-              <li><a href="#">Socijalne usluge</a></li>
-              <li><a href="#">Stipendije </a></li>
-              <li><a href="#">Teleprodaja i telemarketing</a></li>
-              <li><a href="#">Transport i skladištenje</a></li>
-              <li><a href="#">Trgovina </a></li>
-              <li><a href="#">Ugostiteljstvo i turizam </a></li>
-              <li><a href="#">Umjetnost i dizajn</a></li>
-              <li><a href="#">Zanatske usluge </a></li>
-              <li><a href="#">Zdravstvo i medicina  </a></li>
-            </ul>
-          </li>
-        </ul>
-    <ul class="nav navbar-nav navbar-right navbar-user">
-      <li class="dropdown messages-dropdown">
-        <%= link_to (t "nav.register"),users_new_path %>
-      </li>
-      <li class="dropdown user-dropdown">
-      <%= link_to (t "nav.login"), log_in_path %>
-    </li>
-    </ul>
-  </div><!-- /.navbar-collapse -->
+
+            <li class="dropdown">
+               <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-male" > </i> <%= current_user.name %> <%= current_user.surname %> <b class="caret"> </b></a>
+              <ul class="dropdown-menu">
+                <li>  <%= link_to 'Moj profil', user_path(current_user.id) %>  </li>
+                <li>  <%= link_to 'Postavke', edit_user_path(current_user.id) %>  </li>
+                <li>  <%= link_to 'Odjava', log_out_path %> </li>
+              </ul>
+            </li>
+
+
+      <% else %>
+        <li>
+          <%= link_to 'Registracija', new_user_path %>
+        </li>
+        <li>
+          <%= link_to 'Prijava', log_in_path %>
+        </li>
+
+            <% end %>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
 </nav>
 
+<!-- Page Content -->
+<div class="container">
 
-      <div id="page-wrapper">
+  <!-- Page Heading/Breadcrumbs -->
+  <div class="row">
+    <div class="col-lg-12">
 
-        <div class="row">
-          <div class="col-lg-12">
-            <h1>Berza poslova <small> POSO.BA</small></h1>
-            <ol class="breadcrumb">
-              <li class="active"><i class="fa fa-dashboard"></i> Početna stranica</li>
-            </ol>
-            <div class="alert alert-success alert-dismissable">
-              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
-              Dobro došli na berzu poslova <a class="alert-link" href="localhost:3000">poso.ba</a>! Niste  logovani i možete vidjeti samo neke objavljene oglase.
-            </div>
-          </div>
-        </div><!-- /.row -->
+      <h1 class="page-header"><i class="fa fa-question-circle"> </i> Pravni savjeti
+        <small>Podijelite svoja iskustva</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li> <%= link_to 'Početna', root_path %> </li>
+        <li class="active">Objavite svoje pravne dileme, pitanja i probleme</li>
+      </ol>
+    </div>
+  </div>
+  <!-- /.row -->
 
-        <div class="row">
-          <div class="col-lg-12">
-            <h2>Oglasi</h2>
-          </div>
-        </div><!-- /.row -->
-
-        <div class="row">
-
-          <% @advartisments = Advartisment.all %>
-          <% @advartisments.each do |advartisment| %>
-
-              <div class="col-lg-4">
-                <div class="panel panel-info">
-                  <div class="panel-heading">
-                    <h3 class="panel-title"><%= advartisment.title %></h3>
-                  </div>
-                  <div class="panel-body">
-                    <%= advartisment.description %>
-                  </div>
-                </div>
-              </div>
+  <!-- Content Row -->
+  <div class="row">
+    <!-- Sidebar Column -->
+    <div class="col-md-2">
+      <div class="list-group">
+        <b class="list-group-item ">Pravne kategorije</b>
+        <a href="#" class="list-group-item active">Sve kategorije</a>
+        <a href="/problems?utf8=✓&search=Krivično pravo" class="list-group-item">Krivično pravo</a>
+        <a href="/problems?utf8=✓&search=Nasljedno pravo" class="list-group-item">Nasljedno pravo</a>
+        <a href="/problems?utf8=✓&search=Roditeljsko pravo" class="list-group-item">Roditeljsko pravo</a>
+        <a href="/problems?utf8=✓&search=Porodično pravo" class="list-group-item">Porodično pravo</a>
+        <a href="/problems?utf8=✓&search=Radno pravo" class="list-group-item">Radno pravo</a>
+        <a href="/problems?utf8=✓&search=Stvarno pravo" class="list-group-item">Stvarno pravo</a>
+        <a href="/problems?utf8=✓&search=Poresko pravo" class="list-group-item">Poresko pravo</a>
+        <a href="/problems?utf8=✓&search=Obligaciono pravo" class="list-group-item">Obligaciono pravo</a>
+        <a href="/problems?utf8=✓&search=Ostalo" class="list-group-item">Ostalo</a>
+      </div>
+    </div>
 
 
+<div class="col-md-7">
+
+
+
+  <% @problems = Problem.all %>
+  <% @problems.each do |problem| %>
+
+
+<div class="row">
+    <!-- Content Column -->
+    <div class="col-md-2 text-center">
+
+      <% ima = 0 %>
+      <% @users = User.all %>
+      <% @users.each do |us| %>
+      <% if problem.user == us.id
+           ima = 1
+       end %>
+      <% end %>
+
+      <% if ima == 0 %>
+          <p><img src="/assets/avatar.png" height="64" width="64"></p>
+       <% else %>
+      <% @users = User.all %>
+      <% @users.each do |u| %>
+          <% if u.id == problem.user %>
+
+
+             <% if u.avatar.blank? %>
+              <p><img src="/assets/avatar.png" height="64" width="64"></p>
+
+          <% else %>
+              <p><img src= <%= u.avatar_url %> height="64" width="64"></p>
           <% end %>
 
+    <% end %>
+      <% end %>
+<% end %>
+      <hr>
+      <small><i class="fa fa-bell"></i> <br> <%= problem.status %></small>
 
 
-          <div class="row">
-            <div class="col-lg-8">
+    </div>
 
+    <div class="col-md-10">
+     <% if current_user %> <h3> <a href="#"><%= link_to problem.title, problem_path(problem.id) %></a> </h3> <% else %>
+          <h3><a href="#"><%= problem.title %></a></h3> <% end %>
+      <% @users = User.all %>
+      <% @users.each do |user| %>
+            <% if user.id == problem.user %>
+             <% korisnik = user.name + ' '+ user.surname %>
+
+              <% if user.email == '' %>
+                  <p>objavio/la <%= korisnik %></p>
+              <% else %>
+                 <p>objavio/la <%= link_to  korisnik, user_path(user.id)  %></p>
+              <% end %>
+          <% end %>
+      <% end %>
+
+      <p><%= problem.content %> <% if current_user %> <%= link_to ' Pročitaj više', problem_path(problem.id) %><% end %></p>
+      <small><i class="fa fa-clock-o"> </i> prije <%= t time_ago_in_words(problem.created_at) %>  |  <i class="fa fa-bank"> </i> <%= problem.category %></small>
+      <hr>
+    </div>
+</div>
+
+
+ <% end %>
+
+
+
+
+</div>
+    <div class="col-md-3">
+      <!-- Blog Search Well -->
+
+      <%= form_tag problems_path, :method => 'get' do %>
+      <div class="well">
+        <p>Pretraga</p>
+        <div class="input-group">
+
+                <%= text_field_tag :search, params[:search], :class => "form-control", :value => "" %>
+
+                        <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                        </span>
+
+        </div>
+        <!-- /.input-group -->
+      </div>
+
+      <% end %>
+
+
+
+      <% if !current_user %>
+
+      <div class="well">
+        Da biste objavili svoje pitanje, komentarisali na pitanja drugih korisnika ili pregledali korisničke profile morate biti registrovani.
+<br>
+        <a class="fa fa-sign-in"> </a>
+        <%= link_to 'Registracija', new_user_path %>
+      </div>
+<% else %>
+      <div class="panel panel-default">
+        <div class="panel-body">
+
+          <a class="fa fa-question-circle"> </a> <%= link_to 'Objavite pravno pitanje', new_problem_path %>
+        </div>
+      </div>
+          <div class="panel panel-default">
+            <div class="panel-body">
+
+              <% adresa = "/problems?utf8=✓&search=" + current_user.username %>
+              <a class="fa fa-question-circle"></a> <a href= "<%= adresa %>"  class="navbar-link"> Prikaži moja objavljena pitanja </a>
             </div>
+          </div>
+<% end %>
+
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h3 class="panel-title">Statistički podaci</h3>
+        </div>
+
+        <ul class="list-group">
+          <li class="list-group-item">Registrovanih korisnika: <%= User.all.count %> </li>
+          <li class="list-group-item">Objavljenih pitanja: <%= @problems.count %></li>
+
+          </li>
+        </ul>
+      </div>
 
 
-            <div class="col-lg-4">
-              <ul class="pagination pagination-sm">
-                <li class="disabled"><a href="#">&laquo;</a></li>
-                <li class="active"><a href="#">1</a></li>
-                <li><a href="#">2</a></li>
-                <li><a href="#">3</a></li>
-                <li><a href="#">&raquo;</a></li>
-              </ul>
-            </div>
-          </div><!-- /.row -->
+      <div class="thumbnail text-center" >
 
+        <div class="caption">
 
-        </div><!-- /.row -->
-
-
-
-      </div><!-- /#page-wrapper -->
-    </div><!-- /#wrapper -->
-<%end%>
-<!-- JavaScript -->
-<script src="js/jquery-1.10.2.js"></script>
-<script src="js/bootstrap.js"></script>
-
-<!-- Page Specific Plugins -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
-<script src="js/morris/chart-data-morris.js"></script>
-<script src="angular.js">
-    <script src="angular-resource.js">
-<%= javascript_include_tag "http://ajax.googleapis.com/ajax/libs/angularjs/1.0.6/angular-resource.min.js" %>
-<script src="js/tablesorter/jquery.tablesorter.js"></script>
-<script src="js/tablesorter/tables.js"></script>
+          <p>Posjetite nas na Facebook Google+</p>
+          <ul class="list-inline">
+            <li><a href="https://facebook.com"><i class="fa fa-3x fa-facebook-square"></i></a>
+            </li>
+            <li><a href="https://plus.google.com"><i class="fa fa-3x fa-google-plus-square"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
 
 
 
@@ -1232,5 +269,29 @@
 
 
 
-</body>
-</html>
+
+
+    </div>
+
+    </div>
+  <!-- /.row -->
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright &copy; Nusreta Sinanović 2014 | nusretasinanovic@gmail.com</p>
+      </div>
+    </div>
+  </footer>
+
+</div>
+<!-- /.container -->
+
+<!-- jQuery Version 1.11.0 -->
+<script src="js/jquery-1.11.0.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>

@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
   # GET /sessions/1.json
   def show
   end
-##
+  ##
 
   # GET /sessions/1/edit
   def edit
@@ -24,22 +24,18 @@ class SessionsController < ApplicationController
   end
   def create
     user = User.authenticate(params[:email], params[:password])
-    employer = Employer.authenticate(params[:email], params[:password])
+
     if user
       session[:user_id] = user.id
       redirect_to root_url, :notice => "Logged in!"
-    elsif employer
-      session[:employer_id] = employer.id
-      redirect_to root_url, :notice => "Logged in!"
     else
       flash.now.alert = "Invalid email or password"
-      render "new"
+      render "_form"
     end
   end
 
   def destroy
     session[:user_id] = nil
-    session[:employer_id] = nil
     redirect_to root_url, :notice => "Logged out!"
   end
 
@@ -60,14 +56,14 @@ class SessionsController < ApplicationController
 
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-   def set_session
-     @session=Session.find_each
-   #  @session = Session.find(params[:id])
-    end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_session
+    @session=Session.find_each
+    #  @session = Session.find(params[:id])
+  end
 
-    # Never trust parameters from the scary internet, only allow the white list through.
-    def session_params
-      params[:session]
-    end
+  # Never trust parameters from the scary internet, only allow the white list through.
+  def session_params
+    params[:session]
+  end
 end

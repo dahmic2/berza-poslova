@@ -1,19 +1,27 @@
 class ApplicationController < ActionController::Base
-  # Prevent CSRF attacks by raising an exception.
-  # For APIs, you may want to use :null_session instead.
+
   protect_from_forgery with: :exception
+
   helper_method :current_user
-  helper_method :current_employer
+  helper_method :izbrisi
+  helper_method :say
+
   before_filter :set_locale
 
   def set_locale
-    if (params[:locale])
+    if params[:locale]
       session[:locale] = params[:locale]
     elsif session[:locale].nil?
       session[:locale] = request.env['HTTP_ACCEPT_LANGUAGE'].scan(/^[a-z]{2}/).first
     end
     I18n.locale = session[:locale] || I18n.default_locale
   end
+
+  def say
+    "hello"
+  end
+
+
   private
 
   def current_user
@@ -21,22 +29,17 @@ class ApplicationController < ActionController::Base
   end
 
 
-  def current_employer
-    @current_employer ||= Employer.find(session[:employer_id]) if session[:employer_id]
-  end
-  def provjera2
-    if !current_employer
-      redirect_to root_path
-    end
-  end
-  def provjera1
+
+
+  def provjera
     if !current_user
       redirect_to root_path
     end
   end
-  def provjera
-    if !current_employer && !current_user
-      redirect_to root_path
-    end
+
+  def izbrisi(id)
+    user = User.find(id)
+    user.update_attribute(:email, '')
   end
+
 end

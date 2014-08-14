@@ -1,4 +1,15 @@
-<p id="notice"><%= notice %></p>
+<div class="page-header">
+  <%= link_to sessions_path, :class => 'btn btn-default' do %>
+    <span class="glyphicon glyphicon-list-alt"></span>
+    Back
+  <% end %>
+  <%= link_to edit_session_path(@session), :class => 'btn btn-primary' do %>
+    <span class="glyphicon glyphicon-pencil"></span>
+    Edit
+  <% end %>
+  <h1>Show session</h1>
+</div>
 
-<%= link_to (t "edit"), edit_session_path(@session) %> |
-<%= link_to (t "back"), sessions_path %>
+<dl class="dl-horizontal">
+
+</dl>

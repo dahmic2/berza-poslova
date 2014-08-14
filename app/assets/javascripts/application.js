@@ -14,12 +14,5 @@
 //= require jquery_ujs
 //= require bootstrap
 //= require_tree .
-//= require angular
-//= require angular-resource
-//= require angular-cookies
-//= require angular-route
-//= require app
-//= require controller
-//= require services
-//= require cv
+
 

@@ -1,14 +1,392 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
-  <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/app/assets/javascripts/app.js" line="6" mnemonic="9" />
-  </component>
   <component name="ChangeListManager">
     <list default="true" id="531aad26-debe-4623-9c4b-d439d70cd012" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/partials/viewuser.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/viewusercontroller.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/updateusercontroller.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/updateusercontroller.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/font-awesome-4.1.0/fonts/FontAwesome.otf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/images/avatar.png" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/font-awesome-4.1.0/fonts/fontawesome-webfont.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/font-awesome-4.1.0/fonts/fontawesome-webfont.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/font-awesome-4.1.0/fonts/fontawesome-webfont.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/fonts/glyphicons-halflings-regular.eot" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/fonts/glyphicons-halflings-regular.ttf" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/fonts/glyphicons-halflings-regular.woff" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/js/contact_me.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/bin/contact_me.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/font-awesome-4.1.0/css/font-awesome.min.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/font-awesome-4.1.0/fonts/fontawesome-webfont.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/fonts/glyphicons-halflings-regular.svg" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/config/locales/hr.yml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/js/jqBootstrapValidation.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/javascripts/js/jquery-1.11.0.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/assets/stylesheets/css/modern-business.css" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/sessions.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/assets/javascripts/users.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/sessions_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/controllers/users_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/helpers/sessions_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/helpers/users_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/mailers/user_mailer.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/session.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/models/user.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/uploaders/avatar_uploader.rb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/sessions/_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/sessions/edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/sessions/index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/sessions/index.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/sessions/new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/sessions/show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/sessions/show.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/index.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/app/views/users/show.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/db/schema.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\images\contact-us.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\images\job.jpg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\admins.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\advartisments.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\angular-resource.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\angular-route.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\angular.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\c_vs.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\categories.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\controller.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\cv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\employers.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\js\flot\chart-data-flot.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\js\flot\excanvas.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\js\flot\jquery.flot.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\js\flot\jquery.flot.pie.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\js\flot\jquery.flot.resize.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\js\flot\jquery.flot.tooltip.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\js\jquery-1.10.2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\js\morris\chart-data-morris.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\js\tablesorter\jquery.tablesorter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\js\tablesorter\tables.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\notifications.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\projects.js.coffee" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\services.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\updateusercontroller.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\user.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\javascripts\viewusercontroller.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\admins.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\advartisments.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\c_vs.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\categories.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\css\sb-admin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\employers.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\fonts\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\less\bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\less\core.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\less\fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\less\font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\less\icons.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\less\larger.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\less\list.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\less\mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\less\path.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\less\rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\less\spinning.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\less\stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\less\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\scss\_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\scss\_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\scss\_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\scss\_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\scss\_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\scss\_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\scss\_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\scss\_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\scss\_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\scss\_spinning.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\scss\_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\scss\_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\scss\font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\notifications.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\projects.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\scaffolds.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\sessions.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\users.css.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\controllers\admins_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\controllers\advartisments_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\controllers\categories_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\controllers\cvs_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\controllers\employers_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\controllers\notifications_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\helpers\admins_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\helpers\advartisments_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\helpers\c_vs_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\helpers\categories_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\helpers\employers_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\helpers\notifications_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\helpers\projects_helper.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\login\angular.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\login\app.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\login\login.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\login\login.tpl.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\models\admin.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\models\advartisment.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\models\category.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\models\ckeditor\asset.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\models\ckeditor\attachment_file.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\models\ckeditor\picture.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\models\cv.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\models\employer.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\models\notification.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\admins\_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\admins\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\admins\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\admins\index.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\admins\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\admins\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\admins\show.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\advartisments\_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\advartisments\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\advartisments\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\advartisments\index.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\advartisments\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\advartisments\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\advartisments\show.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\categories\_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\categories\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\categories\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\categories\index.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\categories\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\categories\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\categories\show.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\cvs\_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\cvs\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\cvs\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\cvs\index.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\cvs\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\cvs\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\cvs\show.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\employers\_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\employers\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\employers\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\employers\index.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\employers\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\employers\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\employers\show.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\home\about.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\home\contact.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\notifications\_form.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\notifications\edit.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\notifications\index.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\notifications\index.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\notifications\new.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\notifications\show.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\notifications\show.json.jbuilder" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\simple_captcha\_simple_captcha.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\user_mailer\activate_account.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\user_mailer\activate_account.text.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\views\user_mailer\welcome_email.text.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\berza\.idea\.name" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\berza\.idea\berza.iml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\berza\.idea\encodings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\berza\.idea\misc.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\berza\.idea\modules.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\berza\.idea\scopes\scope_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\berza\.idea\vcs.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\berza\.idea\workspace.xml" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\db\migrate\20140319113601_create_users.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\db\migrate\20140319113756_create_employers.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\db\migrate\20140319113853_create_admins.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\db\migrate\20140319113934_create_categories.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\db\migrate\20140319114226_create_cvs.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\db\migrate\20140319114807_create_advartisments.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\db\migrate\20140319114936_create_notifications.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\db\migrate\20140319205709_create_sessions.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\db\migrate\20140319220126_create_projects.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\db\migrate\20140327180641_create_simple_captcha_data.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\db\migrate\20140406195810_add_avatar_to_users.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\db\migrate\20140407163850_add_users_password_reset_fields.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\db\migrate\20140409184324_add_avatar_to_employers.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\db\migrate\20140410172637_remove_category_id_from_advartisments.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\db\migrate\20140410173110_add_category_to_advartisments.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\css\bootstrap.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\css\bootstrap.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\css\sb-admin.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\css\font-awesome.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\css\font-awesome.min.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\fonts\FontAwesome.otf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\fonts\fontawesome-webfont.eot" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\fonts\fontawesome-webfont.svg" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\fonts\fontawesome-webfont.ttf" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\fonts\fontawesome-webfont.woff" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\less\bordered-pulled.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\less\core.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\less\fixed-width.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\less\font-awesome.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\less\icons.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\less\larger.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\less\list.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\less\mixins.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\less\path.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\less\rotated-flipped.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\less\spinning.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\less\stacked.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\less\variables.less" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\scss\_bordered-pulled.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\scss\_core.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\scss\_fixed-width.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\scss\_icons.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\scss\_larger.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\scss\_list.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\scss\_mixins.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\scss\_path.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\scss\_rotated-flipped.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\scss\_spinning.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\scss\_stacked.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\scss\_variables.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\font-awesome\scss\font-awesome.scss" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\js\bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\js\bootstrap.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\js\flot\chart-data-flot.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\js\flot\excanvas.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\js\flot\jquery.flot.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\js\flot\jquery.flot.pie.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\js\flot\jquery.flot.resize.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\js\flot\jquery.flot.tooltip.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\js\jquery-1.10.2.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\js\morris\chart-data-morris.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\js\tablesorter\jquery.tablesorter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\js\tablesorter\tables.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\partials\cv.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\partials\cvNew.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\partials\editUser.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\partials\viewuser.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\public\uploads\user\avatar\2\cuko.jpg" afterPath="" />
+      <change type="MOVED" beforePath="C:\Documents and Settings\edvin\Desktop\pravo\app\assets\stylesheets\font-awesome\css\font-awesome.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/font-awesome-4.1.0/css/font-awesome.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.ids" afterPath="$PROJECT_DIR$/.idea/dataSources.ids" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.rspec" afterPath="$PROJECT_DIR$/.rspec" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/404.html" afterPath="$PROJECT_DIR$/public/404.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/422.html" afterPath="$PROJECT_DIR$/public/422.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/500.html" afterPath="$PROJECT_DIR$/public/500.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Development__berza_poslova.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Development__berza_poslova.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Development__berza_poslova2.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Development__berza_poslova2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile.lock" afterPath="$PROJECT_DIR$/Gemfile.lock" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dictionaries/Nejra.xml" afterPath="$PROJECT_DIR$/.idea/dictionaries/Nejra.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Production__berza_poslova.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Production__berza_poslova.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/Production__berza_poslova2.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/Production__berza_poslova2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.rdoc" afterPath="$PROJECT_DIR$/README.rdoc" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Rakefile" afterPath="$PROJECT_DIR$/Rakefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/templates/erb/scaffold/_form.html.erb" afterPath="$PROJECT_DIR$/lib/templates/erb/scaffold/_form.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/admin_test.rb" afterPath="$PROJECT_DIR$/test/models/admin_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/admins.yml" afterPath="$PROJECT_DIR$/test/fixtures/admins.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/admins_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/admins_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/admins_helper_test.rb" afterPath="$PROJECT_DIR$/test/helpers/admins_helper_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/advartisment_test.rb" afterPath="$PROJECT_DIR$/test/models/advartisment_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/advartisments.yml" afterPath="$PROJECT_DIR$/test/fixtures/advartisments.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/advartisments_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/advartisments_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/advartisments_helper_test.rb" afterPath="$PROJECT_DIR$/test/helpers/advartisments_helper_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/app.rb" afterPath="$PROJECT_DIR$/lib/app.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/app_spec.rb" afterPath="$PROJECT_DIR$/spec/app_spec.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-311954e7cc701f29277869930a98f68e.js" afterPath="$PROJECT_DIR$/public/assets/application-311954e7cc701f29277869930a98f68e.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/application-82285f95ade85af35894c744c8c58e85.css" afterPath="$PROJECT_DIR$/public/assets/application-82285f95ade85af35894c744c8c58e85.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/application.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/application.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/application.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" afterPath="$PROJECT_DIR$/config/initializers/backtrace_silencers.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/berza-poslova.iml" afterPath="$PROJECT_DIR$/.idea/berza-poslova.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/boot.rb" afterPath="$PROJECT_DIR$/config/boot.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/css/bootstrap.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/css/bootstrap.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/js/bootstrap.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/js/bootstrap.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/css/bootstrap.min.css" afterPath="$PROJECT_DIR$/app/assets/stylesheets/css/bootstrap.min.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/app/assets/javascripts/js/bootstrap.min.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/locales/bs.json" afterPath="$PROJECT_DIR$/public/locales/bs.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/bs.yml" afterPath="$PROJECT_DIR$/config/locales/bs.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/bundle" afterPath="$PROJECT_DIR$/bin/bundle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/c_vs_helper_test.rb" afterPath="$PROJECT_DIR$/test/helpers/c_vs_helper_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/categories.yml" afterPath="$PROJECT_DIR$/test/fixtures/categories.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/categories_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/categories_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/categories_helper_test.rb" afterPath="$PROJECT_DIR$/test/helpers/categories_helper_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/category_test.rb" afterPath="$PROJECT_DIR$/test/models/category_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/chartkick-163b7fc0c742514f6792d5fb0ced6f92.js" afterPath="$PROJECT_DIR$/public/assets/chartkick-163b7fc0c742514f6792d5fb0ced6f92.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config.ru" afterPath="$PROJECT_DIR$/config.ru" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/cv_test.rb" afterPath="$PROJECT_DIR$/test/models/cv_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/cvs.yml" afterPath="$PROJECT_DIR$/test/fixtures/cvs.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/cvs_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/cvs_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/database.yml" afterPath="$PROJECT_DIR$/config/database.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/development.rb" afterPath="$PROJECT_DIR$/config/environments/development.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/templates/erb/scaffold/edit.html.erb" afterPath="$PROJECT_DIR$/lib/templates/erb/scaffold/edit.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/employer_test.rb" afterPath="$PROJECT_DIR$/test/models/employer_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/employers.yml" afterPath="$PROJECT_DIR$/test/fixtures/employers.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/employers_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/employers_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/employers_helper_test.rb" afterPath="$PROJECT_DIR$/test/helpers/employers_helper_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/locales/en.json" afterPath="$PROJECT_DIR$/public/locales/en.json" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/locales/en.yml" afterPath="$PROJECT_DIR$/config/locales/en.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environment.rb" afterPath="$PROJECT_DIR$/config/environment.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" afterPath="$PROJECT_DIR$/config/initializers/filter_parameter_logging.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-e327cd5918c69ba34cb1c92b9c7c424a.svg" afterPath="$PROJECT_DIR$/public/assets/bootstrap/glyphicons-halflings-regular-e327cd5918c69ba34cb1c92b9c7c424a.svg" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" afterPath="$PROJECT_DIR$/app/assets/stylesheets/home.css.scss" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/assets/javascripts/home.js.coffee" afterPath="$PROJECT_DIR$/app/assets/javascripts/home.js.coffee" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/home_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/home_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/home_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/home_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/home_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/home_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/home_helper_test.rb" afterPath="$PROJECT_DIR$/test/helpers/home_helper_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/home/index.html.erb" afterPath="$PROJECT_DIR$/app/views/home/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/templates/erb/scaffold/index.html.erb" afterPath="$PROJECT_DIR$/lib/templates/erb/scaffold/index.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/inflections.rb" afterPath="$PROJECT_DIR$/config/initializers/inflections.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/mime_types.rb" afterPath="$PROJECT_DIR$/config/initializers/mime_types.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/templates/erb/scaffold/new.html.erb" afterPath="$PROJECT_DIR$/lib/templates/erb/scaffold/new.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/notification_test.rb" afterPath="$PROJECT_DIR$/test/models/notification_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/notifications.yml" afterPath="$PROJECT_DIR$/test/fixtures/notifications.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/notifications_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/notifications_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/notifications_helper_test.rb" afterPath="$PROJECT_DIR$/test/helpers/notifications_helper_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/password_resets_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/password_resets_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/password_resets_helper_test.rb" afterPath="$PROJECT_DIR$/test/helpers/password_resets_helper_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/project_test.rb" afterPath="$PROJECT_DIR$/test/models/project_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/projects.yml" afterPath="$PROJECT_DIR$/test/fixtures/projects.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/projects_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/projects_helper_test.rb" afterPath="$PROJECT_DIR$/test/helpers/projects_helper_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/rails" afterPath="$PROJECT_DIR$/bin/rails" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/bin/rake" afterPath="$PROJECT_DIR$/bin/rake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/recaptcha.rb" afterPath="$PROJECT_DIR$/config/initializers/recaptcha.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/robots.txt" afterPath="$PROJECT_DIR$/public/robots.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/secret_token.rb" afterPath="$PROJECT_DIR$/config/initializers/secret_token.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/db/seeds.rb" afterPath="$PROJECT_DIR$/db/seeds.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/session_store.rb" afterPath="$PROJECT_DIR$/config/initializers/session_store.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/session_test.rb" afterPath="$PROJECT_DIR$/test/models/session_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/sessions.yml" afterPath="$PROJECT_DIR$/test/fixtures/sessions.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/sessions_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/sessions_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/sessions_helper_test.rb" afterPath="$PROJECT_DIR$/test/helpers/sessions_helper_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/templates/erb/scaffold/show.html.erb" afterPath="$PROJECT_DIR$/lib/templates/erb/scaffold/show.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/spec__berza_poslova.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/spec__berza_poslova.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/spec__berza_poslova2.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/spec__berza_poslova2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/spec/spec_helper.rb" afterPath="$PROJECT_DIR$/spec/spec_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/test.rb" afterPath="$PROJECT_DIR$/config/environments/test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/test__berza_poslova.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/test__berza_poslova.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/runConfigurations/test__berza_poslova2.xml" afterPath="$PROJECT_DIR$/.idea/runConfigurations/test__berza_poslova2.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/test_helper.rb" afterPath="$PROJECT_DIR$/test/test_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/mailers/user_mailer_test.rb" afterPath="$PROJECT_DIR$/test/mailers/user_mailer_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/models/user_test.rb" afterPath="$PROJECT_DIR$/test/models/user_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/fixtures/users.yml" afterPath="$PROJECT_DIR$/test/fixtures/users.yml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/controllers/users_controller_test.rb" afterPath="$PROJECT_DIR$/test/controllers/users_controller_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/test/helpers/users_helper_test.rb" afterPath="$PROJECT_DIR$/test/helpers/users_helper_test.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/templates/erb/controller/view.html.erb" afterPath="$PROJECT_DIR$/lib/templates/erb/controller/view.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/user_mailer/welcome_email.html.erb" afterPath="$PROJECT_DIR$/app/views/user_mailer/welcome_email.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" afterPath="$PROJECT_DIR$/config/initializers/wrap_parameters.rb" />
     </list>
     <ignored path="berza_poslova.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,91 +409,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="controller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/controller.js">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="18" column="11" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
+            <state line="186" column="0" selection-start="6568" selection-end="6568" vertical-scroll-proportion="0.0" vertical-offset="3069" max-vertical-offset="5151">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="updateusercontroller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/updateusercontroller.js">
+      <file leaf-file-name="index.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/problems/index.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="25" column="0" selection-start="0" selection-end="1036" vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="595">
+            <state line="24" column="0" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="6154">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="viewusercontroller.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewusercontroller.js">
+      <file leaf-file-name="new.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
+            <state line="144" column="0" selection-start="4910" selection-end="4910" vertical-scroll-proportion="-5.8846154" vertical-offset="2295" max-vertical-offset="4437">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/services.js">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/sessions/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="41" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
+            <state line="150" column="2" selection-start="5222" selection-end="5222" vertical-scroll-proportion="0.2718327" vertical-offset="2329" max-vertical-offset="4539">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/app.js">
+      <file leaf-file-name="_form.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/problems/_form.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="0" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+            <state line="131" column="32" selection-start="4929" selection-end="4929" vertical-scroll-proportion="-10.019608" vertical-offset="1716" max-vertical-offset="3927">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="17" selection-start="427" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="527">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="angular.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="2" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="385373">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="editUser.html" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/partials/editUser.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="93" selection-start="34" selection-end="210" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="2822">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="viewuser.html" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/partials/viewuser.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="256" column="20" selection-start="14641" selection-end="14641" vertical-scroll-proportion="0.49158877" vertical-offset="4089" max-vertical-offset="4624">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="show.html.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="435" column="24" selection-start="7493" selection-end="19921" vertical-scroll-proportion="-9.461538" vertical-offset="7149" max-vertical-offset="7752">
+            <state line="52" column="11" selection-start="1258" selection-end="1258" vertical-scroll-proportion="-23.2" vertical-offset="304" max-vertical-offset="1258">
               <folding />
             </state>
           </provider>
@@ -135,65 +477,65 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/db/schema.rb" />
-        <option value="$PROJECT_DIR$/app/models/advartisment.rb" />
-        <option value="$PROJECT_DIR$/app/views/employers/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
-        <option value="$PROJECT_DIR$/config/locales/bs.yml" />
-        <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/advartisments_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/advartisments/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/advartisments/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/advartisments/_form.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/user_mailer/welcome_email.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/user_mailer/welcome_email.text.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/admins_controller.rb" />
-        <option value="$PROJECT_DIR$/README.rdoc" />
-        <option value="$PROJECT_DIR$/config/unicorn.rb" />
-        <option value="$PROJECT_DIR$/app/views/cvs/edit.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/simple_captcha/_simple_captcha.erb" />
-        <option value="$PROJECT_DIR$/public/css/bootstrap.css" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/js/bootstrap.js" />
-        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/app.js" />
-        <option value="$PROJECT_DIR$/public/partials/cv.html" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
-        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/services.js" />
-        <option value="$PROJECT_DIR$/app/controllers/cvs_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/cvs/show.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/cvs/index.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/cvs/_form.html.erb" />
-        <option value="$PROJECT_DIR$/public/partials/cvNew.html" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/cv.js" />
-        <option value="$PROJECT_DIR$/app/views/cvs/new.html.erb" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/app.js" />
-        <option value="$PROJECT_DIR$/app/assets/javascripts/controller.js" />
-        <option value="$PROJECT_DIR$/config/database.yml" />
-        <option value="$PROJECT_DIR$/Gemfile" />
-        <option value="$PROJECT_DIR$/config/environments/development.rb" />
-        <option value="$PROJECT_DIR$/config/application.rb" />
-        <option value="$PROJECT_DIR$/app/login/login.tpl.html" />
         <option value="$PROJECT_DIR$/app/login/login.js" />
         <option value="$PROJECT_DIR$/app/login/app.js" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/views/admins/editUser.html" />
         <option value="$PROJECT_DIR$/public/partials/editUser.html" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/updateusercontroller.js" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/viewusercontroller.js" />
         <option value="$PROJECT_DIR$/public/partials/viewuser.html" />
+        <option value="$PROJECT_DIR$/app/models/category.rb" />
+        <option value="$PROJECT_DIR$/Gemfile.lock" />
+        <option value="$PROJECT_DIR$/db/migrate/20140731193932_create_users.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140731194021_create_comments.rb" />
+        <option value="$PROJECT_DIR$/db/migrate/20140731194101_create_problems.rb" />
+        <option value="$PROJECT_DIR$/db/schema.rb" />
+        <option value="$PROJECT_DIR$/config/database.yml" />
+        <option value="$PROJECT_DIR$/app/views/comments/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/comment.rb" />
+        <option value="$PROJECT_DIR$/app/uploaders/picture_uploader.rb" />
+        <option value="$PROJECT_DIR$/app/views/problems/new.html.erb" />
+        <option value="$PROJECT_DIR$/config/locales/bs.yml" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/sessions_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/users_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/users/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/sessions/edit.html.erb" />
+        <option value="$PROJECT_DIR$/config/locales/hr.yml" />
+        <option value="$PROJECT_DIR$/app/views/users/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/_form.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/user.rb" />
+        <option value="$PROJECT_DIR$/app/views/problems/edit.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/users/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/helpers/problems_helper.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/problems_controller.rb" />
+        <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/comments_controller.rb" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
+        <option value="$PROJECT_DIR$/app/views/problems/show.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/comments/show.html.erb" />
+        <option value="$PROJECT_DIR$/config/environment.rb" />
+        <option value="$PROJECT_DIR$/app/mailers/user_mailer.rb" />
+        <option value="$PROJECT_DIR$/app/views/user_mailer/welcome_email.html.erb" />
+        <option value="$PROJECT_DIR$/app/models/problem.rb" />
+        <option value="$PROJECT_DIR$/app/views/sessions/new.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/home/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/problems/index.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/problems/_form.html.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
+        <option value="$PROJECT_DIR$/app/views/sessions/_form.html.erb" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1" />
-    <option name="y" value="1" />
-    <option name="width" value="1364" />
-    <option name="height" value="726" />
+    <option name="x" value="-4" />
+    <option name="y" value="-4" />
+    <option name="width" value="1288" />
+    <option name="height" value="1002" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -209,12 +551,15 @@
             <id>Invalid elementsCSS</id>
           </State>
           <State>
+            <id>Rails</id>
+          </State>
+          <State>
             <id>Ruby</id>
           </State>
         </expanded-state>
         <selected-state>
           <State>
-            <id>CssInvalidElement</id>
+            <id>RailsChecklist02</id>
           </State>
         </selected-state>
       </profile-state>
@@ -250,59 +595,91 @@
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zadnja_verzija" />
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zadnja_verzija" />
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zadnja_verzija" />
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zadnja_verzija" />
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zadnja_verzija" />
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="db" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zadnja_verzija" />
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zadnja_verzija" />
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="partials" />
+              <option name="myItemId" value="config" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zadnja_verzija" />
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zadnja_verzija" />
+              <option name="myItemId" value="pravo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="locales" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pravo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pravo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pravo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -320,11 +697,77 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zadnja_verzija" />
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zadnja_verzija" />
+              <option name="myItemId" value="pravo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="user_mailer" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pravo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pravo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="sessions" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pravo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pravo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="problems" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pravo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -338,11 +781,33 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zadnja_verzija" />
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zadnja_verzija" />
+              <option name="myItemId" value="pravo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="home" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pravo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -352,11 +817,11 @@
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zadnja_verzija" />
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zadnja_verzija" />
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -364,17 +829,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="models" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zadnja_verzija" />
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="zadnja_verzija" />
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -382,37 +847,69 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="assets" />
+              <option name="myItemId" value="mailers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pravo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pravo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="javascripts" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pravo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="pravo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="RailsProjectView" />
       <pane id="Scope" />
+      <pane id="RailsProjectView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$USER_HOME$/challenge" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="recentsLimit" value="5" />
     <property name="FullScreen" value="false" />
     <property name="project.settings.patched" value="true" />
     <property name="org.jetbrains.plugins.ruby.i18n.inspection.quickfixes.I18nCreatePropertyDialog" value="bs.yml" />
-    <property name="SearchEverywhereHistory" value="" />
+    <property name="SearchEverywhereHistory" value="#" />
     <property name="DefaultHtmlFileTemplate" value="Html5" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\Nusreta\RubymineProjects\nwt\berza-poslova\app\login" />
-      <recent name="C:\Users\Nusreta\RubymineProjects\najnoviji\berza-poslova\app\assets\javascripts" />
-      <recent name="C:\Users\Nusreta\RubymineProjects\najnoviji\berza-poslova\public" />
-      <recent name="C:\Sites\Berza\berza-poslova\app\views\user_mailer" />
-      <recent name="C:\Sites\Berza\berza-poslova\app\models" />
+      <recent name="C:\Users\Nusreta\Desktop\pravo\config\locales" />
+      <recent name="C:\Users\Nusreta\Desktop\pravo\app\assets\images" />
+      <recent name="C:\Users\Nusreta\Desktop\pravo\app" />
+      <recent name="C:\Users\Nusreta\Desktop\pravo\config" />
+      <recent name="C:\Users\Nusreta\Desktop\pravo\app\assets\javascripts" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\Users\User\RubymineProjects\zadnja_verzija\public\partials" />
@@ -933,25 +1430,25 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1" y="1" width="1364" height="726" extended-state="0" />
+    <frame x="-4" y="-4" width="1288" height="1002" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32104453" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842416" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32718894" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.06298003" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3268921" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33761328" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38744256" sideWeight="0.32983193" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23505655" sideWeight="0.32983193" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35649547" sideWeight="0.67016804" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771823" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32305434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48164463" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48079878" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917318" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31950846" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33073324" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39968896" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -961,23 +1458,23 @@
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32842416" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32718894" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.34408602" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32872504" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32917318" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33761328" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.35649547" sideWeight="0.67016804" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32771823" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48164463" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32104453" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.48079878" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.31950846" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="SVN Repositories" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.33073324" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32850242" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3268921" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3836858" sideWeight="0.32983193" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32305434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20543806" sideWeight="0.32983193" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.39968896" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32305434" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1023,319 +1520,289 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js/flot/excanvas.min.js">
+    <entry file="file://$PROJECT_DIR$/app/models/comment.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js/flot/chart-data-flot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4131" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js/flot/jquery.flot.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="44217" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js/flot/jquery.flot.pie.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="12852" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js/flot/jquery.flot.resize.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1105" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js/flot/jquery.flot.tooltip.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js/morris/chart-data-morris.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.2208122" vertical-offset="481" max-vertical-offset="2278" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js/tablesorter/jquery.tablesorter.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="17612" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js/bootstrap.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js/tablesorter/tables.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="588" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js/bootstrap.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1937" column="12" selection-start="54934" selection-end="54934" vertical-scroll-proportion="0.58457714" vertical-offset="32694" max-vertical-offset="33269" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/js/jquery-1.10.2.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="575" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="1" selection-start="894" selection-end="894" vertical-scroll-proportion="0.0" vertical-offset="391" max-vertical-offset="1037" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/admins_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="0" selection-start="252" selection-end="252" vertical-scroll-proportion="0.11447811" vertical-offset="170" max-vertical-offset="1411" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/cv.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="186" column="0" selection-start="8824" selection-end="8824" vertical-scroll-proportion="0.0" vertical-offset="2894" max-vertical-offset="3264" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="1223" column="4" selection-start="54722" selection-end="54722" vertical-scroll-proportion="0.0" vertical-offset="20491" max-vertical-offset="21114" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/categories_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="37" column="7" selection-start="489" selection-end="919" vertical-scroll-proportion="0.6736292" vertical-offset="371" max-vertical-offset="1377" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/cvs_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="39" column="0" selection-start="786" selection-end="786" vertical-scroll-proportion="0.6783784" vertical-offset="412" max-vertical-offset="1377" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cvs/show.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="133" column="30" selection-start="6340" selection-end="6340" vertical-scroll-proportion="0.88081396" vertical-offset="1958" max-vertical-offset="2839" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cvs/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="0" selection-start="47" selection-end="47" vertical-scroll-proportion="0.22486773" vertical-offset="0" max-vertical-offset="378" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cvs/index.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="163" column="104" selection-start="7717" selection-end="7717" vertical-scroll-proportion="0.0" vertical-offset="2657" max-vertical-offset="3332" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/cv.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="2" selection-start="150" selection-end="150" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187">
+        <state line="3" column="0" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="153">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cvs/new.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/uploaders/avatar_uploader.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="142" column="29" selection-start="6671" selection-end="6704" vertical-scroll-proportion="0.0" vertical-offset="2386" max-vertical-offset="3281">
+        <state line="11" column="0" selection-start="275" selection-end="275" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="969" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/en.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="6" selection-start="66" selection-end="66" vertical-scroll-proportion="0.136" vertical-offset="0" max-vertical-offset="833" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/bs.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="39" column="10" selection-start="510" selection-end="510" vertical-scroll-proportion="1.0608" vertical-offset="0" max-vertical-offset="5525" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/problems/show.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="625" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/seeds.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="0" selection-start="343" selection-end="343" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="221" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/session.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/sessions_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="9" selection-start="425" selection-end="425" vertical-scroll-proportion="0.0" vertical-offset="204" max-vertical-offset="1275">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/cvs/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/comments/index.json.jbuilder">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="114" vertical-scroll-proportion="0.0" vertical-offset="189" max-vertical-offset="595" />
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/config/database.yml">
+    <entry file="file://$PROJECT_DIR$/app/views/users/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="0" selection-start="601" selection-end="601" vertical-scroll-proportion="0.0" vertical-offset="260" max-vertical-offset="697" />
+        <state line="6" column="6" selection-start="284" selection-end="284" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
+    <entry file="file://$PROJECT_DIR$/app/controllers/users_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="71" column="21" selection-start="1562" selection-end="1562" vertical-scroll-proportion="0.0" vertical-offset="931" max-vertical-offset="1377">
+        <state line="3" column="0" selection-start="169" selection-end="169" vertical-scroll-proportion="0.0" vertical-offset="306" max-vertical-offset="1394" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="119" column="0" selection-start="3765" selection-end="3765" vertical-scroll-proportion="-20.923077" vertical-offset="1479" max-vertical-offset="2125" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/user.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="0" selection-start="684" selection-end="684" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="544">
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="74" selection-start="680" selection-end="680" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="833">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="20" column="7" selection-start="903" selection-end="903" vertical-scroll-proportion="0.0" vertical-offset="116" max-vertical-offset="612">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/login/login.tpl.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="6" selection-start="345" selection-end="345" vertical-scroll-proportion="0.0" vertical-offset="170" max-vertical-offset="272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/login/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="2" selection-start="203" selection-end="203" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/login/login.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="31" column="10" selection-start="934" selection-end="934" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="731">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="23" selection-start="592" selection-end="592" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="1785">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/login/angular.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="385373">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular-route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="15861">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admins/edit.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="0" selection-start="148" selection-end="148" vertical-scroll-proportion="-3.9230769" vertical-offset="0" max-vertical-offset="204">
-          <folding>
-            <marker date="1400080367416" expanded="true" signature="-1:-1" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admins/_form.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="5.1923075" vertical-offset="135" max-vertical-offset="612">
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="371">
+        <state line="114" column="43" selection-start="4153" selection-end="4153" vertical-scroll-proportion="-6.5384617" vertical-offset="1768" max-vertical-offset="4284" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/users/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="174" column="21" selection-start="5451" selection-end="5451" vertical-scroll-proportion="-9.153846" vertical-offset="2720" max-vertical-offset="3366" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/problems/index.json.jbuilder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="183" selection-end="183" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="170" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/problems/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="0" selection-start="90" selection-end="141" vertical-scroll-proportion="-0.65384614" vertical-offset="0" max-vertical-offset="3638" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/problems/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="20" selection-start="20" selection-end="20" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="578">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/users/_form.html.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/comments/edit.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="183" column="34" selection-start="1017" selection-end="8482" vertical-scroll-proportion="-6.230769" vertical-offset="2949" max-vertical-offset="7820">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/cvNew.html">
+    <entry file="file://$PROJECT_DIR$/app/views/comments/new.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="29" selection-start="966" selection-end="1080" vertical-scroll-proportion="-7.9615383" vertical-offset="184" max-vertical-offset="578">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/user.js">
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="371">
-          <folding>
-            <element signature="n#!!doc" expanded="true" />
-          </folding>
-        </state>
+        <state line="15" column="17" selection-start="384" selection-end="384" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="595" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/controller.js">
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="18" column="11" selection-start="797" selection-end="797" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="425">
-          <folding />
-        </state>
+        <state line="15" column="0" selection-start="382" selection-end="382" vertical-scroll-proportion="-9.807693" vertical-offset="0" max-vertical-offset="357" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/services.js">
+    <entry file="file://$PROJECT_DIR$/app/views/comments/_form.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="41" selection-start="41" selection-end="41" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
-          <folding />
-        </state>
+        <state line="20" column="8" selection-start="715" selection-end="715" vertical-scroll-proportion="-13.076923" vertical-offset="0" max-vertical-offset="1292" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/angular.js">
+    <entry file="file://$PROJECT_DIR$/app/views/comments/index.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="2" selection-start="188" selection-end="188" vertical-scroll-proportion="0.0" vertical-offset="816" max-vertical-offset="385373">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="0" selection-start="317" selection-end="317" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="17" selection-start="427" selection-end="441" vertical-scroll-proportion="0.0" vertical-offset="102" max-vertical-offset="527">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/updateusercontroller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="0" selection-start="0" selection-end="1036" vertical-scroll-proportion="0.0" vertical-offset="4" max-vertical-offset="595">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/viewusercontroller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="24" selection-start="24" selection-end="24" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="595">
-          <folding />
-        </state>
+        <state line="45" column="4" selection-start="917" selection-end="917" vertical-scroll-proportion="-28.76923" vertical-offset="17" max-vertical-offset="1071" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/users/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="435" column="24" selection-start="7493" selection-end="19921" vertical-scroll-proportion="-9.461538" vertical-offset="7149" max-vertical-offset="7752">
+        <state line="137" column="34" selection-start="5254" selection-end="5254" vertical-scroll-proportion="-8.0" vertical-offset="2121" max-vertical-offset="4114" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/home_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="604" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/problems_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="54" selection-end="54" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/assets/javascripts/application.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="665" selection-end="665" vertical-scroll-proportion="0.4896" vertical-offset="0" max-vertical-offset="625" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/locales/hr.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="156" column="18" selection-start="4944" selection-end="4944" vertical-scroll-proportion="0.0" vertical-offset="2252" max-vertical-offset="3145" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="20" column="0" selection-start="521" selection-end="521" vertical-scroll-proportion="0.544" vertical-offset="0" max-vertical-offset="625" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="0" selection-start="1122" selection-end="1122" vertical-scroll-proportion="-12.576923" vertical-offset="183" max-vertical-offset="1292" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="22" column="3" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="476">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/editUser.html">
+    <entry file="file://$PROJECT_DIR$/app/controllers/comments_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="93" selection-start="34" selection-end="210" vertical-scroll-proportion="-2.6153846" vertical-offset="0" max-vertical-offset="2822">
+        <state line="34" column="23" selection-start="679" selection-end="699" vertical-scroll-proportion="0.0" vertical-offset="68" max-vertical-offset="1326" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/home_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="187" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/schema.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="34" column="22" selection-start="1379" selection-end="1379" vertical-scroll-proportion="0.8976" vertical-offset="17" max-vertical-offset="1292">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/partials/viewuser.html">
+    <entry file="file://$PROJECT_DIR$/app/views/problems/show.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="256" column="20" selection-start="14641" selection-end="14641" vertical-scroll-proportion="0.49158877" vertical-offset="4089" max-vertical-offset="4624">
+        <state line="144" column="0" selection-start="4916" selection-end="4916" vertical-scroll-proportion="-0.0" vertical-offset="2448" max-vertical-offset="5168" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/comments/show.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="236" column="17" selection-start="8053" selection-end="8053" vertical-scroll-proportion="-8.923077" vertical-offset="3780" max-vertical-offset="5202" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environment.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="0" selection-start="158" selection-end="158" vertical-scroll-proportion="0.136" vertical-offset="0" max-vertical-offset="625" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/user_mailer/welcome_email.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="73" selection-start="73" selection-end="73" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="599" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/mailers/user_mailer.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="46" selection-start="170" selection-end="170" vertical-scroll-proportion="0.136" vertical-offset="0" max-vertical-offset="625" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/edit.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="0" selection-start="356" selection-end="356" vertical-scroll-proportion="0.36894825" vertical-offset="0" max-vertical-offset="599">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/problem.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="11" column="138" selection-start="306" selection-end="306" vertical-scroll-proportion="0.30555555" vertical-offset="0" max-vertical-offset="612">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/problems_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="32" column="24" selection-start="633" selection-end="633" vertical-scroll-proportion="0.8704" vertical-offset="0" max-vertical-offset="1581">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="18" column="0" selection-start="471" selection-end="471" vertical-scroll-proportion="0.4896" vertical-offset="0" max-vertical-offset="867">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/home/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="186" column="0" selection-start="6568" selection-end="6568" vertical-scroll-proportion="0.0" vertical-offset="3069" max-vertical-offset="5151">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/problems/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="0" selection-start="372" selection-end="372" vertical-scroll-proportion="0.0" vertical-offset="408" max-vertical-offset="6154">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/problems/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="131" column="32" selection-start="4929" selection-end="4929" vertical-scroll-proportion="-10.019608" vertical-offset="1716" max-vertical-offset="3927">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="11" selection-start="1258" selection-end="1258" vertical-scroll-proportion="-23.2" vertical-offset="304" max-vertical-offset="1258">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/new.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="144" column="0" selection-start="4910" selection-end="4910" vertical-scroll-proportion="-5.8846154" vertical-offset="2295" max-vertical-offset="4437">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/sessions/_form.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="150" column="2" selection-start="5222" selection-end="5222" vertical-scroll-proportion="0.2718327" vertical-offset="2329" max-vertical-offset="4539">
           <folding />
         </state>
       </provider>

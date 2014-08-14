@@ -2,36 +2,17 @@ class UsersController < ApplicationController
   before_filter :provjera , :except => [:create, :new ]
   before_action :set_user, only: [:show, :edit, :update, :destroy]
 
-  #def activation
-   # act_hash = params[:act_hash]
-    #user = User.where(hashed_password: act_hash ).first
-#
- #   if user.nil?
-  #    redirect_to root_path, :notice => (t "user.does_not_exist")
-   # else
-    #  user.is_activated = 1
-     # user.save
-     # redirect_to root_path, :notice => (t "user.potvrda")
-   # end
-
-
-#  end
-
-
-
   # GET /users
   # GET /users.json
-  #def index
-    #@users = User.all
- # end
+  def index
+    @users = User.all
+  end
 
   # GET /users/1
   # GET /users/1.json
   def show
   end
-  def index
-    @users = User.find(:all, :conditions => ['name LIKE ?', "%#{params[:query]}%"])
-  end
+
   # GET /users/new
   def new
     @user = User.new
@@ -40,16 +21,14 @@ class UsersController < ApplicationController
   # GET /users/1/edit
   def edit
   end
-  #UserMailer.deliver_registration_confirmation(@user)
 
   # POST /users
   # POST /users.json
   def create
     @user = User.new(user_params)
+
     respond_to do |format|
       if @user.save
-       # UserMailer.deliver_registration_confirmation(@current_user)
-        UserMailer.welcome_email(@user).deliver
         format.html { redirect_to @user, notice: 'User was successfully created.' }
         format.json { render action: 'show', status: :created, location: @user }
       else
@@ -76,9 +55,10 @@ class UsersController < ApplicationController
   # DELETE /users/1
   # DELETE /users/1.json
   def destroy
+
     @user.destroy
     respond_to do |format|
-      format.html { redirect_to users_url }
+      format.html { redirect_to root_path }
       format.json { head :no_content }
     end
   end
@@ -91,7 +71,6 @@ class UsersController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def user_params
-      params.require(:user).permit(:name, :last_name, :email, :password, :adress, :phone, :avatar)
+      params.require(:user).permit(:name, :surname, :username, :password, :email, :role, :stars, :registered, :birthdate, :profile, :picture, :additional, :avatar)
     end
-
 end

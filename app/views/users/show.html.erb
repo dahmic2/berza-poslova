@@ -1,450 +1,236 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="">
-  <meta name="author" content="">
 
-  <title>Dashboard - SB Admin</title>
 
-  <!-- Bootstrap core CSS -->
-  <link href="css/bootstrap.css" rel="stylesheet">
-
-  <!-- Add custom CSS here -->
-  <link href="css/sb-admin.css" rel="stylesheet">
-  <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-  <!-- Page Specific CSS -->
-  <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
-</head>
-
-<body>
-
-<div id="wrapper">
-<% if current_user.email == "admin@poso.ba"%>
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">Berza poslova</a>
-      </div>
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav side-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Jezik <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="?locale=bs#" data-no-turbolink="true">BS</a></li>
-              <li><a href="?locale=en#" data-no-turbolink="true">EN</a></li>
-              <li><a href="#">Hrvatski</a></li>
-            </ul>
-          </li>
-          <li class="active"><li class="active"> <%= link_to "Dashboard", root_path %> </li>
-          <li>  <%= link_to (t "employer.add"), employers_new_path %> </li>
-          <li>  <%= link_to (t "employer.all"), employers_path %> </li>
-          <li>  <%= link_to (t "user.all"), users_path %> </li>
-          <li>  <%= link_to (t "advartisment.all"), advartisments_path %> </li>
-
-        </ul>
-        <ul class="nav navbar-nav navbar-right navbar-user">
-          <li class="dropdown messages-dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-header">7 New Messages</li>
-              <li class="message-preview">
-                <a href="#">
-                  <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                  <span class="name"><% current_user %></span>
-                  <span class="message">Hey there, I wanted to ask you something...</span>
-                  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                </a>
-              </li>
-              <li class="divider"></li>
-              <li class="message-preview">
-                <a href="#">
-                  <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                  <span class="name">John Smith:</span>
-                  <span class="message">Hey there, I wanted to ask you something...</span>
-                  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                </a>
-              </li>
-              <li class="divider"></li>
-              <li class="message-preview">
-                <a href="#">
-                  <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                  <span class="name">John Smith:</span>
-                  <span class="message">Hey there, I wanted to ask you something...</span>
-                  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                </a>
-              </li>
-              <li class="divider"></li>
-              <li><a href="#">View Inbox <span class="badge">7</span></a></li>
-            </ul>
-          </li>
-          <li class="dropdown alerts-dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Default <span class="label label-default">Default</span></a></li>
-              <li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
-              <li><a href="#">Success <span class="label label-success">Success</span></a></li>
-              <li><a href="#">Info <span class="label label-info">Info</span></a></li>
-              <li><a href="#">Warning <span class="label label-warning">Warning</span></a></li>
-              <li><a href="#">Danger <span class="label label-danger">Danger</span></a></li>
-              <li class="divider"></li>
-              <li><a href="#">View All</a></li>
-            </ul>
-          </li>
-          <li class="dropdown user-dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <%= current_user.name %> <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><%= link_to (t "nav.profile"),current_user%></li>
-              <li> <%= link_to (t "user.edit"), edit_user_path(current_user.id) %></li>
-              <li class="divider"></li>
-              <li></i> <%= link_to (t "nav.logout"), log_out_path %></li>
-            </ul>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </nav>
-
-      <div id="page-wrapper">
-        <h1 align="center">Dobrodosao na poso ba</h1>
-        <br>
-        <br><br><br>
-        <div class="row">
-          <div class="col-lg-4">
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Podaci o korisniku</h3>
-              </div>
-              <div class="panel-body">
-                <p>
-                  <strong>Name:</strong>
-                  <%= @user.name %>
-                </p>
-
-                <p>
-                  <strong>Last name:</strong>
-                  <%= @user.last_name %>
-                </p>
-
-                <p>
-                  <strong>Email:</strong>
-                  <%= @user.email %>
-                </p>
-
-                <p>
-                  <strong>Password:</strong>
-                  <%= @user.password %>
-                </p>
-
-                <p>
-                  <strong>Adress:</strong>
-                  <%= @user.adress %>
-                </p>
-
-                <p>
-                  <strong>Phone:</strong>
-                  <%= @user.phone %>
-                </p>
-
-                <%= link_to 'Edit', edit_user_path(@user) %> |
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4">
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-money"></i> Slika profila</h3>
-              </div>
-              <div class="panel-body">
-                <%= image_tag(@user.avatar_url) if @user.avatar? %>
-
-              </div>
-            </div>
-          </div>
-        </div>
-      </div><!-- /.row -->
-
-      </div><!-- /#wrapper -->
-    <%else%>
-<!-- Sidebar -->
+<!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="index.html">Berza poslova</a>
-  </div>
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <div class="navbar-brand"> <%= link_to 'Pravni savjeti', root_path %></div>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
 
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav side-nav">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-font"></i> Jezik <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="?locale=bs#" data-no-turbolink="true">Bosanski</a></li>
-          <li><a href="?locale=en#" data-no-turbolink="true">Engleski</a></li>
-          <li><a href="?locale=hr#" data-no-turbolink="true">Hrvatski</a></li>
-        </ul>
-      </li>
-      <li class="active"><%= link_to (t "nav.home"),home_index_path %></li>
-      <li><%= link_to (t "nav.about"),home_about_path %></li>
-      <li><%= link_to (t "nav.contact"), home_contact_path%></li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Lokacije <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Sve lokacije </a></li>
-          <li><a href="#">Sarajevo </a></li>
-          <li><a href="#">Banja Luka</a></li>
-          <li><a href="#">Mostar</a></li>
-          <li><a href="#">Zenica</a></li>
-          <li><a href="#">Tuzla</a></li>
-          <li><a href="#">Bihać</a></li>
-          <li><a href="#">Travnik</a></li>
-          <li><a href="#">Zavidovići</a></li>
-          <li><a href="#">Brčko</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Kategorije <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Administrativne usluge </a></li>
-          <li><a href="#">Bankarstvo </a></li>
-          <li><a href="#">Biotehnologija i farmacija</a></li>
-          <li><a href="#">Drvna industrija</a></li>
-          <li><a href="#">Državna služba i uprava</a></li>
-          <li><a href="#">Ekonomija i finansije </a></li>
-          <li><a href="#">Elektrotehnika i informatika </a></li>
-          <li><a href="#">Energetika i rudarstvo</a></li>
-          <li><a href="#">Frizeri i kozmetičari </a></li>
-          <li><a href="#">Geologija</a></li>
-          <li><a href="#">Građevinarstvo i arhitektura </a></li>
-          <li><a href="#">Komercijala i prodaja</a></li>
-          <li><a href="#">Konsalting</a></li>
-          <li><a href="#">Marketing i PR</a></li>
-          <li><a href="#">Mašinstvo i metalurgija </a></li>
-          <li><a href="#">Mediji </a>
-          <li><a href="#">Menadžment i upravljanje </a></li>
-          <li><a href="#">Obrazovanje, kultura i sport </a></li>
-          <li><a href="#">Osiguranje </a></li>
-          <li><a href="#">Ostalo</a></li>
-          <li><a href="#">Policija i zaštitarske usluge</a></li>
-          <li><a href="#">Političke nauke </a></li>
-          <li><a href="#">Poljoprivreda i šumarstvo </a></li>
-          <li><a href="#">Pravo i društvene nauke</a></li>
-          <li><a href="#">Prevodilačke usluge </a></li>
-          <li><a href="#">Proizvodnja</a></li>
-          <li><a href="#">Računovodstvo i revizija</a></li>
-          <li><a href="#">Socijalne usluge</a></li>
-          <li><a href="#">Stipendije </a></li>
-          <li><a href="#">Teleprodaja i telemarketing</a></li>
-          <li><a href="#">Transport i skladištenje</a></li>
-          <li><a href="#">Trgovina </a></li>
-          <li><a href="#">Ugostiteljstvo i turizam </a></li>
-          <li><a href="#">Umjetnost i dizajn</a></li>
-          <li><a href="#">Zanatske usluge </a></li>
-          <li><a href="#">Zdravstvo i medicina  </a></li>
-        </ul>
-      </li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right navbar-user">
-      <li class="dropdown messages-dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li class="dropdown-header">7 New Messages</li>
-          <li class="message-preview">
-            <a href="#">
-              <span class="avatar"><img src="http://placehold.it/50x50"></span>
-              <span class="name"><% current_user %></span>
-              <span class="message">Hey there, I wanted to ask you something...</span>
-              <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-            </a>
-          </li>
-          <li class="divider"></li>
-          <li class="message-preview">
-            <a href="#">
-              <span class="avatar"><img src="http://placehold.it/50x50"></span>
-              <span class="name">John Smith:</span>
-              <span class="message">Hey there, I wanted to ask you something...</span>
-              <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-            </a>
-          </li>
-          <li class="divider"></li>
-          <li class="message-preview">
-            <a href="#">
-              <span class="avatar"><img src="http://placehold.it/50x50"></span>
-              <span class="name">John Smith:</span>
-              <span class="message">Hey there, I wanted to ask you something...</span>
-              <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-            </a>
-          </li>
-          <li class="divider"></li>
-          <li><a href="#">View Inbox <span class="badge">7</span></a></li>
-        </ul>
-      </li>
-      <li class="dropdown alerts-dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Default <span class="label label-default">Default</span></a></li>
-          <li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
-          <li><a href="#">Success <span class="label label-success">Success</span></a></li>
-          <li><a href="#">Info <span class="label label-info">Info</span></a></li>
-          <li><a href="#">Warning <span class="label label-warning">Warning</span></a></li>
-          <li><a href="#">Danger <span class="label label-danger">Danger</span></a></li>
-          <li class="divider"></li>
-          <li><a href="#">View All</a></li>
-        </ul>
-      </li>
-      <li class="dropdown user-dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <%= current_user.name %> <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><%= link_to (t "nav.profile"),current_user%></li>
-          <li><a href="#"> <%= link_to (t "user.edit"), edit_user_path(current_user.id) %></a></li>
-          <li class="divider"></li>
-          <li><a href="#"></i> <%= link_to (t "nav.logout"), log_out_path %></a></li>
-        </ul>
-      </li>
-    </ul>
-  </div><!-- /.navbar-collapse -->
+        <% if current_user %>
+            <% b=0 %>
+            <% @problems = Problem.all %>
+            <% @problems.each do |p| %>
+                <% if p.user == current_user.id %>
+
+                    <% @comments = Comment.all %>
+                    <% @comments.each do |c| %>
+                        <% if c.additional == "Nepročitan"  %>
+                            <% if c.problem_id == p.id %>
+                                <% b = b+1; %>
+                            <% end %>
+                        <% end %>
+                    <% end %>
+                <% end %>
+            <% end %>
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-info" > </i> Obavještenja (<%=b%>) <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <% @problems = Problem.all %>
+                <% @problems.each do |p| %>
+                    <% if p.user == current_user.id %>
+
+                        <% @comments = Comment.all %>
+                        <% @comments.each do |c| %>
+                            <% if c.additional == "Nepročitan"  %>
+                                <% if c.problem_id == p.id %>
+                                    <% komentar = ' Imate novi komentar na ' + p.title %>
+                                    <li>  <%= link_to komentar, problem_path(p.id) %>  </li>
+                                <% end %>
+                            <% end %>
+                        <% end %>
+                    <% end %>
+                <% end %>
+                <% if b==0 %> <li><a>Nemate novih obavještenja</a></li><% end %>
+              </ul>
+            </li>
+
+
+
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-male" > </i> <%= current_user.name %> <%= current_user.surname %> <b class="caret"> </b></a>
+              <ul class="dropdown-menu">
+                <li>  <%= link_to 'Moj profil', user_path(current_user.id) %>  </li>
+                <li>  <%= link_to 'Postavke', edit_user_path(current_user.id) %>  </li>
+                <li>  <%= link_to 'Odjava', log_out_path %> </li>
+              </ul>
+            </li>
+
+
+        <% else %>
+            <li>
+              <%= link_to 'Registracija', new_user_path %>
+            </li>
+            <li>
+              <%= link_to 'Prijava', log_in_path %>
+            </li>
+
+        <% end %>
+      </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+  </div>
+  <!-- /.container -->
 </nav>
 
+<!-- Page Content -->
+<div class="container">
 
-
-
-<div id="page-wrapper">
-  <h1 align="center">Dobrodosao na poso ba</h1>
-  <br>
-  <br><br><br>
+  <!-- Page Heading/Breadcrumbs -->
   <div class="row">
-    <div class="col-lg-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Podaci o korisniku</h3>
+    <div class="col-lg-12">
+
+      <h1 class="page-header"><i class="fa fa-question-circle"> </i> Pravni savjeti
+        <small>Podijelite svoja iskustva</small>
+      </h1>
+      <ol class="breadcrumb">
+        <li> <%= link_to 'Početna', root_path %> </li>
+        <li class="active">Korisnički profil</li>
+      </ol>
+    </div>
+  </div>
+  <!-- /.row -->
+
+  <!-- Content Row -->
+  <div class="row">
+
+
+    <!-- Blog Post Content Column -->
+    <div class="col-lg-9">
+      <div class="row">
+        <!-- Content Column -->
+        <div class="col-md-4">
+          <% if @user.avatar.blank? %>
+              <p><img src="/assets/avatar.png" height="340" width="260"></p>
+
+          <% else %>
+              <p><img src= <%= @user.avatar_url %> height="340" width="260"></p>
+          <% end %>
+
+          <hr>
+         <strong class="text-center"> <i class="fa fa-star "></i> <%= @user.stars %>  </strong><br><br>
+          <small > (Broj zvjezdica raste u odnosu na broj pozitivno ocjenjenih komentara i broj riješenih pitanja)</small><br><br>
+          <% if current_user.id == @user.id %> <a class="fa fa-eraser"> </a> <%= link_to 'Deaktiviraj svoj račun', users_path, data: { confirm: 'Jeste li sigurni da želite deaktivirati svoj korisnički račun?' } %><% end %>
+
         </div>
-        <div class="panel-body">
-          <p>
-            <strong>Name:</strong>
-            <%= @user.name %>
-          </p>
 
-          <p>
-            <strong>Last name:</strong>
-            <%= @user.last_name %>
-          </p>
+        <div class="col-md-8">
+          <h3>
+            <p> <%= @user.name %> <%= @user.surname%></p>
+          </h3>
+          <hr>
+          <p><i class="fa fa-male"> </i> Korisničko ime: <%= @user.username %>      </p>
+          <p><i class="fa fa-envelope-o"> </i> Email: <%= @user.email %>       </p>
+          <% if current_user.id == @user.id %><p><a class="fa fa-key"> </a>  <%= link_to 'Promijeni šifru', edit_user_path(@user) %>       </p><% end %>
+          <hr>
+          <p><i class="fa fa-clock-o"> </i> Registrovan/a prije <%= time_ago_in_words(@user.created_at) %>     </p>
+          <p><i class="fa fa-star"> </i> Ima <%= @user.stars %> zvjezdica      </p>
 
-          <p>
-            <strong>Email:</strong>
-            <%= @user.email %>
-          </p>
+          <%
+             p = 0
+             @problems = Problem.all
+             @problems.each do |problem|
+                if problem.user == @user.id
+                  p = p + 1
+                end
+             end
+             k = 0
+             @comments = Comment.all
+             @comments.each do |comment|
+               if comment.user == @user.id
+                 k = k + 1
+               end
+             end
 
-          <p>
-            <strong>Password:</strong>
-            <%= @user.password %>
-          </p>
 
-          <p>
-            <strong>Adress:</strong>
-            <%= @user.adress %>
-          </p>
+          %>
 
-          <p>
-            <strong>Phone:</strong>
-            <%= @user.phone %>
-          </p>
 
-          <%= link_to 'Edit', edit_user_path(@user) %> |
+
+          <p><i class="fa fa-question-circle"> </i>  Objavio/la <%=p%> pitanja      </p>
+          <p><i class="fa fa-comment-o"> </i>  Objavio/la <%=k%>  komentara     </p>
+          <hr>
+          <p><%= @user.profile %></p>
+            <hr>
+          <p><%= @user.additional %></p>
+
+          <% if current_user.id == @user.id %>
+              <hr>
+          <p> <a class="fa fa-edit"> </a> <%= link_to 'Uredi svoj profil', edit_user_path(@user)%></p>
+         <% end %>
         </div>
       </div>
+
+
     </div>
 
-    <div class="col-lg-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title"><i class="fa fa-clock-o"></i> Moje kategorije</h3>
+    <!-- Blog Sidebar Widgets Column -->
+    <div class="col-md-3">
+      <div class="panel panel-default ">
+        <div class="panel-heading text-center">
+          <h3 class="panel-title">Pitanja od ovog korisnika </h3>
         </div>
-        <div class="panel-body">
-          <form>
-            <input type="checkbox" name="kategorija" value="1">Administrativne usluge <br>
-            <input type="checkbox" name="kategorija" value="2">Bankarstvo <br>
-            <input type="checkbox" name="kategorija" value="3">Biotehnologija i farmacija <br>
-            <input type="checkbox" name="kategorija" value="4">Drvna industrija <br>
-            <input type="checkbox" name="kategorija" value="5"> Državna služba i uprava <br>
-            <input type="checkbox" name="kategorija" value="6">Ekonomija i finansije <br>
-            <input type="checkbox" name="kategorija" value="7">Elektrotehnika i informatika <br>
-            <input type="checkbox" name="kategorija" value="8">Energetika i rudarstvo <br>
-            <input type="checkbox" name="kategorija" value="9">Frizeri i kozmetičari <br>
-            <input type="checkbox" name="kategorija" value="10">Geologija <br>
-            <input type="checkbox" name="kategorija" value="11">Građevinarstvo i arhitektura <br>
-            <input type="checkbox" name="kategorija" value="12">Komercijala i prodaja<br>
-            <input type="checkbox" name="kategorija" value="13">Marketing i PR <br>
-            <input type="checkbox" name="kategorija" value="14">Mašinstvo i metalurgija <br>
-            <input type="checkbox" name="kategorija" value="15">Mediji <br>
-            <input type="checkbox" name="kategorija" value="16">Menadžment i upravljanje <br>
-            <input type="checkbox" name="kategorija" value="17">Obrazovanje, kultura i sport <br>
-            <input type="checkbox" name="kategorija" value="18">Osiguranje <br>
-            <input type="checkbox" name="kategorija" value="19">Ostalo <br>
-            <input type="checkbox" name="kategorija" value="20">Policija i zaštitarske usluge <br>
-            <input type="checkbox" name="kategorija" value="21">Poljoprivreda i šumarstvo <br>
-            <input type="checkbox" name="kategorija" value="22">Pravo i društvene nauke <br>
-            <input type="checkbox" name="kategorija" value="23">Prevodilačke usluge <br>
-            <input type="checkbox" name="kategorija" value="24">Proizvodnja <br>
-            <input type="checkbox" name="kategorija" value="25">Računovodstvo i revizija <br>
-            <input type="checkbox" name="kategorija" value="26">Socijalne usluge <br>
-            <input type="checkbox" name="kategorija" value="27">Stipendije <br>
-            <input type="checkbox" name="kategorija" value="28">Teleprodaja i telemarketing <br>
-            <input type="checkbox" name="kategorija" value="29">Transport i skladištenje <br>
-            <input type="checkbox" name="kategorija" value="30">Trgovina <br>
-            <input type="checkbox" name="kategorija" value="31">Ugostiteljstvo i turizam <br>
-            <input type="checkbox" name="kategorija" value="32">Umjetnost i dizajn <br>
-            <input type="checkbox" name="kategorija" value="33">Zanatske usluge <br>
-            <input type="checkbox" name="kategorija" value="34">Zdravstvo i medicina <br>
-            <br>
-            <div class="actions">
-              <%= f.submit %>
-            </div>
-            <input type="button" value="Spremi promjene">
-          </form>
-        </div>
+
+        <ul class="list-group">
+          <% @problems = Problem.all %>
+          <% @problems.each do |p| %>
+              <% if @user.id == p.user %>
+                  <li class="list-group-item"> <i class="fa fa-question-circle"> </i>   <%= link_to p.title, problem_path(p.id) %> </li>
+              <% end %>
+          <% end %>
+        </ul>
+      </div>
+
+
+      <p> <a class="fa fa-question-circle"> </a> <%= link_to 'Objavi novo pitanje', new_problem_path %></p>
+
+    </div>
+
+
+
+
+
+
+
+  </div>
+  <!-- /.row -->
+
+  <hr>
+
+  <!-- Footer -->
+  <footer>
+    <div class="row">
+      <div class="col-lg-12">
+        <p>Copyright &copy; Nusreta Sinanović 2014 | nusretasinanovic@gmail.com</p>
       </div>
     </div>
-    <div class="col-lg-4">
-      <div class="panel panel-primary">
-        <div class="panel-heading">
-          <h3 class="panel-title"><i class="fa fa-money"></i> Slika profila</h3>
-        </div>
-        <div class="panel-body">
-          <%= image_tag(@user.avatar_url) if @user.avatar? %>
+  </footer>
 
-          </div>
-        </div>
-      </div>
-    </div>
-  </div><!-- /.row -->
+</div>
+<!-- /.container -->
 
-</div><!-- /#wrapper -->
-<%end%>
-<!-- JavaScript -->
-<script src="js/jquery-1.10.2.js"></script>
-<script src="js/bootstrap.js"></script>
+<!-- jQuery Version 1.11.0 -->
+<script src="js/jquery-1.11.0.js"></script>
 
-<!-- Page Specific Plugins -->
-<script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-<script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
-<script src="js/morris/chart-data-morris.js"></script>
-<script src="js/tablesorter/jquery.tablesorter.js"></script>
-<script src="js/tablesorter/tables.js"></script>
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>
 
-</body>
-</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

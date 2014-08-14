@@ -46,7 +46,7 @@ end
 # gem 'debugger', group: [:development, :test]
 gem 'bootstrap-generators', '~> 3.1.1'
 
-gem 'rails_12factor', group: :production
+
 
 gem 'wash_out'
 
@@ -66,11 +66,3 @@ group :development, :test do
   gem 'rspec-rails', '~> 3.0.0.beta'
 end
 
-gem 'paperclip'
-
-gem 'ckeditor'
-gem 'angularjs-rails'
-
-
-
-gem 'devise'

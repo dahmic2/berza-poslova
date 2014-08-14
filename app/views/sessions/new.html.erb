@@ -1,135 +1,255 @@
-<html>
-<head></head>
-<body>
+
+
+<% current_user = nil %>
+
+
+<!-- Navigation -->
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-  <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button>
-    <a class="navbar-brand" href="#">Berza poslova</a>
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <div class="navbar-brand"> <%= link_to 'Pravni savjeti', root_path %></div>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <%= form_tag sessions_path do %>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right">
+        <br>
+       <li class="small"><div class="col-md-12">
+         Email i Šifra  <%= text_field_tag :email, params[:email], :placeholder => "example@email.com" %>
+         <%= password_field_tag :password, params[:password], :placeholder => "password" %>
+        <%= submit_tag "Prijava" %>
+</div>
+       </li>
+
+
+
+
+
+      </ul>
+    </div>
+    <% end %>
+    <!-- /.navbar-collapse -->
   </div>
-
-  <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="collapse navbar-collapse navbar-ex1-collapse">
-    <ul class="nav navbar-nav side-nav">
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Jezik <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="?locale=bs#" data-no-turbolink="true">Bosanski</a></li>
-          <li><a href="?locale=en#" data-no-turbolink="true">Engelski</a></li>
-          <li><a href="#">Hrvatski</a></li>
-        </ul>
-      </li>
-      <li>  <%= link_to (t "nav.home"), home_index_path %> </li>
-      <li>  <%= link_to (t "nav.about"), home_about_path %> </li>
-      <li>  <%= link_to (t "nav.contact"), home_contact_path %> </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Lokacije <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Sve lokacije </a></li>
-          <li><a href="#">Sarajevo </a></li>
-          <li><a href="#">Banja Luka</a></li>
-          <li><a href="#">Mostar</a></li>
-          <li><a href="#">Zenica</a></li>
-          <li><a href="#">Tuzla</a></li>
-          <li><a href="#">Bihać</a></li>
-          <li><a href="#">Travnik</a></li>
-          <li><a href="#">Zavidovići</a></li>
-          <li><a href="#">Brčko</a></li>
-        </ul>
-      </li>
-      <li class="dropdown">
-        <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Kategorije <b class="caret"></b></a>
-        <ul class="dropdown-menu">
-          <li><a href="#">Administrativne usluge </a></li>
-          <li><a href="#">Bankarstvo </a></li>
-          <li><a href="#">Biotehnologija i farmacija</a></li>
-          <li><a href="#">Drvna industrija</a></li>
-          <li><a href="#">Državna služba i uprava</a></li>
-          <li><a href="#">Ekonomija i finansije </a></li>
-          <li><a href="#">Elektrotehnika i informatika </a></li>
-          <li><a href="#">Energetika i rudarstvo</a></li>
-          <li><a href="#">Frizeri i kozmetičari </a></li>
-          <li><a href="#">Geologija</a></li>
-          <li><a href="#">Građevinarstvo i arhitektura </a></li>
-          <li><a href="#">Komercijala i prodaja</a></li>
-          <li><a href="#">Konsalting</a></li>
-          <li><a href="#">Marketing i PR</a></li>
-          <li><a href="#">Mašinstvo i metalurgija </a></li>
-          <li><a href="#">Mediji </a>
-          <li><a href="#">Menadžment i upravljanje </a></li>
-          <li><a href="#">Obrazovanje, kultura i sport </a></li>
-          <li><a href="#">Osiguranje </a></li>
-          <li><a href="#">Ostalo</a></li>
-          <li><a href="#">Policija i zaštitarske usluge</a></li>
-          <li><a href="#">Političke nauke </a></li>
-          <li><a href="#">Poljoprivreda i šumarstvo </a></li>
-          <li><a href="#">Pravo i društvene nauke</a></li>
-          <li><a href="#">Prevodilačke usluge </a></li>
-          <li><a href="#">Proizvodnja</a></li>
-          <li><a href="#">Računovodstvo i revizija</a></li>
-          <li><a href="#">Socijalne usluge</a></li>
-          <li><a href="#">Stipendije </a></li>
-          <li><a href="#">Teleprodaja i telemarketing</a></li>
-          <li><a href="#">Transport i skladištenje</a></li>
-          <li><a href="#">Trgovina </a></li>
-          <li><a href="#">Ugostiteljstvo i turizam </a></li>
-          <li><a href="#">Umjetnost i dizajn</a></li>
-          <li><a href="#">Zanatske usluge </a></li>
-          <li><a href="#">Zdravstvo i medicina  </a></li>
-        </ul>
-      </li>
-    </ul>
-
-    <ul class="nav navbar-nav navbar-right navbar-user">
-      <li class="dropdown messages-dropdown">
-        <a href="#" ><i></i> <%= link_to (t "nav.register"),users_new_path %></b></a>
-      </li>
-      <li class="dropdown user-dropdown">
-        <a href="#" ><%= link_to (t "nav.login"), log_in_path %></b></a>
-      </li>
-    </ul>
-  </div><!-- /.navbar-collapse -->
+  <!-- /.container -->
 </nav>
 
-<br>
+<!-- Page Content -->
+<div class="container">
 
-<%= form_tag sessions_path do %>
+<!-- Page Heading/Breadcrumbs -->
+<div class="row">
+  <div class="col-lg-12">
 
-      <!--login modal-->
-<div align="center">
-          <div class="modal-content" aligne="center" style="  border: 2px solid black;width:400px;margin-top:40px">
-            <div class="modal-header" style="align-content: center; text-align: center;">
-              <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-              <h1 class="text-center">Login</h1>
-            </div>
-            <div class="modal-body" style="align-content: center; text-align: center;">
-              <form class="form col-md-12 center-block" style="align-content: center; text-align: center; align-items: center">
-                <div class="form-group" style="align-content: center; text-align: center;">
-                  <%= label_tag (t "user.email") %>  <%= text_field_tag :email, params[:email] %>
-                </div>
-                <div class="form-group" style="align-content: center; text-align: center;">
-                  <%= label_tag (t "user.password") %>  <%= password_field_tag :password %>
-                </div>
-                <div class="form-group"style="align-content: center; text-align: center;">
-                  <button class="btn "style="align-content: center; text-align: center;" ><%= t "nav.login" %> <a style="visibility: hidden" <%= submit_tag (t "nav.login") %>  /a></button>
-                </div>
-              </form>
-            </div>
-            <div class="modal-footer" style="border-top: 0px;align-content: center; text-align: center;" >
-              <div class="col-md-12">
-                <button class="btn" data-dismiss="modal" aria-hidden="true">Cancel</button>
-              </div>
-            </div>
+    <h1 class="page-header"><i class="fa fa-question-circle"> </i> Pravni savjeti
+      <small>Podijelite svoja iskustva</small>
+    </h1>
+    <ol class="breadcrumb">
+      <li> <%= link_to 'Početna', root_path %> </li>
+      <li class="active">Objavite svoje pravne dileme, pitanja i probleme</li>
+    </ol>
+  </div>
+</div>
+<!-- /.row -->
+
+<!-- Content Row -->
+<div class="row">
+  <!-- Sidebar Column -->
+  <div class="col-md-2">
+    <div class="list-group">
+      <b class="list-group-item ">Pravne kategorije</b>
+      <a href="#" class="list-group-item active">Sve kategorije</a>
+      <a href="/problems?utf8=✓&search=Krivično pravo" class="list-group-item">Krivično pravo</a>
+      <a href="/problems?utf8=✓&search=Nasljedno pravo" class="list-group-item">Nasljedno pravo</a>
+      <a href="/problems?utf8=✓&search=Roditeljsko pravo" class="list-group-item">Roditeljsko pravo</a>
+      <a href="/problems?utf8=✓&search=Porodično pravo" class="list-group-item">Porodično pravo</a>
+      <a href="/problems?utf8=✓&search=Radno pravo" class="list-group-item">Radno pravo</a>
+      <a href="/problems?utf8=✓&search=Stvarno pravo" class="list-group-item">Stvarno pravo</a>
+      <a href="/problems?utf8=✓&search=Poresko pravo" class="list-group-item">Poresko pravo</a>
+      <a href="/problems?utf8=✓&search=Obligaciono pravo" class="list-group-item">Obligaciono pravo</a>
+      <a href="/problems?utf8=✓&search=Ostalo" class="list-group-item">Ostalo</a>
+    </div>
+  </div>
+
+
+  <div class="col-md-7">
+
+
+
+    <% @problems = Problem.all %>
+    <% @problems.each do |problem| %>
+
+
+        <div class="row">
+          <!-- Content Column -->
+          <div class="col-md-2 text-center">
+
+            <% ima = 0 %>
+            <% @users = User.all %>
+            <% @users.each do |us| %>
+                <% if problem.user == us.id
+                     ima = 1
+                   end %>
+            <% end %>
+
+            <% if ima == 0 %>
+                <p><img src="/assets/avatar.png" height="64" width="64"></p>
+            <% else %>
+                <% @users = User.all %>
+                <% @users.each do |u| %>
+                    <% if u.id == problem.user %>
+
+
+                        <% if u.avatar.blank? %>
+                            <p><img src="/assets/avatar.png" height="64" width="64"></p>
+
+                        <% else %>
+                            <p><img src= <%= u.avatar_url %> height="64" width="64"></p>
+                        <% end %>
+
+                    <% end %>
+                <% end %>
+            <% end %>
+            <hr>
+            <small><i class="fa fa-bell"></i> <br> <%= problem.status %></small>
+
+
           </div>
+
+          <div class="col-md-10">
+            <% if current_user %> <h3> <a href="#"><%= link_to problem.title, problem_path(problem.id) %></a> </h3> <% else %>
+                <h3><a href="#"><%= problem.title %></a></h3> <% end %>
+            <% @users = User.all %>
+            <% @users.each do |user| %>
+                <% if user.id == problem.user %>
+                    <% korisnik = user.name + ' '+ user.surname %>
+
+                    <% if user.email == '' %>
+                        <p>objavio/la <%= korisnik %></p>
+                    <% else %>
+                        <p>objavio/la <%= link_to  korisnik, user_path(user.id)  %></p>
+                    <% end %>
+                <% end %>
+            <% end %>
+
+            <p><%= problem.content %> <% if current_user %> <%= link_to ' Pročitaj više', problem_path(problem.id) %><% end %></p>
+            <small><i class="fa fa-clock-o"> </i> prije <%= t time_ago_in_words(problem.created_at) %>  |  <i class="fa fa-bank"> </i> <%= problem.category %></small>
+            <hr>
+          </div>
+        </div>
+
+
+    <% end %>
+
+    <!-- Pagination -->
+
+
+
+
+  </div>
+  <div class="col-md-3">
+    <!-- Blog Search Well -->
+
+    <%= form_tag problems_path, :method => 'get' do %>
+        <div class="well">
+          <p>Pretraga</p>
+          <div class="input-group">
+
+            <%= text_field_tag :search, params[:search], :class => "form-control", :value => "" %>
+
+            <span class="input-group-btn">
+                            <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                        </span>
+
+          </div>
+          <!-- /.input-group -->
+        </div>
+
+    <% end %>
+
+
+
+    <% if !current_user %>
+
+        <div class="well">
+          Da biste objavili svoje pitanje, komentarisali na pitanja drugih korisnika ili pregledali korisničke profile morate biti registrovani.
+          <br>
+          <a class="fa fa-sign-in"> </a>
+          <%= link_to 'Registracija', new_user_path %>
+        </div>
+    <% else %>
+        <div class="panel panel-default">
+          <div class="panel-body">
+
+            <a class="fa fa-question-circle"> </a> <%= link_to 'Objavite pravno pitanje', new_problem_path %>
+          </div>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+
+            <% adresa = "/problems?utf8=✓&search=" + current_user.username %>
+            <a class="fa fa-question-circle"></a> <a href= "<%= adresa %>"  class="navbar-link"> Prikaži moja objavljena pitanja </a>
+          </div>
+        </div>
+    <% end %>
+
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h3 class="panel-title">Statistički podaci</h3>
       </div>
 
+      <ul class="list-group">
+        <li class="list-group-item">Registrovanih korisnika: <%= User.all.count %> </li>
+        <li class="list-group-item">Objavljenih pitanja: <%= @problems.count %></li>
 
-  <% end %>
-</body>
-</html>
+        </li>
+      </ul>
+    </div>
 
+
+    <div class="thumbnail text-center" >
+
+      <div class="caption">
+
+        <p>Posjetite nas na Facebook Google+</p>
+        <ul class="list-inline">
+          <li><a href="https://facebook.com"><i class="fa fa-3x fa-facebook-square"></i></a>
+          </li>
+          <li><a href="https://plus.google.com"><i class="fa fa-3x fa-google-plus-square"></i></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+
+
+
+
+
+
+
+
+  </div>
+
+</div>
+<!-- /.row -->
+
+<hr>
+
+<!-- Footer -->
+<footer>
+  <div class="row">
+    <div class="col-lg-12">
+      <p>Copyright &copy; Nusreta Sinanović 2014 | nusretasinanovic@gmail.com</p>
+    </div>
+  </div>
+</footer>
+
+</div>
+<!-- /.container -->
+
+<!-- jQuery Version 1.11.0 -->
+<script src="js/jquery-1.11.0.js"></script>
+
+<!-- Bootstrap Core JavaScript -->
+<script src="js/bootstrap.min.js"></script>

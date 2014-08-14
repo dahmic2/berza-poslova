@@ -1,454 +1,119 @@
-<%= form_for(@user) do |f| %>
-  <% if @user.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h2>
+<%= form_for(@user, :html => { :class => "form-horizontal" }) do |f| %>
 
-      <ul>
-      <% @user.errors.full_messages.each do |msg| %>
-        <li><%= msg %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <meta name="description" content="">
-      <meta name="author" content="">
 
-      <title>Dashboard - SB Admin</title>
+    <div class="col-md-8">
+      <div class="well">
 
-      <!-- Bootstrap core CSS -->
-      <link href="css/bootstrap.css" rel="stylesheet">
+        <% if @user.errors.any? %>
+            <div class="alert alert-danger alert-dismissable">
+              <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+              <h4><%= pluralize(@user.errors.count, "error") %> prohibited this user from being saved:</h4>
 
-      <!-- Add custom CSS here -->
-      <link href="css/sb-admin.css" rel="stylesheet">
-      <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-      <!-- Page Specific CSS -->
-      <link rel="stylesheet" href="http://cdn.oesmith.co.uk/morris-0.4.3.min.css">
-    </head>
+              <ul>
+                <% @user.errors.full_messages.each do |msg| %>
+                    <li><%= msg %></li>
+                <% end %>
+              </ul>
+            </div>
+        <% end %>
 
-    <body>
+        <h4 class="text-center">Unesite potrebne podatke za registraciju<br><small>Polja sa uzvičnikom su obavezna</small></h4>
 
-    <div id="wrapper">
-
-    <% if current_user.email == "admin@poso.ba"%>
-        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-          <!-- Brand and toggle get grouped for better mobile display -->
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="#">Berza poslova</a>
-          </div>
-
-          <!-- Collect the nav links, forms, and other content for toggling -->
-          <div class="collapse navbar-collapse navbar-ex1-collapse">
-            <ul class="nav navbar-nav side-nav">
-              <li class="dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Jezik <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="?locale=bs#" data-no-turbolink="true">BS</a></li>
-                  <li><a href="?locale=en#" data-no-turbolink="true">EN</a></li>
-                  <li><a href="#">Hrvatski</a></li>
-                </ul>
-              </li>
-              <li class="active"><li class="active"> <%= link_to "Dashboard", root_path %> </li>
-              <li>  <%= link_to (t "employer.add"), employers_new_path %> </li>
-              <li>  <%= link_to (t "employer.all"), employers_path %> </li>
-              <li>  <%= link_to (t "user.all"), users_path %> </li>
-              <li>  <%= link_to (t "advartisment.all"), advartisments_path %> </li>
-
-            </ul>
-            <ul class="nav navbar-nav navbar-right navbar-user">
-              <li class="dropdown messages-dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li class="dropdown-header">7 New Messages</li>
-                  <li class="message-preview">
-                    <a href="#">
-                      <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                      <span class="name"><% current_user %></span>
-                      <span class="message">Hey there, I wanted to ask you something...</span>
-                      <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                    </a>
-                  </li>
-                  <li class="divider"></li>
-                  <li class="message-preview">
-                    <a href="#">
-                      <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                      <span class="name">John Smith:</span>
-                      <span class="message">Hey there, I wanted to ask you something...</span>
-                      <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                    </a>
-                  </li>
-                  <li class="divider"></li>
-                  <li class="message-preview">
-                    <a href="#">
-                      <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                      <span class="name">John Smith:</span>
-                      <span class="message">Hey there, I wanted to ask you something...</span>
-                      <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                    </a>
-                  </li>
-                  <li class="divider"></li>
-                  <li><a href="#">View Inbox <span class="badge">7</span></a></li>
-                </ul>
-              </li>
-              <li class="dropdown alerts-dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><a href="#">Default <span class="label label-default">Default</span></a></li>
-                  <li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
-                  <li><a href="#">Success <span class="label label-success">Success</span></a></li>
-                  <li><a href="#">Info <span class="label label-info">Info</span></a></li>
-                  <li><a href="#">Warning <span class="label label-warning">Warning</span></a></li>
-                  <li><a href="#">Danger <span class="label label-danger">Danger</span></a></li>
-                  <li class="divider"></li>
-                  <li><a href="#">View All</a></li>
-                </ul>
-              </li>
-              <li class="dropdown user-dropdown">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <%= current_user.name %> <b class="caret"></b></a>
-                <ul class="dropdown-menu">
-                  <li><%= link_to (t "nav.profile"),current_user%></li>
-                  <li><a href="#"> <%= link_to (t "user.edit"), edit_user_path(current_user.id) %></a></li>
-                  <li class="divider"></li>
-                  <li><a href="#"></i> <%= link_to (t "nav.logout"), log_out_path %></a></li>
-                </ul>
-              </li>
-            </ul>
-          </div><!-- /.navbar-collapse -->
-        </nav>
-        <div id="page-wrapper">
-        <h1 align="center">Dobrodosao na poso ba</h1>
         <br>
-        <br><br><br>
-        <div class="row">
-        <div class="col-lg-4">
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Podaci o korisniku</h3>
-            </div>
-            <div class="panel-body">
-              <div class="field">
-                <%= f.label :name %><br>
-                <%= f.text_field :name %>
-              </div>
-              <div class="field">
-                <%= f.label :last_name %><br>
-                <%= f.text_field :last_name %>
-              </div>
-              <div class="field">
-                <%= f.label :email %><br>
-                <%= f.text_field :email %>
-              </div>
-              <div class="field">
-                <%= f.label :password %><br>
-                <%= f.text_field :password %>
-              </div>
-              <div class="field">
-                <%= f.label :adress %><br>
-                <%= f.text_field :adress %>
-              </div>
-              <div class="field">
-                <%= f.label :phone %><br>
-                <%= f.text_field :phone %>
-              </div>
-              <div class="actions">
-                <%= f.submit %>
-              </div>
-            </div>
+
+        <div class="form-group">
+          <%= f.label :Ime_!, :class => "col-sm-4 control-label" %>
+          <div class="col-sm-6">
+            <%= f.text_field :name, :class => "form-control" %>
           </div>
         </div>
-          <div class="col-lg-4">
-            <div class="panel panel-primary">
-              <div class="panel-heading">
-                <h3 class="panel-title"><i class="fa fa-money"></i> Slika profila</h3>
-              </div>
-              <div class="panel-body">
-                <%= image_tag(@user.avatar_url) if @user.avatar? %>
-                <%= f.file_field :avatar %>
-                <%= f.hidden_field :avatar_cache %>
-              </div>
-            </div>
+
+        <div class="form-group">
+          <%= f.label :Prezime_!, :class => "col-sm-4 control-label" %>
+          <div class="col-sm-6">
+            <%= f.text_field :surname, :class => "form-control" %>
           </div>
         </div>
-        </div><!-- /.row -->
 
-          </div><!-- /#wrapper -->
+        <div class="form-group">
+          <%= f.label :Korisničko_ime_!, :class => "col-sm-4 control-label" %>
+          <div class="col-sm-6">
+            <%= f.text_field :username, :class => "form-control" %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :Šifra_!, :class => "col-sm-4 control-label" %>
+          <div class="col-sm-6">
+            <%= f.password_field :password, :class => "form-control" %>
+          </div>
+        </div>
 
 
-    <%else%>
 
-        <!-- Sidebar -->
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="index.html">Berza poslova</a>
+        <div class="form-group">
+          <%= f.label :Email_!, :class => "col-sm-4 control-label" %>
+          <div class="col-sm-6">
+            <%= f.text_field :email, :class => "form-control" %>
+          </div>
+        </div>
+
+
+
+        <div class="form-group">
+          <%= f.label :Kratka_biografija, :class => "col-sm-4 control-label" %>
+          <div class="col-sm-6">
+            <%= f.text_area :profile, :class => "form-control" %>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <%= f.label :Dodatne_informacije, :class => "col-sm-4 control-label" %>
+          <div class="col-sm-6">
+            <%= f.text_field :additional, :class => "form-control" %>
+          </div>
+        </div>
+
+
+
+        <div class="form-group text-right">
+          <div class="col-sm-offset-4 col-sm-6">
+            <%= f.submit "Registruj se", :class => "btn btn-primary"%>
+          </div>
+        </div>
+
       </div>
+    </div>
 
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse navbar-ex1-collapse">
-        <ul class="nav navbar-nav side-nav">
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-font"></i> Jezik <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="?locale=bs#" data-no-turbolink="true">Bosanski</a></li>
-              <li><a href="?locale=en#" data-no-turbolink="true">Engleski</a></li>
-              <li><a href="?locale=hr#" data-no-turbolink="true">Hrvatski</a></li>
-            </ul>
-          </li>
-          <li class="active"><%= link_to (t "nav.home"),home_index_path %></li>
-          <li><%= link_to (t "nav.about"),home_about_path %></li>
-          <li><%= link_to (t "nav.contact"), home_contact_path%></li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Lokacije <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Sve lokacije </a></li>
-              <li><a href="#">Sarajevo </a></li>
-              <li><a href="#">Banja Luka</a></li>
-              <li><a href="#">Mostar</a></li>
-              <li><a href="#">Zenica</a></li>
-              <li><a href="#">Tuzla</a></li>
-              <li><a href="#">Bihać</a></li>
-              <li><a href="#">Travnik</a></li>
-              <li><a href="#">Zavidovići</a></li>
-              <li><a href="#">Brčko</a></li>
-            </ul>
-          </li>
-          <li class="dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-caret-square-o-down"></i> Kategorije <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Administrativne usluge </a></li>
-              <li><a href="#">Bankarstvo </a></li>
-              <li><a href="#">Biotehnologija i farmacija</a></li>
-              <li><a href="#">Drvna industrija</a></li>
-              <li><a href="#">Državna služba i uprava</a></li>
-              <li><a href="#">Ekonomija i finansije </a></li>
-              <li><a href="#">Elektrotehnika i informatika </a></li>
-              <li><a href="#">Energetika i rudarstvo</a></li>
-              <li><a href="#">Frizeri i kozmetičari </a></li>
-              <li><a href="#">Geologija</a></li>
-              <li><a href="#">Građevinarstvo i arhitektura </a></li>
-              <li><a href="#">Komercijala i prodaja</a></li>
-              <li><a href="#">Konsalting</a></li>
-              <li><a href="#">Marketing i PR</a></li>
-              <li><a href="#">Mašinstvo i metalurgija </a></li>
-              <li><a href="#">Mediji </a>
-              <li><a href="#">Menadžment i upravljanje </a></li>
-              <li><a href="#">Obrazovanje, kultura i sport </a></li>
-              <li><a href="#">Osiguranje </a></li>
-              <li><a href="#">Ostalo</a></li>
-              <li><a href="#">Policija i zaštitarske usluge</a></li>
-              <li><a href="#">Političke nauke </a></li>
-              <li><a href="#">Poljoprivreda i šumarstvo </a></li>
-              <li><a href="#">Pravo i društvene nauke</a></li>
-              <li><a href="#">Prevodilačke usluge </a></li>
-              <li><a href="#">Proizvodnja</a></li>
-              <li><a href="#">Računovodstvo i revizija</a></li>
-              <li><a href="#">Socijalne usluge</a></li>
-              <li><a href="#">Stipendije </a></li>
-              <li><a href="#">Teleprodaja i telemarketing</a></li>
-              <li><a href="#">Transport i skladištenje</a></li>
-              <li><a href="#">Trgovina </a></li>
-              <li><a href="#">Ugostiteljstvo i turizam </a></li>
-              <li><a href="#">Umjetnost i dizajn</a></li>
-              <li><a href="#">Zanatske usluge </a></li>
-              <li><a href="#">Zdravstvo i medicina  </a></li>
-            </ul>
-          </li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right navbar-user">
-          <li class="dropdown messages-dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-envelope"></i> Messages <span class="badge">7</span> <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li class="dropdown-header">7 New Messages</li>
-              <li class="message-preview">
-                <a href="#">
-                  <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                  <span class="name"><% current_user %></span>
-                  <span class="message">Hey there, I wanted to ask you something...</span>
-                  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                </a>
-              </li>
-              <li class="divider"></li>
-              <li class="message-preview">
-                <a href="#">
-                  <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                  <span class="name">John Smith:</span>
-                  <span class="message">Hey there, I wanted to ask you something...</span>
-                  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                </a>
-              </li>
-              <li class="divider"></li>
-              <li class="message-preview">
-                <a href="#">
-                  <span class="avatar"><img src="http://placehold.it/50x50"></span>
-                  <span class="name">John Smith:</span>
-                  <span class="message">Hey there, I wanted to ask you something...</span>
-                  <span class="time"><i class="fa fa-clock-o"></i> 4:34 PM</span>
-                </a>
-              </li>
-              <li class="divider"></li>
-              <li><a href="#">View Inbox <span class="badge">7</span></a></li>
-            </ul>
-          </li>
-          <li class="dropdown alerts-dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-bell"></i> Alerts <span class="badge">3</span> <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Default <span class="label label-default">Default</span></a></li>
-              <li><a href="#">Primary <span class="label label-primary">Primary</span></a></li>
-              <li><a href="#">Success <span class="label label-success">Success</span></a></li>
-              <li><a href="#">Info <span class="label label-info">Info</span></a></li>
-              <li><a href="#">Warning <span class="label label-warning">Warning</span></a></li>
-              <li><a href="#">Danger <span class="label label-danger">Danger</span></a></li>
-              <li class="divider"></li>
-              <li><a href="#">View All</a></li>
-            </ul>
-          </li>
-          <li class="dropdown user-dropdown">
-            <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <%= current_user.name %> <b class="caret"></b></a>
-            <ul class="dropdown-menu">
-              <li> <%= link_to (t "nav.profile"),current_user%></li>
-              <li> <%= link_to (t "user.settings"), edit_user_path(@current_user)%></li>
-              <li class="divider"></li>
-              <li><a href="#"> <%= link_to (t "nav.logout"), log_out_path %></a></li>
-            </ul>
-          </li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </nav>
-
-    <div id="page-wrapper">
-      <h1 align="center">Dobrodosao na poso ba</h1>
-      <br>
-      <br><br><br>
-      <div class="row">
-        <div class="col-lg-4">
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title"><i class="fa fa-long-arrow-right"></i> Podaci o korisniku</h3>
-            </div>
-            <div class="panel-body">
-              <div class="field">
-                <%= f.label :name %><br>
-                <%= f.text_field :name %>
-              </div>
-              <div class="field">
-                <%= f.label :last_name %><br>
-                <%= f.text_field :last_name %>
-              </div>
-              <div class="field">
-                <%= f.label :email %><br>
-                <%= f.text_field :email %>
-              </div>
-              <div class="field">
-                <%= f.label :password %><br>
-                <%= f.text_field :password %>
-              </div>
-              <div class="field">
-                <%= f.label :adress %><br>
-                <%= f.text_field :adress %>
-              </div>
-              <div class="field">
-                <%= f.label :phone %><br>
-                <%= f.text_field :phone %>
-              </div>
-              <div>
-                          <%= recaptcha_tags %>
-                        </div>
-              <div class="actions">
-                <%= f.submit %>
-              </div>
-            </div>
+    <div class="col-md-4">
+      <div class="well">
+        <div class="form-group">
+          <%= f.label :Odaberite_sliku, :class => "col-sm-12 text-center" %> <br>
+          <div class="col-lg-12">
+            <% if current_user %>
+                <% if current_user.avatar.present? %>
+                    <br><p class="text-center"> <img src= <%= current_user.avatar_url %> height="345" width="270"></p>
+                <% else %>
+                    <br>  <p class="text-center"><img src="/assets/avatar.png" height="345" width="270"></p>
+                <% end %>
+            <% else %>
+                <br> <p class="text-center"> <img src="/assets/avatar.png" height="345" width="270"></p>
+            <% end %><br>
+            <%= f.file_field :avatar, :class => "form-control" %><br>
+            <%= f.hidden_field :avatar_cache %>
           </div>
         </div>
 
-        <div class="col-lg-4">
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-
-              <h3 class="panel-title"><i class="fa fa-clock-o"></i> Moje kategorije</h3>
-            </div>
-            <div class="panel-body">
-              <form>
-                <input type="checkbox" name="kategorija" value="1">Administrativne usluge <br>
-                <input type="checkbox" name="kategorija" value="2">Bankarstvo <br>
-                <input type="checkbox" name="kategorija" value="3">Biotehnologija i farmacija <br>
-                <input type="checkbox" name="kategorija" value="4">Drvna industrija <br>
-                <input type="checkbox" name="kategorija" value="5"> Državna služba i uprava <br>
-                <input type="checkbox" name="kategorija" value="6">Ekonomija i finansije <br>
-                <input type="checkbox" name="kategorija" value="7">Elektrotehnika i informatika <br>
-                <input type="checkbox" name="kategorija" value="8">Energetika i rudarstvo <br>
-                <input type="checkbox" name="kategorija" value="9">Frizeri i kozmetičari <br>
-                <input type="checkbox" name="kategorija" value="10">Geologija <br>
-                <input type="checkbox" name="kategorija" value="11">Građevinarstvo i arhitektura <br>
-                <input type="checkbox" name="kategorija" value="12">Komercijala i prodaja<br>
-                <input type="checkbox" name="kategorija" value="13">Marketing i PR <br>
-                <input type="checkbox" name="kategorija" value="14">Mašinstvo i metalurgija <br>
-                <input type="checkbox" name="kategorija" value="15">Mediji <br>
-                <input type="checkbox" name="kategorija" value="16">Menadžment i upravljanje <br>
-                <input type="checkbox" name="kategorija" value="17">Obrazovanje, kultura i sport <br>
-                <input type="checkbox" name="kategorija" value="18">Osiguranje <br>
-                <input type="checkbox" name="kategorija" value="19">Ostalo <br>
-                <input type="checkbox" name="kategorija" value="20">Policija i zaštitarske usluge <br>
-                <input type="checkbox" name="kategorija" value="21">Poljoprivreda i šumarstvo <br>
-                <input type="checkbox" name="kategorija" value="22">Pravo i društvene nauke <br>
-                <input type="checkbox" name="kategorija" value="23">Prevodilačke usluge <br>
-                <input type="checkbox" name="kategorija" value="24">Proizvodnja <br>
-                <input type="checkbox" name="kategorija" value="25">Računovodstvo i revizija <br>
-                <input type="checkbox" name="kategorija" value="26">Socijalne usluge <br>
-                <input type="checkbox" name="kategorija" value="27">Stipendije <br>
-                <input type="checkbox" name="kategorija" value="28">Teleprodaja i telemarketing <br>
-                <input type="checkbox" name="kategorija" value="29">Transport i skladištenje <br>
-                <input type="checkbox" name="kategorija" value="30">Trgovina <br>
-                <input type="checkbox" name="kategorija" value="31">Ugostiteljstvo i turizam <br>
-                <input type="checkbox" name="kategorija" value="32">Umjetnost i dizajn <br>
-                <input type="checkbox" name="kategorija" value="33">Zanatske usluge <br>
-                <input type="checkbox" name="kategorija" value="34">Zdravstvo i medicina <br>
-                <br>
-              </form>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4">
-          <div class="panel panel-primary">
-            <div class="panel-heading">
-              <h3 class="panel-title"><i class="fa fa-money"></i> Slika profila</h3>
-            </div>
-            <div class="panel-body">
-              <%= image_tag(@user.avatar_url) if @user.avatar? %>
-              <%= f.file_field :avatar %>
-              <%= f.hidden_field :avatar_cache %>
-            </div>
-          </div>
-        </div>
       </div>
-    </div><!-- /.row -->
+    </div>
 
-    </div><!-- /#wrapper -->
-<%end%>
-    <!-- JavaScript -->
-    <script src="js/jquery-1.10.2.js"></script>
-    <script src="js/bootstrap.js"></script>
 
-    <!-- Page Specific Plugins -->
-    <script src="http://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
-    <script src="http://cdn.oesmith.co.uk/morris-0.4.3.min.js"></script>
-    <script src="js/morris/chart-data-morris.js"></script>
-    <script src="js/tablesorter/jquery.tablesorter.js"></script>
-    <script src="js/tablesorter/tables.js"></script>
+
+    <% if !current_user %>
+        <div style="visibility: hidden">
+          <%= f.text_field :stars, :value => 0 %>
+        </div>
+    <% end %>
+
 
 <% end %>
